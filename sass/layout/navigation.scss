@@ -1,7 +1,8 @@
 .nav {
     position: fixed;
     width: 100%;
-
+    top: 0px;
+    z-index: 100;
     &__logo {
         width: 4rem;
         height: 4rem;

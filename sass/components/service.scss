@@ -1,0 +1,52 @@
+.service {
+    &__container {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 2rem;
+    }
+
+    &__domain {
+        display: flex;
+        height: 50rem;
+        width: 100%;
+        #appD {
+            background-image: url(../images/svg/svgBg.svg);
+        }
+
+    
+
+        &__image {
+            width: 50%;
+
+            background-repeat: no-repeat;
+
+
+
+            img {
+                height: 100%;
+            }
+        }
+
+        &__text {
+            width: 50%;
+            transition: all .3s;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+            h1 {
+                font-family: 'Muli', sans-serif;
+                font-size: 4rem;
+                font-weight: 900;
+                color: #05055a;
+            }
+
+            p {
+                font-size: 2rem;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+    }
+}
