@@ -1,7 +1,10 @@
+
+
 .section{
-    &__who,&__service,&__features{
+    &__who,&__service,&__features,&__join{
         margin-top: 20rem;
         margin-bottom: 10rem;
+        position: relative;
         &__heading{
             font-size:3rem;
             font-family: 'Poppins',sans-serif;
@@ -14,4 +17,7 @@
             margin-left: -.5rem;
         }
     }
+}
+.section__join{
+    margin-top: 55rem;
 }
