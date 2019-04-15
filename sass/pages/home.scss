@@ -1,0 +1,17 @@
+.section{
+    &__who,&__service,&__features{
+        margin-top: 20rem;
+        margin-bottom: 10rem;
+        &__heading{
+            font-size:3rem;
+            font-family: 'Poppins',sans-serif;
+            color: #fff;
+            background-image: linear-gradient(to right ,#2121db,#09097e);
+            font-weight: 500;
+            padding: 1rem 2rem;
+            display: inline-block;
+            border-radius: 4px;
+            margin-left: -.5rem;
+        }
+    }
+}

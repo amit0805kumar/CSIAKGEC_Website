@@ -1,0 +1,43 @@
+* {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+  
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%; //1rem = 10px def font size of browser = 16px; 10/16 = 62.5%
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+::selection
+{
+    
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul,li{
+    list-style: none;
+}

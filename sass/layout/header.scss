@@ -1,0 +1,167 @@
+header {
+    width: 100%;
+    height: 100vh;
+    .header {
+        &__text {
+            position: absolute;
+            top: 20rem;
+            left: 5rem;
+        }
+
+        &__csi {
+            font-size: 7rem;
+            font-family: 'Muli', sans-serif;
+            font-weight: 800;
+            color: #292626;
+
+            @include respond(tab-port) {
+                font-size: 5rem;
+            }
+
+            @include respond(phone) {
+                //                font-size: 2rem;
+            }
+
+            &__type {
+                font-size: 2rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                margin-top: 3rem;
+                color: #292626;
+
+                @include respond(tab-port) {
+                    font-size: 2rem;
+                }
+
+            }
+        }
+
+        &__moto {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 300;
+
+            span {
+                position: relative;
+            }
+
+            span::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 100%;
+                width: 50%;
+                height: 2px;
+                background: blue;
+            }
+        }
+
+        &__bg {
+
+            position: relative;
+            width: 100%;
+           
+
+            img {
+                position: absolute;
+            }
+
+            #bg {
+                top: 0;
+                right: 0;
+                width: 70%;
+
+                @include respond(tab-port) {
+                    width: 80%;
+                }
+
+                @include respond(phone) {
+                    width: 90%;
+                }
+
+            }
+
+            #sys {
+                width: 50rem;
+                top: 10rem;
+                right: 15%;
+
+                @include respond(tab-land) {
+                    width: 50rem;
+
+                }
+
+                @include respond(tab-port) {
+                    top: 25rem;
+                    width: 40rem;
+                }
+
+                @include respond(phone) {
+                    top: 8rem;
+                    width: 25rem;
+                    right: 15%;
+                }
+            }
+
+            #colourful {
+                width: 38%;
+                right: 3rem;
+            }
+
+            #white {
+                width: 50%;
+                right: 0;
+
+                @include respond(phone) {
+                    width: 70%;
+                }
+            }
+
+            #boy {
+                top: 30rem;
+                width: 45rem;
+                right: 22rem;
+                position: absolute;
+                @include respond(tab-port) {
+                    width: 30rem;
+                    top: 40rem;
+                }
+
+                @include respond(phone) {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}
+
+.boy {
+    animation: updownsp1 3s infinite;
+    animation-timing-function: ease-in-out;
+
+    @include respond(tab-port) {
+        animation: none;
+    }
+}
+
+@keyframes updownsp1 {
+    0% {
+        top: 30rem;
+
+       
+    }
+
+    50% {
+        top: 35rem;
+
+       
+    }
+
+    100% {
+        top: 30rem;
+
+    }
+
+}

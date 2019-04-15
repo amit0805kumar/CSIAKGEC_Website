@@ -1,115 +1,31 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <title>CSI | Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Orbitron:400,500,700,900|Poiret+One|Poppins:200,300,400,500,600,700,800,900|Muli:200,300,400,700,800,900" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta charset="utf-8">
 
-    <script src="script.js"></script>
+    <!--    <link rel="shotcut icon" type="img/png" href="Images/icon.png">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Orbitron:400,500,700,900|Poiret+One|Poppins:200,300,400,500,600,700,800,900|Muli:200,300,400,700,800,900" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <title>CSI | Home</title>
 </head>
 
 <body>
 
-    <div class="nav">
 
-        <div class="nav__button">
 
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-            <label for="navi-toggle" class="navigation__button">
-           <span class="navigation__icon">&nbsp;</span>
-           <span class="navigation__icon-1">&nbsp;</span>
-           <span class="navigation__icon-2">&nbsp;</span>
-       </label>
+    <header>
 
+        <div class="header__bg">
+            <img src="images/svg/bg.svg" id="bg" alt="">
+            <img src="images/svg/white.svg" alt="" id="white">
+            <img src="images/svg/colourful.svg" alt="" id="colourful">
+            <img src="images/svg/sys.svg" alt="" id="sys">
+            <img src="images/svg/boy.svg" alt="" id="boy" class="boy">
         </div>
-
-        <div id="menu__section">
-            <div class="menu__logo__section">
-                <img class="menu__logo__section-img movelogo" src="logocsiCenter.png" alt="Csi-logo" class="logo">
-            </div>
-
-            <div class="menu__links">
-                <div class="main__links">
-                    <div class="link expEvents">
-                        <a href="#">Events</a>
-                    </div>
-                    <div class="link expWorkshop">
-                        <a href="#">Workshops</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Sevices</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">About Us</a>
-                    </div>
-                    <div class="link expLink expMem">
-                        <a href="#">Our Team</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">The Initiative</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Join Us</a>
-                    </div>
-                    <div class="link">
-                        <a href="#">Contact Us</a>
-                    </div>
-
-                </div>
-
-                <div class="arrow hideArrow">
-                    <i class="material-icons md-36">play_arrow</i>
-                </div>
-
-                <div class="replacing__links memberLinks">
-                    <div class="rLinks">
-                        <a href="#">2nd Year</a>
-                    </div>
-                    <div class="rLinks">
-                        <a href="#">3rd Year</a>
-                    </div>
-                    <div class="rLinks">
-                        <a href="#">4th Year</a>
-                    </div>
-                </div>
-                 <div class="replacing__links workshopLinks">
-                    <div class="rLinks">
-                        <a href="#">Java And Android</a>
-                    </div>
-                     <div class="rLinks">
-                        <a href="#">Ethical Hacking</a>
-                    </div>
-                    <div class="rLinks">
-                        <a href="#">UI with MongoDB</a>
-                    </div>
-                    <div class="rLinks">
-                        <a href="#">Web Tech With Angular</a>
-                    </div>
-                </div>
-                
-                <div class="replacing__links eventLinks">
-                    <div class="rLinks">
-                        <a href="#">CINE</a>
-                    </div>
-                     <div class="rLinks">
-                        <a href="#">The Initiative</a>
-                    </div>
-                    <div class="rLinks">
-                        <a href="#">RDM</a>
-                    </div>
-                    <div class="rLinks">
-                        <a href="#">Vacanza</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="header">
 
         <div class="header__text">
             <div class="header__csi">Computer</div>
@@ -121,15 +37,160 @@
             <div class="header__moto"><span>Create</span> / <span>Share</span> / <span>Innovate</span></div>
         </div>
 
-        <img src="newBg/bg.svg" alt="">
-        <img src="newBg/sys.svg" alt="" class="">
-        <img src="newBg/colourful.svg" alt="" class="">
-        <img src="newBg/boy.svg" alt="" class="boy">
-        <img src="newBg/white.svg" alt="" class="">
-    </div>
+    </header>
+    <nav class="nav">
+        <div class="nav__container">
+            <div class="nav__logo">
+                <a href="#">
+                    <img src="images/logocsiCenter.png" alt="">
+                </a>
+            </div>
+            <div class="nav__links">
+                <ul class="topLinks">
+                    <li><a href="#">Home</a></li>
+                    <li>What We Do
+                        <ul class="sublinks">
+                            <li>Events
+                                <ul class="subLinksChild">
+                                    <li><a href="">CINE</a></li>
+                                    <li><a href="">The Initiative</a></li>
+                                    <li><a href="">RDM</a></li>
+                                    <li><a href="">Vacanza</a></li>
 
-    <div class="box"></div>
-    <script src="rellax.js"></script>
-</body>
+                                </ul>
+                            </li>
+                            <li>Workshops
+                                <ul class="subLinksChild">
+                                    <li><a href="#">UI With MongoDB</a></li>
+                                    <li><a href="#">Java And Android</a></li>
+                                    <li><a href="#">Ethical Hacking</a></li>
+                                    <li><a href="#">Web Development</a></li>
+                                    <li><a href="#">Web Tech With Angular</a></li>
+                                    <li><a href="#">Blockchain</a></li>
 
-</html>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li>Our Team
+                        <ul class="sublinks">
+                            <li>2nd Year</li>
+                            <li>3rd Year</li>
+                            <li>4th Year</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">The Initiative</a></li>
+                    <li><a href="#">Join Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section__who">
+        <div class="section__who__heading">
+            <div class="section__heading">
+                Who We Are
+            </div>
+        </div>
+        <div class="who__container">
+            <div class="who__text">
+                <h1>Team CSI</h1>
+                <p>
+                    The COMPUTER SOCIETY OF INDIA (acronym as CSI) was formed in the year 1965. Since its inception, CSI has been paving the way for the IT industry to advance in the right direction. By indulging within itself most famous IT leaders, brilliant scientists and dedicated academicians, CSI has been highly successful in setting highest benchmarks in the field of professional competence with high quality commitment.
+                </p>
+                <a href="#" class="who__btn">
+                    Know More
+                    <img src="images/svg/icons/004-arrow-pointing-to-right.svg" alt="">
+                </a>
+            </div>
+            <div class="who__images">
+                <div class="who__images__cover">
+                    <div class="who__images__icons">
+                        <a href="fb" class="who__images__icon"><img src="images/svg/icons/007-facebook.svg" alt=""></a>
+                        <a href="youtube" class="who__images__icon"><img src="images/svg/icons/005-youtube.svg" alt=""></a>
+                        <a href="insta" class="who__images__icon"><img src="images/svg/icons/006-instagram.svg" alt=""></a>
+                    </div>
+                </div>
+                <img src="images/team.JPG" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section__service">
+        <div class="section__service__heading">
+            <div class="section__heading">
+                Service Domains
+            </div>
+        </div>
+
+        <div class="service__container">
+            <div class="service__domain">
+
+                <div class="service__domain__text">
+                    <h1>
+                        Web Development
+                    </h1>
+                    <p>
+                        We are the trendsetters in web development. Our team makes use of the latest design principles and technologies to develop content and websites that can empower people, and help them achieve perfection
+                    </p>
+                </div>
+                <div class="service__domain__image">
+                    <img src="images/svg/webd.svg" alt="">
+                </div>
+            </div>
+            <div class="service__domain">
+                <div class="service__domain__image" id="appD">
+                    <img src="images/svg/appD.svg" alt="">
+                </div>
+                <div class="service__domain__text">
+                    <h1>
+                        Android Development
+                    </h1>
+                    <p>
+                        Our team has that edge, which makes us the leaders in application development. We live, to turn ideas full of potential into hardcore code leading to beautiful and efficient mobile applications.
+                    </p>
+                </div>
+
+            </div>
+            <div class="service__domain">
+
+                <div class="service__domain__text">
+                    <h1>
+                        Graphic Designing
+                    </h1>
+                    <p>
+                        We, at CSI, have a team full of innovators and original thinkers imbued with the ability to turn the imaginations into a visually pleasing vista of creativity.
+                    </p>
+                </div>
+                <div class="service__domain__image">
+                    <img src="images/svg/graphicD.svg" alt="">
+                </div>
+            </div>
+             <div class="service__domain">
+                <div class="service__domain__image">
+                    <img src="images/svg/blockD.svg" alt="">
+                </div>
+                <div class="service__domain__text">
+                    <h1>
+                        Blockchain Programming
+                    </h1>
+                    <p>
+                        Our team has that edge, which makes us the leaders in application development. We live, to turn ideas full of potential into hardcore code leading to beautiful and efficient mobile applications.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section__features">
+        <div class="section__features__heading">
+            <div class="section__heading">
+               Our Features
+            </div>
+        </div>
+    </section>
+
+</body></html>
