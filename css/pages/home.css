@@ -1,0 +1,15 @@
+.section__who, .section__service, .section__features {
+  margin-top: 20rem;
+  margin-bottom: 10rem; }
+  .section__who__heading, .section__service__heading, .section__features__heading {
+    font-size: 3rem;
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+    background-image: linear-gradient(to right, #2121db, #09097e);
+    font-weight: 500;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: 4px;
+    margin-left: -.5rem; }
+
+/*# sourceMappingURL=home.css.map */

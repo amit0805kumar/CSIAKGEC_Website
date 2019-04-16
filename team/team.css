@@ -1,0 +1,62 @@
+* {
+  box-sizing: inherit;
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+     supported by Chrome and Opera */ }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+ul, li {
+  list-style: none; }
+
+.team-page {
+  margin-top: 15rem; }
+
+.text {
+  background-image: linear-gradient(to right, #2121db, #09097e);
+  width: 25rem;
+  height: 10rem;
+  border-radius: .5rem;
+  margin-left: -.2rem; }
+  .text__align {
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    color: white;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    letter-spacing: .2rem; }
+  .text span {
+    font-size: 4.3rem; }
+
+/*# sourceMappingURL=team.css.map */
