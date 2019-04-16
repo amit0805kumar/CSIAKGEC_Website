@@ -1,0 +1,89 @@
+.join {
+    &__container {
+        width: 100%;
+        //        background: #f4f4f4;
+        display: flex;
+        margin: 6rem 0;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    &__box {
+        background: #fff;
+        margin: 0 .5rem;
+        display: flex;
+        align-items: center;
+        //        background: rgba(191, 234, 191, 6);
+
+        transition: all .3s;
+        cursor: pointer;
+
+        path {
+            transition: all .3s;
+        }
+        
+        &:hover{
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+        }
+        &:hover path {
+
+            stroke-dashoffset: -275.5px;
+
+        }
+
+        &:hover .line {
+            width: 5rem;
+            left: 80%;
+            opacity: 1;
+        }
+
+        &:hover .num {
+            color: #0944C6;
+        }
+
+        &__anim {
+            position: relative;
+            width: 12rem;
+            height: 10rem;
+            margin-right: 4rem;
+
+            svg,
+            div {
+                top: 50%;
+                transform: translateY(-50%);
+                position: absolute;
+            }
+
+            .num {
+                font-family: 'Poppins', sans-serif;
+                font-size: 3rem;
+                left: 50%;
+                transform: translateY(-50%) translateX(-50%);
+                transition: all .3s;
+            }
+
+            .line {
+                width: 0rem;
+                height: 2px;
+                background: #000;
+                left: 60%;
+                transition: all .3s;
+                opacity: 0;
+            }
+
+        }
+
+        &__text {
+            //            width: 40rem;
+            font-family: 'Poppins';
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

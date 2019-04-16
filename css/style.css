@@ -512,7 +512,8 @@ header {
     -webkit-transition: all .3s;
     transition: all .3s;
     cursor: pointer;
-    padding: .5rem 2rem; }
+    padding: .5rem 2rem;
+    overflow: hidden; }
     .features__box:hover {
       -webkit-transform: translateY(-1rem);
               transform: translateY(-1rem);
@@ -520,11 +521,81 @@ header {
               box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08); }
     .features__box h1 {
       font-size: 3rem;
-      font-family: 'Muli',sans-serif;
+      font-family: 'Muli', sans-serif;
       margin: 2rem 0;
       margin-top: 4rem; }
     .features__box p {
       font-size: 1.4rem;
-      font-family: 'Poppins',sans-serif; }
+      font-family: 'Poppins', sans-serif; }
+
+.join__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 6rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2rem; }
+.join__box {
+  background: #fff;
+  margin: 0 .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer; }
+  .join__box path {
+    -webkit-transition: all .3s;
+    transition: all .3s; }
+  .join__box:hover {
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
+  .join__box:hover path {
+    stroke-dashoffset: -275.5px; }
+  .join__box:hover .line {
+    width: 5rem;
+    left: 80%;
+    opacity: 1; }
+  .join__box:hover .num {
+    color: #0944C6; }
+  .join__box__anim {
+    position: relative;
+    width: 12rem;
+    height: 10rem;
+    margin-right: 4rem; }
+    .join__box__anim svg,
+    .join__box__anim div {
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      position: absolute; }
+    .join__box__anim .num {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+      left: 50%;
+      -webkit-transform: translateY(-50%) translateX(-50%);
+              transform: translateY(-50%) translateX(-50%);
+      -webkit-transition: all .3s;
+      transition: all .3s; }
+    .join__box__anim .line {
+      width: 0rem;
+      height: 2px;
+      background: #000;
+      left: 60%;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      opacity: 0; }
+  .join__box__text {
+    font-family: 'Poppins'; }
+    .join__box__text h1 {
+      font-size: 2rem; }
+    .join__box__text p {
+      font-size: 1.5rem; }
 
 /*# sourceMappingURL=style.css.map */
