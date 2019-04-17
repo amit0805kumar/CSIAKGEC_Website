@@ -332,6 +332,47 @@ header {
                       -ms-flex-pack: start;
                           justify-content: flex-start; }
 
+.service__container {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2rem; }
+.service__domain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50rem;
+  width: 100%; }
+  .service__domain #appD {
+    background-image: url(../images/svg/svgBg.svg); }
+  .service__domain__image {
+    width: 50%;
+    background-repeat: no-repeat; }
+    .service__domain__image img {
+      height: 100%; }
+  .service__domain__text {
+    width: 50%;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .service__domain__text h1 {
+      font-family: 'Muli', sans-serif;
+      font-size: 4rem;
+      font-weight: 900;
+      color: #05055a; }
+    .service__domain__text p {
+      font-size: 2rem;
+      font-family: 'Poppins', sans-serif; }
+
 .who__container {
   width: 100%;
   height: 30rem;
@@ -436,45 +477,4 @@ header {
     width: 2rem; }
   .who__btn:hover img {
     margin-right: 1rem; }
-
-.service__container {
-  width: 100%;
-  overflow: hidden;
-  margin-top: 2rem; }
-.service__domain {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50rem;
-  width: 100%; }
-  .service__domain #appD {
-    background-image: url(../images/svg/svgBg.svg); }
-  .service__domain__image {
-    width: 50%;
-    background-repeat: no-repeat; }
-    .service__domain__image img {
-      height: 100%; }
-  .service__domain__text {
-    width: 50%;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    padding: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .service__domain__text h1 {
-      font-family: 'Muli', sans-serif;
-      font-size: 4rem;
-      font-weight: 900;
-      color: #05055a; }
-    .service__domain__text p {
-      font-size: 2rem;
-      font-family: 'Poppins', sans-serif; }
 /*# sourceMappingURL=style.css.map */
