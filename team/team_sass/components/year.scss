@@ -1,26 +1,68 @@
-.team-page {
-    margin-top: 15rem;
+.section {
+   
+    &__heading {
+            font-size: 3rem;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            background-image: linear-gradient(to right, #2121db, #09097e);
+            font-weight: 500;
+            padding: 1rem 2rem;
+            display: inline-block;
+            border-radius: 4px;
+            margin-left: -.5rem;
+        
+        &__align{
+       
+        margin-top: 10rem;
+        margin-bottom: -10rem;
+        }
+        }
+    }
+
+
+
+
+.team
+{
+    &__gallery {
+       margin-top: 12rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
 }
 
-.text {
-        background-image: linear-gradient(to right, #2121db, #09097e);
-        width: 25rem;
-        height: 10rem;
-    border-radius: .5rem;
-    margin-left: -.2rem;
+&--row {
   
-    &__align {
-         font-size: 3.5rem;
-         font-weight: 700;
-         font-family: 'Poppins', sans-serif;
-         display: inline-block;
-         color: white;
-    padding:2rem;
-        padding-bottom: 1rem;
-         letter-spacing: .2rem;
-    }
-    & span {
-        font-size: 4.3rem;
-    }
 
+    display: flex;
+    justify-content: space-around;
+}
+
+&--box {
+    width: 30rem;
+    height: 40rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+    margin: 3rem 2rem;
+}
+
+
+&__imgshape {
+  
+    width: 20rem;
+    height: 20rem;
+  
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+
+}
+
+&--member {
+    height: 100%;  
+}
 }

@@ -1,6 +1,6 @@
 .who__container {
   width: 100%;
-  height: 30rem;
+  height: 20rem;
   margin-top: 2rem;
   display: flex; }
 .who__text {
@@ -12,7 +12,7 @@
   background: #e3e3e3; }
   .who__text h1 {
     font-family: 'Muli', sans-serif;
-    font-size: 4rem;
+    font-size: 4rem; 
     font-weight: 900;
     color: #05055a; }
   .who__text p {
