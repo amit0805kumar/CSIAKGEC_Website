@@ -1,0 +1,50 @@
+.scroll{
+    height: 20rem;
+    background: grey;
+    color: #000;
+    display: grid;
+    grid-template-columns: 80% auto;
+    font-size: 2rem;
+}
+.alumni {
+    &__container {
+        width: 100%;
+        height: 60rem;
+        background: #f1f1f5;
+        margin-top: 3rem;
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-y: scroll;
+    }
+    &__box{
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+        background: #000;
+        margin:1rem 2rem;
+        
+        cursor: pointer;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+        transition: all .3s;
+        &:hover{
+              box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
+        }
+        .name{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            padding: .5rem 0;
+            padding-left: 1rem;
+            font-family: 'Poppins',sans-serif;
+            font-size: 1rem;
+            color: #fff;
+            left: 0;
+            background: rgba(0, 0, 0, 0.58);
+        }
+    }
+}
