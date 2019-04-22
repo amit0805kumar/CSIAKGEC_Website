@@ -1,0 +1,116 @@
+footer{
+    width: 100%;
+    background: #fff;
+    height: 50rem;
+    border-top: 1px solid #ede6e6;
+    margin-top: 22rem;
+    position: relative;
+}
+.footer{
+    &__bg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+        img{
+            opacity: .2;
+            width: 30rem;
+            filter: grayscale(1);
+        }
+    }
+    &__container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    &__main{
+        height: 80%;
+        background: #1d1d1d;
+        position: relative;
+        &__heading{
+            font-size: 3rem;
+            color: #fff;
+            font-family: 'Poppins',sans-serif;
+            transform: rotate(-90deg);
+            position: absolute;
+            left: 0;
+            top: 10rem;
+            display: inline;
+            padding:1rem;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 30rem;
+                background: #fff;
+                left: -1rem;
+                top: -25rem;
+            }
+           
+        }
+        
+        &__content{
+            position: absolute;
+            right: 2rem;
+            top: -3rem;
+            background: #fff;
+            padding: 3rem 2rem;
+            width: 50rem;
+            height: 35rem;
+            border-radius: 3px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+            display: flex;
+            justify-content:space-around;
+            flex-direction: column;
+            font-family: sans-serif;
+            
+        }
+        &__text{
+            margin-left: 2rem;
+            h1{
+                position: relative;
+                font-size: 2rem;
+                &::before{
+                    content: '';
+                    background: #000;
+                    position: absolute;
+                    width: .2rem;
+                    height: 100%;
+                    left: -1rem;
+                }
+            }
+            p{
+                font-size: 1.5rem;
+                font-family: 'Poppins',sans-serif;
+            }
+        }
+    }
+    &__copy{
+        flex: 1;
+        display: flex;
+        padding: 0 1rem;
+        align-items: center;    
+        justify-content: space-between;
+        background: #f4f3ee;
+        overflow: hidden;
+        &__section{
+            & > a{
+                font-family: 'Poppins',sans-serif;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+        }
+        &__icons{
+            width: 20rem;
+            display: flex;
+        a img{
+                width: 2rem;
+                margin: 0 1.5rem;
+            }
+        }
+        
+    }
+}
