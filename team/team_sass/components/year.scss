@@ -31,26 +31,31 @@
         justify-content: space-around;
 }
 
+&--row {
+  
 
+    display: flex;
+    justify-content: space-around;
+}
 
 &--box {
     width: 30rem;
     height: 40rem;
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: .5rem;
     margin: 3rem 2rem;
-    
 }
 
 
 &__imgshape {
   
-    width: 22rem;
-    height: 22rem;
-  -webkit-shape-outside: circle(50% at 50% 50%);
+    width: 20rem;
+    height: 20rem;
+  
+    -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
@@ -59,23 +64,5 @@
 
 &--member {
     height: 100%;  
-    &--name {
-        margin-top: 5rem;
-        font-size: 3rem;
-            font-family: 'Poppins', sans-serif;
-         font-weight: 700;
-        text-transform: uppercase;
-     }
-    &--icons {
-   flex: 33.33%;
-        
-        width: 6rem;
-      padding: 1rem;
-        &__align {
-       display: flex;
-     margin-left: -.2rem;
-            }
-    
-    }
 }
 }
