@@ -221,7 +221,7 @@ ul, li {
 .cine_intro{
   /*background-color: pink;*/
   width: 600px;
-  float: left;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -265,4 +265,134 @@ text-align: left;
 width: 200px;
 height: 50px;
 cursor: pointer;
+}
+.event_details_header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.events_details_dates{
+  
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+}
+.events_details_name,.registration_details,.written_details{
+  margin:20px 0;
+
+}
+.event_details_header{
+  
+  
+  margin-top: 2px;
+}
+.registration_details
+{
+  margin-left: 150px;
+}
+.events_details_name{
+  text-align: center;
+}
+
+.event_all_details{
+  
+  width: 100%;
+}
+.registration_date,.written_date{
+  margin: 10px 0;
+}
+.svg_sideof_details{
+  width: 230px;
+  height: 130px;
+}
+.svg_and_details{
+  display: flex;
+  flex-direction: row;
+}
+.gallery_section{
+  margin: 15px 0;
+}
+.gallery_name{
+  text-align: center;
+  margin: 50px 0;
+}
+.gallery{
+  text-align: center;
+  margin: 20px 0;
+}
+.gallery img
+{
+  width: 600px;
+  height: 400px;
+}
+
+.other_events_name{
+  text-align: center;
+  margin: 50px 0;
+}
+
+.other_events_pics{
+  padding: 0 100px 0 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+}
+.other_events_pics img{
+  height: 190px;
+  width: 300px;
+ box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.footer_address_mission_featuredlinks{
+  margin: 200px 0;
+}
+.csi_logo_last img{
+  height: 150px;
+  width: 150px;
+}
+.footer_address_mission_featuredlinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 40px 0 80px;
+}
+.mission_header,.address_header,.geaturedlinks_header
+{
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+}
+.address_header p,.mission_header p,.geaturedlinks_header ul
+{
+  font-size: 15px;
+padding: 15px 0;
+}
+.footer {
+  border-top:1px solid #D3D3D3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+  padding: 50px 20px 0 20px;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+font-size: 12px;
+ 
+}
+.privacy{
+  padding: 0 0 0 20px;
+}
+.social_media img{
+  width: 20px;
+  height: 20px;
+}
+.social_media{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100px;
+  
 }
