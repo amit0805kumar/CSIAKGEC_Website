@@ -1,0 +1,35 @@
+* {
+  padding: 0px;
+  margin: 0px; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  width: 100vw; }
+  header img {
+    height: 70px;
+    width: 70px; }
+  header h1 {
+    height: 70px;
+    line-height: 70px;
+    font-family: 'Muli', sans-serif;
+    color: #292626;
+    font-size: 30px;
+    border: 1px black;
+    font-weight: 800; }
+
+section {
+  padding: 50px 5vw 0px 5vw;
+  display: flex;
+  flex-direction: row;
+  align-content: center; }
+  section .left {
+    width: 50vw; }
+    section .left img {
+      width: 100%; }
+  section .right {
+    background-color: bisque;
+    width: 40vw; }
+
+/*# sourceMappingURL=account.css.map */

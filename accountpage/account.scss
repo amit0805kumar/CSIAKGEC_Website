@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+margin: 0px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 100vw;
+    img{
+        height: 70px;
+        width: 70px;
+    
+    }
+    h1{ height: 70px;
+        line-height: 70px;
+        font-family: 'Muli', sans-serif;
+        color: #292626;
+        font-size: 30px;
+        border: 1px black;
+        font-weight: 800;
+    }
+}
+section{
+    padding:50px 5vw 0px 5vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    .left{
+        width: 50vw;
+        img{
+            width: 100%;
+        }
+    }
+    .right{
+        background-color: bisque;
+        width: 40vw;
+    }
+
+}
