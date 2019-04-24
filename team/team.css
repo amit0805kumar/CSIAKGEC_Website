@@ -165,6 +165,9 @@ ul, li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
+.team--row {
+  display: flex;
+  justify-content: space-around; }
 .team--box {
   width: 30rem;
   height: 40rem;
@@ -174,26 +177,13 @@ ul, li {
   padding: .5rem;
   margin: 3rem 2rem; }
 .team__imgshape {
-  width: 22rem;
-  height: 22rem;
+  width: 20rem;
+  height: 20rem;
   -webkit-shape-outside: circle(50% at 50% 50%);
   shape-outside: circle(50% at 50% 50%);
   -webkit-clip-path: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%); }
 .team--member {
   height: 100%; }
-  .team--member--name {
-    margin-top: 5rem;
-    font-size: 3rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase; }
-  .team--member--icons {
-    flex: 33.33%;
-    width: 6rem;
-    padding: 1rem; }
-    .team--member--icons__align {
-      display: flex;
-      margin-left: -.2rem; }
 
 /*# sourceMappingURL=team.css.map */
