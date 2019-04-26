@@ -25,11 +25,50 @@ section {
   flex-direction: row;
   align-content: center; }
   section .left {
+    height: 70vh;
     width: 50vw; }
     section .left img {
-      width: 100%; }
+      overflow: hidden;
+      width: 100%;
+      height: 100%; }
   section .right {
-    background-color: bisque;
-    width: 40vw; }
+    padding: 40px;
+    /* background-color: bisque; */
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    section .right div {
+      margin: 17px; }
+
+.right__dec h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #292626;
+  margin-bottom: 20px; }
+.right__dec p {
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 300; }
+
+.form input {
+  border-radius: 4px black;
+  height: 40px;
+  width: 200px; }
+.form a {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 300;
+  text-decoration: none; }
+
+.buttons button {
+  font-family: 'Muli', sans-serif;
+  font-size: 15px;
+  padding: 12px 24px;
+  border: 1px solid black; }
+
+.help a {
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 300; }
 
 /*# sourceMappingURL=account.css.map */
