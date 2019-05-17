@@ -1,15 +1,19 @@
+.section {
 
-
-.section{
-    &__who,&__service,&__features,&__join,&__alumni{
+    &__who,
+    &__service,
+    &__features,
+    &__join,
+    &__alumni {
         margin-top: 20rem;
         margin-bottom: 10rem;
         position: relative;
-        &__heading{
-            font-size:3rem;
-            font-family: 'Poppins',sans-serif;
+
+        &__heading {
+            font-size: 3rem;
+            font-family: 'Poppins', sans-serif;
             color: #fff;
-            background-image: linear-gradient(to right ,#2121db,#09097e);
+            background-image: linear-gradient(to right, #2121db, #09097e);
             font-weight: 500;
             padding: 1rem 2rem;
             display: inline-block;
@@ -18,6 +22,83 @@
         }
     }
 }
-.section__join{
+
+.section__join {
     margin-top: 55rem;
-} 
+}
+
+.body-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+
+    }
+
+    .b1 {
+        width: 20rem;
+        top: 5rem;
+        left: -5rem;
+        opacity: .5;
+    }
+
+    .b2 {
+        top: 18%;
+        width: 100%;
+        opacity: .4;
+    }
+
+    .b4 {
+        top: 30%;
+        width: 10rem;
+        opacity: .4;
+    }
+
+    .b5 {
+        width: 25rem;
+        top: 35%;
+        right: 0;
+        opacity: .5;
+    }
+
+
+    .b7 {
+        width: 20rem;
+        top: 43%;
+        left: 0rem;
+        opacity: .4;
+    }
+
+    .b8 {
+        width: 3rem;
+        top: 43%;
+        left: 50%;
+        opacity: .6;
+    }
+
+    .b3 {
+        width: 100%;
+        top: 43%;
+        opacity: .2;
+    }
+
+
+    .b6 {
+        width: 8rem;
+        top: 56%;
+        right: -2rem;
+        opacity: .6;
+    }
+
+    .b9 {
+        width: 20rem;
+        top: 58%;
+        opacity: .4;
+        left: -8rem;
+    }
+
+}

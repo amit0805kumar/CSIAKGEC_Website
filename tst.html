@@ -26,17 +26,25 @@
 </head>
 
 <body>
+    <svg>
+        <use xlink:href="images/svg/icons/youtube-symbol.svg"></use>
+    </svg>
     <button>
         Click me
     </button>
 
-<svg version="1.1" id="Layer_1" 
-	 viewBox="0 0 100 100"  xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#F24444;stroke-width:5;stroke-miterlimit:10;}
-</style>
-<polygon id="XMLID_2_" class="st0" points="70,55.5 24.5,55.5 24.5,96.5 72.5,96.5 72.5,76 72.5,56 "/>
-</svg>
+    <svg version="1.1" id="Layer_1" viewBox="0 0 100 100" xml:space="preserve">
+        <style type="text/css">
+            .st0 {
+                fill: #FFFFFF;
+                stroke: #F24444;
+                stroke-width: 5;
+                stroke-miterlimit: 10;
+            }
+
+        </style>
+        <polygon id="XMLID_2_" class="st0" points="70,55.5 24.5,55.5 24.5,96.5 72.5,96.5 72.5,76 72.5,56 " />
+    </svg>
 
 
 
@@ -51,19 +59,17 @@
                 },
 
             ],
-            stroke: [
-                { 
-                    value: "#309a22"
-                }
-            ],
+            stroke: [{
+                value: "#309a22"
+            }],
             easing: 'easeInOutQuint',
             duration: 1500,
             loop: false,
-                          autoplay: false
+            autoplay: false
         });
         btn.click(function() {
 
-            animate.restart ();
+            animate.restart();
 
         });
 
