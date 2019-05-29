@@ -1,16 +1,8 @@
-.scroll{
-    height: 20rem;
-    background: grey;
-    color: #000;
-    display: grid;
-    grid-template-columns: 80% auto;
-    font-size: 2rem;
-}
+
 .alumni {
     &__container {
         width: 10    0%;
-//        height: 60rem;
-        margin-top: 3rem;
+        margin-top: 6rem;
         padding: 1rem;
         display: flex;
         flex-wrap: wrap;

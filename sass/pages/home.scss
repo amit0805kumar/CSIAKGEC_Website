@@ -21,6 +21,9 @@
             margin-left: -.5rem;
         }
     }
+    &__alumni{
+        margin-bottom: 10rem;
+    }
 }
 
 .section__join {
@@ -34,13 +37,13 @@
     z-index: -1;
     overflow: hidden;
 
-    img {
+    img,div {
         position: absolute;
 
     }
 
     .b1 {
-        width: 20rem;
+        width: 15rem;
         top: 5rem;
         left: -5rem;
         opacity: .5;
@@ -49,7 +52,7 @@
     .b2 {
         top: 18%;
         width: 100%;
-        opacity: .4;
+        opacity: .2;
     }
 
     .b4 {
@@ -99,6 +102,32 @@
         top: 58%;
         opacity: .4;
         left: -8rem;
+    }
+
+    .b10 {
+        width: 15rem;
+        opacity: .5;
+        top: 65%;
+        left: 5rem;
+
+    }
+
+    .b11 {
+        width: 28rem;
+        opacity: .5;
+        top: 77%;
+        right: -3rem;
+
+    }
+
+    .b12 {
+        width: 100%;
+        height: 18rem; 
+        top: 84%;
+       left: 0;
+        background-image:linear-gradient(to right, rgba(53, 30, 233, 0.91),rgba(74, 20, 140, 0.9)),url(../images/logoPattern.jpg);
+        background-size: cover;
+
     }
 
 }

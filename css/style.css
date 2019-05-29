@@ -55,6 +55,8 @@ ul, li {
     display: inline-block;
     border-radius: 4px;
     margin-left: -.5rem; }
+.section__alumni {
+  margin-bottom: 10rem; }
 
 .section__join {
   margin-top: 55rem; }
@@ -65,17 +67,17 @@ ul, li {
   height: 100%;
   z-index: -1;
   overflow: hidden; }
-  .body-bg img {
+  .body-bg img, .body-bg div {
     position: absolute; }
   .body-bg .b1 {
-    width: 20rem;
+    width: 15rem;
     top: 5rem;
     left: -5rem;
     opacity: .5; }
   .body-bg .b2 {
     top: 18%;
     width: 100%;
-    opacity: .4; }
+    opacity: .2; }
   .body-bg .b4 {
     top: 30%;
     width: 10rem;
@@ -109,6 +111,24 @@ ul, li {
     top: 58%;
     opacity: .4;
     left: -8rem; }
+  .body-bg .b10 {
+    width: 15rem;
+    opacity: .5;
+    top: 65%;
+    left: 5rem; }
+  .body-bg .b11 {
+    width: 28rem;
+    opacity: .5;
+    top: 77%;
+    right: -3rem; }
+  .body-bg .b12 {
+    width: 100%;
+    height: 18rem;
+    top: 84%;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(53, 30, 233, 0.91)), to(rgba(74, 20, 140, 0.9))), url(../images/logoPattern.jpg);
+    background-image: linear-gradient(to right, rgba(53, 30, 233, 0.91), rgba(74, 20, 140, 0.9)), url(../images/logoPattern.jpg);
+    background-size: cover; }
 
 header {
   width: 100%;
@@ -268,7 +288,7 @@ footer {
   background: #fff;
   height: 50rem;
   border-top: 1px solid #ede6e6;
-  margin-top: 22rem;
+  margin-top: 5rem;
   position: relative; }
 
 .footer__bg {
@@ -875,17 +895,9 @@ footer {
       width: 100%;
       opacity: 1; }
 
-.scroll {
-  height: 20rem;
-  background: grey;
-  color: #000;
-  display: grid;
-  grid-template-columns: 80% auto;
-  font-size: 2rem; }
-
 .alumni__container {
   width: 10    0%;
-  margin-top: 3rem;
+  margin-top: 6rem;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
