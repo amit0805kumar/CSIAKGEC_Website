@@ -13,7 +13,7 @@ header {
             font-size: 7rem;
             font-family: 'Muli', sans-serif;
             font-weight: 800;
-            color: #292626;
+            color: $color-secondary;
 
             @include respond(tab-port) {
                 font-size: 5rem;
@@ -28,7 +28,7 @@ header {
                 font-family: 'Poppins', sans-serif;
                 font-weight: 700;
                 margin-top: 3rem;
-                color: #292626;
+                color: $color-secondary;
 
                 @include respond(tab-port) {
                     font-size: 2rem;
@@ -45,7 +45,7 @@ header {
             font-size: 4rem;
             margin-top: 2rem;
             font-weight: 700;
-            color: #292626;
+            color: $color-secondary;
 
             p {
                 display: inline-block;
@@ -58,7 +58,7 @@ header {
                 width: 22rem;
                 opacity: 0;
                 font-weight: 300;
-                color: blue;
+                color: $color-primary;
             }
 
 

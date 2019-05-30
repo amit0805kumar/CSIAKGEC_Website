@@ -13,7 +13,7 @@
             font-size: 3rem;
             font-family: 'Poppins', sans-serif;
             color: #fff;
-            background-image: linear-gradient(to right, #2121db, #09097e);
+            background-image: linear-gradient(to right, $color-primary-light, $color-primary);
             font-weight: 500;
             padding: 1rem 2rem;
             display: inline-block;
@@ -50,20 +50,20 @@
     }
 
     .b2 {
-        top: 18%;
+        top: 11%;
         width: 100%;
         opacity: .2;
     }
 
     .b4 {
-        top: 30%;
+        top: 22%;
         width: 10rem;
         opacity: .4;
     }
 
     .b5 {
         width: 25rem;
-        top: 35%;
+        top: 43%;
         right: 0;
         opacity: .5;
     }
@@ -71,14 +71,14 @@
 
     .b7 {
         width: 20rem;
-        top: 43%;
+        top: 35%;
         left: 0rem;
         opacity: .4;
     }
 
     .b8 {
         width: 3rem;
-        top: 43%;
+        top: 28%;
         left: 50%;
         opacity: .6;
     }
@@ -92,14 +92,14 @@
 
     .b6 {
         width: 8rem;
-        top: 56%;
+        top: 43%;
         right: -2rem;
         opacity: .6;
     }
 
     .b9 {
         width: 20rem;
-        top: 58%;
+        top: 59%;
         opacity: .4;
         left: -8rem;
     }
@@ -107,7 +107,7 @@
     .b10 {
         width: 15rem;
         opacity: .5;
-        top: 65%;
+        top: 52%;
         left: 5rem;
 
     }
@@ -115,7 +115,7 @@
     .b11 {
         width: 28rem;
         opacity: .5;
-        top: 77%;
+        top: 78%;
         right: -3rem;
 
     }
@@ -126,8 +126,8 @@
         top: 84%;
        left: 0;
         background-image:linear-gradient(to right, rgba(53, 30, 233, 0.91),rgba(74, 20, 140, 0.9)),url(../images/logoPattern.jpg);
-        background-size: cover;
-
+        background-size: contain;
+        background-attachment: fixed;
     }
 
 }

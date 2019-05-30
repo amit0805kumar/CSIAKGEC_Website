@@ -75,26 +75,26 @@ ul, li {
     left: -5rem;
     opacity: .5; }
   .body-bg .b2 {
-    top: 18%;
+    top: 11%;
     width: 100%;
     opacity: .2; }
   .body-bg .b4 {
-    top: 30%;
+    top: 22%;
     width: 10rem;
     opacity: .4; }
   .body-bg .b5 {
     width: 25rem;
-    top: 35%;
+    top: 43%;
     right: 0;
     opacity: .5; }
   .body-bg .b7 {
     width: 20rem;
-    top: 43%;
+    top: 35%;
     left: 0rem;
     opacity: .4; }
   .body-bg .b8 {
     width: 3rem;
-    top: 43%;
+    top: 28%;
     left: 50%;
     opacity: .6; }
   .body-bg .b3 {
@@ -103,23 +103,23 @@ ul, li {
     opacity: .2; }
   .body-bg .b6 {
     width: 8rem;
-    top: 56%;
+    top: 43%;
     right: -2rem;
     opacity: .6; }
   .body-bg .b9 {
     width: 20rem;
-    top: 58%;
+    top: 59%;
     opacity: .4;
     left: -8rem; }
   .body-bg .b10 {
     width: 15rem;
     opacity: .5;
-    top: 65%;
+    top: 52%;
     left: 5rem; }
   .body-bg .b11 {
     width: 28rem;
     opacity: .5;
-    top: 77%;
+    top: 78%;
     right: -3rem; }
   .body-bg .b12 {
     width: 100%;
@@ -128,7 +128,8 @@ ul, li {
     left: 0;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(53, 30, 233, 0.91)), to(rgba(74, 20, 140, 0.9))), url(../images/logoPattern.jpg);
     background-image: linear-gradient(to right, rgba(53, 30, 233, 0.91), rgba(74, 20, 140, 0.9)), url(../images/logoPattern.jpg);
-    background-size: cover; }
+    background-size: contain;
+    background-attachment: fixed; }
 
 header {
   width: 100%;
@@ -172,7 +173,7 @@ header {
       width: 22rem;
       opacity: 0;
       font-weight: 300;
-      color: blue; }
+      color: #09097e; }
   header .header__bg {
     position: relative;
     width: 100%; }
@@ -746,7 +747,7 @@ footer {
       font-family: 'Muli', sans-serif;
       font-size: 4rem;
       font-weight: 900;
-      color: #05055a; }
+      color: #09097e; }
     .service__domain__text p {
       font-size: 2rem;
       font-family: 'Poppins', sans-serif; }
@@ -896,7 +897,7 @@ footer {
       opacity: 1; }
 
 .alumni__container {
-  width: 10    0%;
+  width: 85%;
   margin-top: 6rem;
   padding: 1rem;
   display: -webkit-box;
@@ -906,7 +907,10 @@ footer {
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
 .alumni__box {
   position: relative;
   width: 12rem;
@@ -916,7 +920,6 @@ footer {
   overflow: hidden;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
-  margin: .5px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transition: all .3s;
@@ -928,8 +931,6 @@ footer {
   .alumni__box:hover {
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
     z-index: 10;
     -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
             box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08); }
@@ -1022,5 +1023,4 @@ footer {
       font-size: 2rem; }
     .join__box__text p {
       font-size: 1.5rem; }
-
 /*# sourceMappingURL=style.css.map */
