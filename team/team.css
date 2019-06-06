@@ -163,37 +163,45 @@ ul, li {
 .team__gallery {
   margin-top: 12rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-.team--box {
-  width: 30rem;
+  justify-content: center;
+  flex-wrap: wrap; }
+.team__imgbox {
   height: 40rem;
   display: flex;
+  flex: 0 1 20%;
   flex-direction: column;
-  align-items: center;
-  padding: .5rem;
-  margin: 3rem 2rem; }
+  margin-left: 2rem; }
+  .team__imgbox:not(last-child) {
+    margin-bottom: 2rem; }
 .team__imgshape {
+  margin: 1rem auto;
   width: 22rem;
   height: 22rem;
-  -webkit-shape-outside: circle(50% at 50% 50%);
-  shape-outside: circle(50% at 50% 50%);
-  -webkit-clip-path: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%); }
-.team--member {
-  height: 100%; }
-  .team--member--name {
-    margin-top: 5rem;
-    font-size: 3rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase; }
-  .team--member--icons {
-    flex: 33.33%;
-    width: 6rem;
-    padding: 1rem; }
-    .team--member--icons__align {
-      display: flex;
-      margin-left: -.2rem; }
+  border-radius: 50%;
+  overflow: hidden; }
+.team__member-photo {
+  width: 100%; }
+.team__member-name {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem; }
+.team__iconbox {
+  display: flex;
+  justify-content: center; }
+.team__iconlink {
+  padding: 1rem; }
+  .team__iconlink--facebook {
+    height: 3.5rem;
+    width: 3.5rem; }
+  .team__iconlink--github {
+    height: 3.5rem;
+    width: 3.5rem; }
+  .team__iconlink--linkedin {
+    height: 3.5rem;
+    width: 3.5rem; }
 
 /*# sourceMappingURL=team.css.map */

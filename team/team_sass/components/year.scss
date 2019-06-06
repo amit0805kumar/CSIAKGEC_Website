@@ -19,63 +19,80 @@
         }
     }
 
-
-
-
-.team
-{
-    &__gallery {
-       margin-top: 12rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-}
-
-
-
-&--box {
-    width: 30rem;
-    height: 40rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: .5rem;
-    margin: 3rem 2rem;
-    
-}
-
-
-&__imgshape {
+.team{
+    &__gallery{
+        margin-top: 12rem;
   
+        display: flex;
+        justify-content: center;
+       flex-wrap: wrap;
+  }
+    &__imgbox {
+        height: 40rem;
+       
+        display: flex;
+       flex: 0 1 20%;
+        flex-direction: column;
+        
+        margin-left: 2rem;
+       &:not(last-child)
+       {
+         margin-bottom: 2rem;
+          
+        }
+    }
+    
+    &__imgshape {
+    margin: 1rem auto;
     width: 22rem;
     height: 22rem;
-  -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-
-}
-
-&--member {
-    height: 100%;  
-    &--name {
-        margin-top: 5rem;
-        font-size: 3rem;
-            font-family: 'Poppins', sans-serif;
-         font-weight: 700;
-        text-transform: uppercase;
-     }
-    &--icons {
-   flex: 33.33%;
+    border-radius: 50%;
+    overflow: hidden;
         
-        width: 6rem;
-      padding: 1rem;
-        &__align {
-       display: flex;
-     margin-left: -.2rem;
-            }
+    
+        
+  }
+    &__member-photo {
+       width: 100%;
+          
+    }
+    &__member-name {
+        font-size: 2rem;
+       
+        font-weight: 700;
+         font-family: 'Poppins', sans-serif;
+        letter-spacing: .5rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    
+    &__iconbox{
+        display: flex;
+    
+        justify-content: center;
+   
+        
     
     }
+    &__iconlink{
+         padding: 1rem;
+        &--facebook{
+            height: 3.5rem;
+            width: 3.5rem;      
+        }
+        &--github {
+            height: 3.5rem;
+            width: 3.5rem; 
+        }
+        &--linkedin{
+             height: 3.5rem;
+            width: 3.5rem;
+        
+        }
+        
+    }
+    
 }
-}
+
+
