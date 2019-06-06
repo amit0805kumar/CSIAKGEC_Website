@@ -29,12 +29,10 @@
   }
     &__imgbox {
         height: 40rem;
-       
-        display: flex;
+      display: flex;
        flex: 0 1 20%;
         flex-direction: column;
-        
-        margin-left: 2rem;
+       margin-left: 2rem;
        &:not(last-child)
        {
          margin-bottom: 2rem;
@@ -48,18 +46,13 @@
     height: 22rem;
     border-radius: 50%;
     overflow: hidden;
-        
-    
-        
-  }
+ }
     &__member-photo {
        width: 100%;
-          
     }
     &__member-name {
         font-size: 2rem;
-       
-        font-weight: 700;
+      font-weight: 700;
          font-family: 'Poppins', sans-serif;
         letter-spacing: .5rem;
         display: flex;
@@ -69,11 +62,7 @@
     
     &__iconbox{
         display: flex;
-    
-        justify-content: center;
-   
-        
-    
+    justify-content: center;
     }
     &__iconlink{
          padding: 1rem;
@@ -92,7 +81,6 @@
         }
         
     }
-    
 }
 
 
