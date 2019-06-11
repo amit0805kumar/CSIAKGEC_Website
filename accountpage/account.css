@@ -52,6 +52,7 @@ section {
   font-weight: 300; }
 
 .form input {
+  padding-left: 5px;
   border-radius: 4px black;
   height: 40px;
   width: 200px; }
@@ -59,6 +60,17 @@ section {
   font-family: 'Orbitron', sans-serif;
   font-weight: 300;
   text-decoration: none; }
+.form input[type=number]::-webkit-inner-spin-button,
+.form input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+.stid {
+  display: flex; }
+  .stid .material-icons.md-35 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-right: 5px; }
 
 .buttons button {
   font-family: 'Muli', sans-serif;
