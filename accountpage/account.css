@@ -33,7 +33,7 @@ section {
       height: 100%; }
   section .right {
     padding: 40px;
-    /* background-color: bisque; */
+    background-image: linear-gradient(-45deg, #95F3FD, white, white, white);
     width: 40vw;
     display: flex;
     flex-direction: column;
