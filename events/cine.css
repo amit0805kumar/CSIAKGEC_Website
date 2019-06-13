@@ -232,17 +232,21 @@ ul, li {
 }
 .header__image__container{
   background: black;
-  width: 100%;
+  width: 95%;
   height: 95%;
   position: absolute;
   right: 0;
   overflow: hidden;
   border-bottom-left-radius: 100%;
-   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+   -webkit-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
 }
+
 .header__image__container img{
   height: 100%;
   width: 100%;
+  background-color: white;
+  padding-left: 90px;
 }
 .cine_name,.about_cine,.first_register_button{
 margin:20px 0;
@@ -272,8 +276,10 @@ cursor: pointer;
 }
 .first_register_button img{
   width: 2rem;
-
+  margin-left: 15px;
+ 
 }
+
 .event_details_header{
   display: flex;
   flex-direction: column;
@@ -330,6 +336,24 @@ padding: 0 40px 0 40px;
   width: 230px;
   height: 130px;
 }
+.svg_sideof_details {
+  
+  animation: rot 2.5s infinite linear;
+}
+@keyframes rot {
+  from {
+    transform: rotate(0deg)
+               translate(-40px)
+               rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg)
+               translate(-40px) 
+               rotate(-360deg);
+  }
+}
+
+
 .svg_and_details{
   display: flex;
   flex-direction: row;
@@ -539,9 +563,16 @@ padding: 0 40px 0 40px;
   justify-content: center;
   justify-content: space-between;
 }
+.other_events_pics a{
+  text-decoration: none;
+}
+.other_events_pics a:hover{
+text-decoration: underline;
+}
+
 .other_events_pics img{
-  height: 190px;
-  width: 300px;
+  height: 220px;
+  width: 350px;
  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .footer_address_mission_featuredlinks{
