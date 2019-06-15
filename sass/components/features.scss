@@ -27,10 +27,19 @@
         cursor: pointer;    
         padding: .5rem 2rem;
         overflow: hidden;
+        position: relative;
         &:hover {
             transform: translateY(-1rem);
             box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
                 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+        }
+        .bg{
+            position: absolute;
+            width: 10rem;
+            top: 20%;
+            left: 85%;
+            transform: translate(-50%,-50%);
+            opacity: .2;
         }
 
         h1 {
@@ -43,6 +52,24 @@
         p {
             font-size: 1.4rem;
             font-family: 'Poppins', sans-serif;
+        }
+        
+        &::after{
+            content: '';
+            position: absolute;
+            width: 10%;
+            height: 1rem;
+            background: linear-gradient(to right, blue,#080871);
+            left: 50%;
+            bottom: 0;
+            opacity: 0;
+            transition: all .2s;
+            transform: translateX(-50%);
+        }
+        &:hover::after{
+//            transform: translateX(-100%);
+            width: 100%;
+            opacity: 1;
         }
     
     }
