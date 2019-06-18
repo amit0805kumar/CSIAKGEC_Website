@@ -1,15 +1,19 @@
+.section {
 
-
-.section{
-    &__who,&__service,&__features,&__join,&__alumni{
+    &__who,
+    &__service,
+    &__features,
+    &__join,
+    &__alumni {
         margin-top: 20rem;
         margin-bottom: 10rem;
         position: relative;
-        &__heading{
-            font-size:3rem;
-            font-family: 'Poppins',sans-serif;
+
+        &__heading {
+            font-size: 3rem;
+            font-family: 'Poppins', sans-serif;
             color: #fff;
-            background-image: linear-gradient(to right ,#2121db,#09097e);
+            background-image: linear-gradient(to right, $color-primary-light, $color-primary);
             font-weight: 500;
             padding: 1rem 2rem;
             display: inline-block;
@@ -17,7 +21,113 @@
             margin-left: -.5rem;
         }
     }
+    &__alumni{
+        margin-bottom: 10rem;
+    }
 }
-.section__join{
+
+.section__join {
     margin-top: 55rem;
-} 
+}
+
+.body-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+
+    img,div {
+        position: absolute;
+
+    }
+
+    .b1 {
+        width: 15rem;
+        top: 5rem;
+        left: -5rem;
+        opacity: .5;
+    }
+
+    .b2 {
+        top: 11%;
+        width: 100%;
+        opacity: .2;
+    }
+
+    .b4 {
+        top: 22%;
+        width: 10rem;
+        opacity: .4;
+    }
+
+    .b5 {
+        width: 25rem;
+        top: 43%;
+        right: 0;
+        opacity: .5;
+    }
+
+
+    .b7 {
+        width: 20rem;
+        top: 35%;
+        left: 0rem;
+        opacity: .4;
+    }
+
+    .b8 {
+        width: 3rem;
+        top: 28%;
+        left: 50%;
+        opacity: .6;
+    }
+
+    .b3 {
+        width: 100%;
+        top: 43%;
+        opacity: .2;
+    }
+
+
+    .b6 {
+        width: 8rem;
+        top: 43%;
+        right: -2rem;
+        opacity: .6;
+    }
+
+    .b9 {
+        width: 20rem;
+        top: 59%;
+        opacity: .4;
+        left: -8rem;
+    }
+
+    .b10 {
+        width: 15rem;
+        opacity: .5;
+        top: 52%;
+        left: 5rem;
+
+    }
+
+    .b11 {
+        width: 28rem;
+        opacity: .5;
+        top: 78%;
+        right: -3rem;
+
+    }
+
+    .b12 {
+        width: 100%;
+        height: 18rem; 
+        top: 84%;
+       left: 0;
+        background-image:linear-gradient(to right, rgba(53, 30, 233, 0.91),rgba(74, 20, 140, 0.9)),url(../images/logoPattern.jpg);
+        background-size: contain;
+        background-attachment: fixed;
+    }
+
+}
