@@ -1,0 +1,77 @@
+.body-bg {
+  
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+   
+
+    img,div {
+        position: absolute;
+
+    }
+
+    .b1 {
+        width: 15rem;
+        top: 15rem;
+        left: -5rem;
+        opacity: .5;
+    }
+
+    .b2 {
+        top: 40%;
+        width: 100%;
+        opacity: .2;
+            z-index: -10;
+     
+    }
+
+    .b3 {
+        top: 37%;
+        left: 1rem;
+        width: 10rem;
+        opacity: .4;
+    }
+
+    .b4 {
+        width: 15rem;
+        top: 110%;
+        right: 0;
+        opacity: .5;
+    }
+   .b5 {
+        width: 8rem;
+        top: 43%;
+        right: 0rem;
+        opacity: .6;
+    }
+
+    .b6 {
+        width: 20rem;
+        top: 10%;
+       right: 0rem;
+        opacity: .4;
+    }
+     .b7 {
+        width: 20rem;
+        top: 130%;
+        opacity: .4;
+        left: -8rem;
+    }
+
+    .b8 {
+        width: 15rem;
+        opacity: .5;
+        top: 75%;
+        left: 3rem;
+
+    }
+
+    .b9 {
+        width: 25rem;
+        opacity: .5;
+        top: 145%;
+        left: -2rem;
+       z-index: -10;
+       
+    }
+}
