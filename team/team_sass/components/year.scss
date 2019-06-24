@@ -16,71 +16,84 @@
         margin-top: 10rem;
         margin-bottom: -10rem;
         }
-        }
+        }  
     }
 
 .team{
     &__gallery{
         margin-top: 12rem;
-  
         display: flex;
         justify-content: center;
-       flex-wrap: wrap;
+        flex-wrap: wrap;
   }
     &__imgbox {
-        height: 40rem;
-      display: flex;
-       flex: 0 1 20%;
-        flex-direction: column;
+        height: 35rem;
+       display: flex;
+       flex: 0 1 19%;
+     transition: all .3s;
+       flex-direction: column;
        margin-left: 2rem;
+       
        &:not(last-child)
        {
          margin-bottom: 2rem;
           
         }
+        &:hover{
+            box-shadow: 0 2px 10px 0 rgba(0,0,0,0.10);
+        }
     }
-    
+
     &__imgshape {
-    margin: 1rem auto;
-    width: 22rem;
-    height: 22rem;
+    margin: 1rem auto; 
+       margin-top: 3rem;
+    width: 17rem;
+    height: 17rem;
     border-radius: 50%;
-    overflow: hidden;
- }
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+       
+  }
     &__member-photo {
        width: 100%;
     }
     &__member-name {
-        font-size: 2rem;
-      font-weight: 700;
+        font-size: 1.8rem;
+      font-weight: 625;
          font-family: 'Poppins', sans-serif;
-        letter-spacing: .5rem;
+        color: #606060;
+        letter-spacing: .2rem;
         display: flex;
         justify-content: center;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
     
     &__iconbox{
+        
         display: flex;
     justify-content: center;
-    }
+   }
     &__iconlink{
          padding: 1rem;
-        &--facebook{
-            height: 3.5rem;
-            width: 3.5rem;      
+       &--facebook{
+            height: 2.75rem;
+            width: 2.75rem;      
         }
         &--github {
-            height: 3.5rem;
-            width: 3.5rem; 
+         height: 2.75rem;
+            width: 2.75rem;  
+            background-color: #fff;
+            border-radius: 50%;
         }
         &--linkedin{
-             height: 3.5rem;
-            width: 3.5rem;
-        
+             height: 2.75rem;
+            width: 2.75rem;  
         }
         
     }
+   
 }
 
 

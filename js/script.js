@@ -96,6 +96,7 @@ $(function () {
     setInterval(changeWord, 2000);
 
 
+    //Parallax classes
     var rellax1 = new Rellax('.rellax1', {
         speed: -3,
         center: false,
@@ -111,7 +112,7 @@ $(function () {
         round: true,
         vertical: true,
         horizontal: false
-    });    
+    });
     var rellax3 = new Rellax('.rellax3', {
         speed: 3,
         center: false,
@@ -121,5 +122,99 @@ $(function () {
         horizontal: false
     });
 
+    //Scroll functions
+
+    const mainPageScrollEffect = () => {
+
+        ScrollReveal().reveal('.header__csi', {
+            delay: 500,
+            duration: 1000
+        });
+        ScrollReveal().reveal('.header__csi__type', {
+            delay: 500,
+            duration: 1200
+        });
+        ScrollReveal().reveal('.header__moto', {
+            delay: 500,
+            duration: 1400
+        });
+
+
+
+        ScrollReveal().reveal('.section__who__heading', {
+            delay: 400,
+            duration: 1000
+        });
+        ScrollReveal().reveal('.who__text', {
+            delay: 420,
+            duration: 1000
+        });
+        ScrollReveal().reveal('.who__btn', {
+            delay: 420,
+            duration: 1000
+        });
+        ScrollReveal().reveal('.who__images', {
+            delay: 420,
+            duration: 1000
+        });
+
+        var allDomainImages = document.querySelectorAll('.service__domain__image');
+        var allDomainText = document.querySelectorAll('.service__domain__text');
+
+        ScrollReveal().reveal('.section__service__heading', {
+            delay: 420,
+            duration: 1000
+        });
+        ScrollReveal().reveal(allDomainText, {
+            delay: 420,
+            duration: 1000
+        });
+        ScrollReveal().reveal(allDomainImages, {
+            delay: 420,
+            duration: 1000,
+            distance: '300px',
+            origin: 'bottom'
+        });
+
+        //Section features
+
+        ScrollReveal().reveal('.section__features__heading', {
+            delay: 420,
+            duration: 1000
+        });
+        ScrollReveal().reveal('.features__box', {
+            delay: 420,
+            duration: 1000,
+            distance: '100px',
+            origin: 'right'
+        });
+
+        //section joinUs
+
+        ScrollReveal().reveal('.section__join__heading', {
+            delay: 420,
+            duration: 1000
+        });
+        ScrollReveal().reveal('.join__box', {
+            delay: 420,
+            duration: 1000,
+
+        });
+
+        //section alumni
+
+        ScrollReveal().reveal('.section__alumni__heading', {
+            delay: 420,
+            duration: 1000
+        });
+        ScrollReveal().reveal('.alumni__container', {
+            delay: 420,
+            duration: 1000
+        });
+
+
+    }
+    
+    mainPageScrollEffect();
 
 });
