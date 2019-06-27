@@ -1,0 +1,30 @@
+.con {
+    margin-top: 20vh;
+}
+.login{
+/*     display: block; */
+    background-color: aqua;
+}
+.details{
+    width: 60%;
+    background-color: beige;
+}
+.block{
+    margin-bottom: 7%;
+}
+.mar{
+    margin-bottom: -15px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+input {
+    background-color: transparent;
+    border-top: 0px solid skyblue;
+    border-left: 0px solid skyblue;
+    border-right: 0px solid skyblue;
+    border-bottom: 2px solid skyblue;
+    height: 20px;
+    width: 160px;
+    color: #CCC;
+}
