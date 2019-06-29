@@ -1,0 +1,87 @@
+.con {
+    margin-top: 20vh ;/* 0px 0px 0px; */
+   
+}
+.login{
+/*     display: block; */
+/*     background-color: aqua; */
+}
+.details{
+    width: 80%;
+    /* background-color: beige; */
+}
+.block{
+    margin-bottom: 7%;
+}
+.box{
+    /* border-radius: 20px; */
+    background-color: beige;
+}
+.mar{
+    margin-bottom: -15px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+i{    
+    margin-top: 5px;
+    font-size: 25px;
+}
+input {
+    background-color: transparent;
+    border-top: 0px solid skyblue;
+    border-left: 0px solid skyblue;
+    border-right: 0px solid skyblue;
+    border-bottom: 0px solid skyblue;
+    height: 20px;
+    width: 160px;
+    color: #CCC;
+}
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+#forgot{
+    margin: 0px 0px;
+  /*   float: right; */
+}
+#butt{
+    margin: 2vh 0px;
+    display: block;
+    font-size: 20px;
+}
+.help{
+    margin-bottom: 5vh;
+}
+.fa {
+    border-radius: 100%;
+ padding: 20px;
+  font-size: 25px;
+  width: 60px;
+    height: 60px;
+  text-align: center;
+  text-decoration: none;
+/*   margin: 5px 2px; */
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
