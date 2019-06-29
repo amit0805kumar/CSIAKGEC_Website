@@ -296,55 +296,39 @@ footer {
   margin-top: 12rem;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  position: relative; }
+  flex-wrap: wrap; }
 .team__imgbox {
-  height: 38rem;
+  height: 35rem;
   display: flex;
-  flex: 0 1 20%;
+  flex: 0 1 19%;
+  transition: all .3s;
   flex-direction: column;
-  margin-left: 2rem;
-  position: relative;
-  z-index: 10;
-  transition: transform cubic-bezier(0.68, 0.23, 0.37, 0.61) 0.4s; }
+  margin-left: 2rem; }
   .team__imgbox:not(last-child) {
     margin-bottom: 2rem; }
-.team__imgbox:hover {
-  transform: scale(1.05); }
-.team__imgbox::before {
-  content: "";
-  height: 37rem;
-  width: 31rem;
-  position: absolute;
-  transform: scale(0);
-  transition: transform cubic-bezier(0.68, 0.23, 0.37, 0.61) 0.4s; }
-.team__imgbox:hover::before {
-  transform: scaleY(1) translateY(-1rem);
-  background-image: linear-gradient(to right, #2121db, #09097e);
-  border-radius: 5px;
-  z-index: -10;
-  box-shadow: 10px 10px 20px #000; }
+  .team__imgbox:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1); }
 .team__imgshape {
   margin: 1rem auto;
-  width: 21rem;
-  height: 21rem;
+  margin-top: 3rem;
+  width: 17rem;
+  height: 17rem;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  align-content: center;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6); }
+  align-content: center; }
 .team__member-photo {
   width: 100%; }
 .team__member-name {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 625;
   font-family: 'Poppins', sans-serif;
   color: #606060;
   letter-spacing: .2rem;
   display: flex;
   justify-content: center;
-  margin-top: 3rem; }
+  margin-top: 2rem; }
 .team__iconbox {
   display: flex;
   justify-content: center; }
@@ -361,5 +345,58 @@ footer {
   .team__iconlink--linkedin {
     height: 2.75rem;
     width: 2.75rem; }
+
+.body-bg {
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+  .body-bg img, .body-bg div {
+    position: absolute; }
+  .body-bg .b1 {
+    width: 15rem;
+    top: 15rem;
+    left: -5rem;
+    opacity: .5; }
+  .body-bg .b2 {
+    top: 40%;
+    width: 100%;
+    opacity: .2;
+    z-index: -10; }
+  .body-bg .b3 {
+    top: 37%;
+    left: 1rem;
+    width: 10rem;
+    opacity: .4; }
+  .body-bg .b4 {
+    width: 15rem;
+    top: 110%;
+    right: 0;
+    opacity: .5; }
+  .body-bg .b5 {
+    width: 8rem;
+    top: 43%;
+    right: 0rem;
+    opacity: .6; }
+  .body-bg .b6 {
+    width: 20rem;
+    top: 10%;
+    right: 0rem;
+    opacity: .4; }
+  .body-bg .b7 {
+    width: 20rem;
+    top: 130%;
+    opacity: .4;
+    left: -8rem; }
+  .body-bg .b8 {
+    width: 15rem;
+    opacity: .5;
+    top: 75%;
+    left: 3rem; }
+  .body-bg .b9 {
+    width: 25rem;
+    opacity: .5;
+    top: 145%;
+    left: -2rem;
+    z-index: -10; }
 
 /*# sourceMappingURL=team.css.map */
