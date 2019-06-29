@@ -4,18 +4,24 @@
 }
 .login{
 /*     display: block; */
-/*     background-color: aqua; */
+    background-color: #F9FAFC;
+    font-family: 'Poppins', sans-serif;
+        
+}
+h1{    
+    font-family: 'Muli', sans-serif;
+    font-weight: 800;
+    margin-bottom: 2vh;
 }
 .details{
     width: 80%;
-    /* background-color: beige; */
 }
 .block{
     margin-bottom: 7%;
 }
 .box{
     /* border-radius: 20px; */
-    background-color: beige;
+    /* background-color: beige; */
 }
 .mar{
     margin-bottom: -15px;
@@ -45,18 +51,35 @@ input {
 .table-borderless > thead > tr > th {
     border: none;
 }
+
+tbody{
+    background-color: #EDF2F5;
+}
+    
+tbody:hover{
+    background-color: white;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
 #forgot{
     margin: 0px 0px;
   /*   float: right; */
 }
-#butt{
+.butt{
     margin: 2vh 0px;
     display: block;
     font-size: 20px;
+    font-weight: 500;
+    a{     color: #09097e;}
 }
 .help{
     margin-bottom: 5vh;
 }
+
+/* icons */
+
 .fa {
     border-radius: 100%;
  padding: 20px;
