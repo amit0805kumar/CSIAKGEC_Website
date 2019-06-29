@@ -374,7 +374,7 @@ padding: 0 40px 0 40px;
 
 }
 .events_details_name{
-  text-align: right;
+  float: right;
    font-size: 2.5rem;
     font-family: 'Poppins',sans-serif;
     color: #fff;
@@ -385,7 +385,7 @@ padding: 0 40px 0 40px;
     display: inline-block;
     border-radius: 4px;
    margin: -.5rem;
-   margin-left: 84rem;
+  width: 32rem;
 }
 .event_details_header{
   
@@ -395,10 +395,24 @@ padding: 0 40px 0 40px;
 
 
 .event_all_details{
+  
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 60%;
+  
+background-color: blue;
+  height: 30rem;
+  position: absolute;
+  left: 40%;
+  padding-top: 10rem;
+  
 }
+.events_details_dates:after{
+   transform-origin:bottom right;
+    -ms-transform: skew(30deg, deg);
+    -webkit-transform: skew(30deg, 0deg);
+    transform: skew(65deg, 0deg);
+   }
 .registration_date,.written_date{
   margin: 10px 0;
    font-family: 'Poppins', sans-serif;
@@ -412,12 +426,14 @@ padding: 0 40px 0 40px;
 .svg_sideof_details{
   width: 300px;
   height: 130px;
+  
 }
 .svg_sideof_details img{
    width: 250px;
   height: 250px;
+  margin: 3.9rem 0;
 }
-.svg_sideof_details {
+.svg_sideof_details img{
   
   animation: rot 2.5s infinite linear;
 }
@@ -440,7 +456,7 @@ padding: 0 40px 0 40px;
   flex-direction: row;
 }
 .gallery_section{
-  margin: 15px 0;
+  margin: 20rem 0;
 }
 .gallery_name{
   text-align: left;
@@ -530,9 +546,21 @@ margin-left: 19.95%;
     border-radius: 4px;
     margin-left: -.5rem;
 }
-.title{
-   background-image: -webkit-gradient(linear, left top, right top, from(#2121db), to(#09097e));
-    background-image: linear-gradient(to right, #2121db, #09097e);
+#init19{
+   background-image: -webkit-gradient(linear, left top, right top, from(#fe5a1d), to(#ffb347));
+    background-image: linear-gradient(to right, #fe5a1ds, #ffb347);
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+#vac19{
+   background-image: -webkit-gradient(linear, left top, right top, from(#7E3517), to(#CE8567));
+    background-image: linear-gradient(to right, #7E3517, #CE8567);
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+#rdm19{
+  background-image: -webkit-gradient(linear, left top, right top, from(#1F91EB), to(#23E3F2));
+    background-image: linear-gradient(to right, #1F91EB, #23E3F2);
     -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
