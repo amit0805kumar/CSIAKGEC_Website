@@ -399,21 +399,17 @@ padding: 0 40px 0 40px;
   
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 70%;
   
-background-color: blue;
+margin-top: 100px;
   height: 30rem;
   position: absolute;
-  left: 40%;
+  left: 30%;
   padding-top: 10rem;
-  
+  -webkit-box-shadow: 0 10px 7px rgba(0,0,0,0.30), 0 6px 4px rgba(0,0,0,0.22);
+   
 }
-.events_details_dates:after{
-   transform-origin:bottom right;
-    -ms-transform: skew(30deg, deg);
-    -webkit-transform: skew(30deg, 0deg);
-    transform: skew(65deg, 0deg);
-   }
+
 .registration_date,.written_date{
   margin: 10px 0;
    font-family: 'Poppins', sans-serif;
@@ -457,7 +453,7 @@ background-color: blue;
   flex-direction: row;
 }
 .gallery_section{
-  margin: 20rem 0;
+  margin: 30rem 0;
 }
 .gallery_name{
   text-align: left;
