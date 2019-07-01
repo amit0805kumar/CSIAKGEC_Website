@@ -278,7 +278,7 @@ ul, li {
        font-size: 5rem;
   /*height: 60px;*/
   width: 570px;
- 
+ color: #202020;
   
 
 }
@@ -287,7 +287,7 @@ ul, li {
   
   /*height: 100px;*/
   width: 500px;
- 
+ color: #202020;
   font-size: 20px;
 }
 .cine_intro{
@@ -499,6 +499,8 @@ margin-top: 100px;
    font-family: 'Muli', sans-serif;
        font-size: 2rem;
        padding-top: 2rem;
+        color: #FFFFFF ;
+       padding-left: 2rem;
 }
 .image3{
   margin-top: 6.7rem;
@@ -544,20 +546,20 @@ margin-left: 19.95%;
     margin-left: -.5rem;
 }
 #init19{
-   background-image: -webkit-gradient(linear, left top, right top, from(#ffd700), to(#ffb347));
-    background-image: linear-gradient(to right, #ffd700, #ffb347);
+   background-image: -webkit-gradient(linear, left top, right top, from(#09097e), to(#585454));
+    background-image: linear-gradient(to right,#09097e, #585454);
     -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 #vac19{
-   background-image: -webkit-gradient(linear, left top, right top, from(#7E3517), to(#CE8567));
-    background-image: linear-gradient(to right, #7E3517, #CE8567);
+   background-image: -webkit-gradient(linear, left top, right top, from(#09097e), to(#585454));
+    background-image: linear-gradient(to right, #09097e, #585454);
     -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 #rdm19{
-  background-image: -webkit-gradient(linear, left top, right top, from(#1F91EB), to(#23E3F2));
-    background-image: linear-gradient(to right, #1F91EB, #23E3F2);
+  background-image: -webkit-gradient(linear, left top, right top, from(#09097e), to(#585454));
+    background-image: linear-gradient(to right,#09097e, #585454);
     -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
@@ -595,8 +597,8 @@ a:hover {
 
 .tiles .tile:before {
   content: '';
-  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
-  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(9, 9, 126, 1) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(9, 9, 126, 1) 100%);
   width: 100%;
   height: 50%;
   opacity: 0;
