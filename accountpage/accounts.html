@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CSI | Account</title>
-	<!-- fonts -->
+    <title>CSI | Account</title>
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Orbitron:400,500,700,900|Poiret+One|Poppins:200,300,400,500,600,700,800,900|Muli:200,300,400,700,800,900" rel="stylesheet">
-     <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,146 +17,154 @@
     <link rel="stylesheet" type="text/css" href="account.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
+
 <body>
 
-<header>
-   
-   
- <nav class="nav">
-        <div class="nav__container">
-            <div class="nav__logo">
-                <a href="index.html">
-                    <img src="images/logocsiCenter.png" alt="">
-                </a>
+    <header>
+
+
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__logo">
+                    <a href="index.html">
+                        <img src="images/logocsiCenter.png" alt="">
+                    </a>
+                </div>
+                <div class="nav__links">
+                    <ul class="topLinks">
+                        <li><a href="#">Home</a></li>
+                        <li>What We Do
+                            <ul class="sublinks">
+                                <li>Events
+                                    <ul class="subLinksChild">
+                                        <li><a href="">CINE</a></li>
+                                        <li><a href="">The Initiative</a></li>
+                                        <li><a href="">RDM</a></li>
+                                        <li><a href="">Vacanza</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>Workshops
+                                    <ul class="subLinksChild">
+                                        <li><a href="#">UI With MongoDB</a></li>
+                                        <li><a href="#">Java And Android</a></li>
+                                        <li><a href="#">Ethical Hacking</a></li>
+                                        <li><a href="#">Web Development</a></li>
+                                        <li><a href="#">Web Tech With Angular</a></li>
+                                        <li><a href="#">Blockchain</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li>Our Team
+                            <ul class="sublinks">
+                                <li>2nd Year</li>
+                                <li>3rd Year</li>
+                                <li>4th Year</li>
+                            </ul>
+                        </li>
+                        <li><a href="#">The Initiative</a></li>
+                        <li><a href="#">Join Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="nav__links">
-                <ul class="topLinks">
-                    <li><a href="#">Home</a></li>
-                    <li>What We Do
-                        <ul class="sublinks">
-                            <li>Events
-                                <ul class="subLinksChild">
-                                    <li><a href="">CINE</a></li>
-                                    <li><a href="">The Initiative</a></li>
-                                    <li><a href="">RDM</a></li>
-                                    <li><a href="">Vacanza</a></li>
+        </nav>
 
-                                </ul>
-                            </li>
-                            <li>Workshops
-                                <ul class="subLinksChild">
-                                    <li><a href="#">UI With MongoDB</a></li>
-                                    <li><a href="#">Java And Android</a></li>
-                                    <li><a href="#">Ethical Hacking</a></li>
-                                    <li><a href="#">Web Development</a></li>
-                                    <li><a href="#">Web Tech With Angular</a></li>
-                                    <li><a href="#">Blockchain</a></li>
 
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li>Our Team
-                        <ul class="sublinks">
-                            <li>2nd Year</li>
-                            <li>3rd Year</li>
-                            <li>4th Year</li>
-                        </ul>
-                    </li>
-                    <li><a href="#">The Initiative</a></li>
-                    <li><a href="#">Join Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+    </header>
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------->
+
+
+    <section>
+
+
+        <div class="container con">
+            <div class="row">
+
+                <div class="col-md-7">
+                    <img class="formImg" src="images/494641-PHESOK-776.svg" class="img-responsive" alt="">
+                </div>
+
+                <div class="col-md-5 login">
+                    <div class="block">
+                        <h1>Welcome back :)</h1>
+                        <p>Please enter your details to keep connected with us</p>
+                    </div>
+
+                    <div class="details">
+                        <form action="">
+                            <!--    <div>
+                                <table class="table table-sm table-borderless">
+                                    <tbody>
+                                        <tr class="border">
+                                            <td class="text-center">
+                                                <i class="glyphicon glyphicon-user"></i>
+                                            </td>
+                                            <td>
+                                                <input type="text" placeholder="Student Id">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">
+                                                <i class="glyphicon glyphicon-lock"></i>
+                                            </td>
+                                            <td>
+                                                <input type="password" placeholder="Password">
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>-->
+                            <div class="fields">
+                                <div class="inputs">
+                                    <i class="glyphicon glyphicon-user"></i>
+                                    <input type="text" placeholder="Student ID" required>
+                                </div>
+                                <div class="inputs">
+                                    <i class="glyphicon glyphicon-lock"></i>
+                                    <input type="password" placeholder="Password" required>
+                                </div>
+                                <div class="inputBtn">
+
+                                    <input type="submit" class="loginBtn" value="Login">
+                                    <i class="glyphicon glyphicon-menu-right"></i>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class="create_account">
+                        Don't have an account ?
+                        <p>
+                            <a href="#">Create Account</a>
+                            <!--<a id="help" href="">Need Help?</a>-->
+                        </p>
+                    </div>
+                    <div class="contact">
+                        <div class="links">
+                            <a id="forgot" href="">Forgot Password ?</a>
+
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-youtube"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
-    </nav>
-   
-   
-</header>
+    </section>
 
-
-
-<!---------------------------------------------------------------------------------------------------------------->
-
-
-<section>
-
-
-<div class="container con">
-<div class="row">
-
-    <div class="col-md-8">
-        <img src="images/494641-PHESOK-776.svg" class="img-responsive" alt="">
-        </div>
-        
-    <div class="col-md-4 login">
-        <div class="block">
-            <h1>Welcome back :)</h1>
-            <p>Please enter your details to keep connected with us</p>
-        </div>
-        
-        <div class="details">
-            <form action="">
-              <div>
-               <table class="table table-sm table-borderless">
-                   <tbody class="box">
-                       <tr>
-                           <td class="text-center" rowspan="2">
-                                <i class="glyphicon glyphicon-user"></i>
-                            </td>
-                            <td>
-                                <p class="mar">Student Id</p>
-                           </td>
-                       </tr>
-                       <tr>
-                           <td>
-                        <input type="number" placeholder="stu123">
-                            </td>
-                       </tr>
-                      </tbody>
-                       <tbody class="box">
-                       <tr>
-                           <td class="text-center" rowspan="2">
-                                <i class="glyphicon glyphicon-lock"></i>
-                            </td>
-                            <td>
-                                <p class="mar">Password</p>
-                           </td>
-                       </tr>
-                       <tr>
-                           <td>
-                        <input type="password" placeholder="••••••••••">
-                            </td>
-                       </tr>
-                       
-                    </tbody>
-               </table>
-               </div>
-              </form>
-        <a id="forgot" href="">Forgot Password</a>
-     </div>
-     <div id="butt">
-        <a>Login</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a>Create Account</a>
-      </div>
-     <div class="help">
-         <a href="">Need Help?</a>
-     </div>
-     <div class="contact">
-        Contact us<br>  <br>  
-            
-         <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-youtube"></a>
-        <a href="#" class="fa fa-instagram"></a>
-    </div>
-     
-   </div>   
-
- </div>
-</div> 
-</section>
-
-</body>
-</html>
+</body></html>
