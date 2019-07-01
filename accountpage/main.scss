@@ -1,5 +1,5 @@
 .con {
-    margin-top: 20vh ;/* 0px 0px 0px; */
+    margin-top: 20vh ;
    
 }
 .login{
@@ -19,19 +19,19 @@ h1{
 .block{
     margin-bottom: 7%;
 }
-.box{
-    /* border-radius: 20px; */
-    /* background-color: beige; */
+tr{
+    border-bottom: 2px solid  lightgrey;
 }
 .mar{
-    margin-bottom: -15px;
+    /* margin-bottom: -15px; */
 }
 textarea:focus, input:focus{
     outline: none;
 }
 i{    
-    margin-top: 5px;
-    font-size: 25px;
+    margin-top: 0px;
+    font-size: 13px;
+    padding-bottom: 10px;
 }
 input {
     background-color: transparent;
@@ -56,7 +56,7 @@ tbody{
     background-color: #EDF2F5;
 }
     
-tbody:hover{
+tr:hover{
     background-color: white;
 }
 a:hover{
@@ -74,21 +74,29 @@ a:hover{
     font-weight: 500;
     a{     color: #09097e;}
 }
-.help{
+#help{
+    float: right;
     margin-bottom: 5vh;
 }
-
+.create_account{
+    p{
+        margin-top: 10px;
+        font-weight: 500;
+    }
+}
+.contact{
+    margin-top: 40px;
+}
 /* icons */
 
 .fa {
     border-radius: 100%;
- padding: 20px;
-  font-size: 25px;
-  width: 60px;
-    height: 60px;
-  text-align: center;
-  text-decoration: none;
-/*   margin: 5px 2px; */
+    padding: 15px;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .fa:hover {
@@ -96,15 +104,15 @@ a:hover{
 }
 
 .fa-facebook {
-  background: #3B5998;
+  background: grey;
   color: white;
 }
 .fa-youtube {
-  background: #bb0000;
+  background: grey;
   color: white;
 }
 
 .fa-instagram {
-  background: #125688;
+  background: grey;
   color: white;
 }
