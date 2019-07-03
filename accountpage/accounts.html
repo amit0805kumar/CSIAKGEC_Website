@@ -13,12 +13,31 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
     <!-- myfiles -->
     <link rel="stylesheet" type="text/css" href="account.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+
+        <script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#login").hide();
+      $("#create").show();
+  });
+});
+            
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#login").hide();
+  });
+});            
+            
+            
+        </script>
 </head>
 
 <body>
+    
 
     <header>
 
@@ -92,7 +111,7 @@
                     <img class="formImg" src="images/494641-PHESOK-776.svg" class="img-responsive" alt="">
                 </div>
 
-                <div class="col-md-5 login">
+                <div id="login" class="col-md-5 login disp">
                     <div class="block">
                         <h1>Welcome back :)</h1>
                         <p>Please enter your details to keep connected with us</p>
@@ -100,29 +119,6 @@
 
                     <div class="details">
                         <form action="">
-                            <!--    <div>
-                                <table class="table table-sm table-borderless">
-                                    <tbody>
-                                        <tr class="border">
-                                            <td class="text-center">
-                                                <i class="glyphicon glyphicon-user"></i>
-                                            </td>
-                                            <td>
-                                                <input type="text" placeholder="Student Id">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center">
-                                                <i class="glyphicon glyphicon-lock"></i>
-                                            </td>
-                                            <td>
-                                                <input type="password" placeholder="Password">
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>-->
                             <div class="fields">
                                 <div class="inputs">
                                     <i class="glyphicon glyphicon-user"></i>
@@ -144,9 +140,13 @@
 
                     <div class="create_account">
                         Don't have an account ?
-                        <p>
-                            <a href="#">Create Account</a>
-                            <!--<a id="help" href="">Need Help?</a>-->
+                        <p  id="hide">
+                           
+                           
+                           
+                            <a  href="#">Create Account</a>
+                            
+                            
                         </p>
                     </div>
                     <div class="contact">
@@ -162,9 +162,69 @@
                     </div>
 
                 </div>
+                <div id="create" class="formfill login col-md-5">
+                   <div class="block">
+                        <h1>Hi There :)</h1>
+                        <p>Please enter your details to get connected with us</p>
+                    </div>
+                    <form action="">
+                       <div class="inputs">
+                        <input type="number" placeholder="Roll Number" required>
+                        </div>
+                        <div class="inputs">
+                        <input type="text" placeholder="Name" required>
+                        </div>
+                        
+                        <select class="select" name="Branch" required>
+                                  <option value="none" selected disabled hidden>Branch</option> 
+                                  <option value="saab">Information Technology</option>
+                                  <option value="mercedes">Computer Science</option>
+                                  <option value="audi">Electronics And Instrumentation Engineering</option>
+                                  <option value="saab">Electrical And Electronics Engineering</option>
+                                  <option value="mercedes">Electronics And Communication Engineering</option>
+                                  <option value="audi">Civil Engineering</option>
+                                  <option value="audi">Mechanical Engineering</option>
+                                  <option value="audi">MCA OR MBA</option>
+                        </select>
+                       
+                        <div class="inputs">
+                        <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="inputs">
+                        <input type="Number" placeholder="Phone" required>
+                        </div>
+                        <select class="select" name="Batch" required>
+                                  <option value="none" selected disabled hidden>Batch Year</option> 
+                                  <option value="">2016</option>
+                                  <option value="">2017</option>
+                                  <option value="">2018</option>
+                                  <option value="">2019</option>
+                        </select>
+                        <div class="radio">
+                        CSI Member
+                        <div class="boxes">
+                        <span class="rdo">
+                        Yes<input type="radio" name="csimember" value="Yes">
+                        </span>
+                        <span class="rdo">
+                        No<input type="radio" name="csimember" value="No">
+                        </span>
+                        </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="inputBtn">
+
+                        <input type="submit" class="loginBtn" value="Create Account">
+                        <i class="glyphicon glyphicon-menu-right"></i>
+                    </div>
+                    </form>
+                </div>
 
             </div>
         </div>
     </section>
 
-</body></html>
+</body>
+</html>

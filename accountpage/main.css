@@ -56,19 +56,12 @@ h1 {
 .block {
   margin-bottom: 7%; }
 
-.mar {
-  /* margin-bottom: -15px; */ }
-
 tbody {
   background-color: #fff; }
 
 a:hover {
   text-decoration: none;
   cursor: pointer; }
-
-#forgot {
-  margin: 0px 0px;
-  /*   float: right; */ }
 
 #help {
   float: right;
@@ -113,6 +106,55 @@ a:hover {
       background: #000;
       color: white; }
 
-/* icons */
+/* create account */
+.formfill {
+  display: none;
+  width: 41.6%; }
+  .formfill input {
+    background-color: transparent;
+    border: 0px solid skyblue;
+    height: 4rem;
+    color: #000;
+    width: 100%; }
+  .formfill textarea:focus,
+  .formfill input:focus {
+    outline: none; }
+  .formfill form .inputs {
+    display: flex;
+    border-bottom: 1px solid #313030;
+    margin: 2rem 0; }
+  .formfill form .radio {
+    display: flex;
+    margin: 3rem 0px; }
+    .formfill form .radio .boxes {
+      display: flex;
+      margin: 3rem 0 0 -6rem; }
+    .formfill form .radio input {
+      height: 3rem;
+      width: auto; }
+    .formfill form .radio .rdo {
+      margin-right: 2rem;
+      display: flex;
+      height: 4rem;
+      width: 5rem;
+      line-height: 4rem; }
+  .formfill form .select {
+    margin-top: 1rem;
+    width: 100%;
+    padding: .5rem; }
+  .formfill form .inputBtn {
+    position: relative;
+    margin-bottom: 2rem; }
+    .formfill form .inputBtn .loginBtn {
+      background: #09097e;
+      color: #fff;
+      font-size: 2rem;
+      letter-spacing: 3px; }
+    .formfill form .inputBtn i {
+      color: #fff;
+      transform: translateY(-50%);
+      top: 50%;
+      left: 72%;
+      position: absolute; }
 
 /*# sourceMappingURL=main.css.map */

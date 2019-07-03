@@ -88,57 +88,13 @@ h1 {
 .block {
     margin-bottom: 7%;
 }
-
-//tr {
-//    border-bottom: 2px solid lightgrey;
-//}
-.mar {
-    /* margin-bottom: -15px; */
-}
-
-
-
-
-
-
-//.table-borderless > tbody > tr > td,
-//.table-borderless > tbody > tr > th,
-//.table-borderless > tfoot > tr > td,
-//.table-borderless > tfoot > tr > th,
-//.table-borderless > thead > tr > td,
-//.table-borderless > thead > tr > th {
-//    border: none;
-//}
-
 tbody {
     background-color: #fff;
 }
-
-//tr:hover {
-//    background-color: #fff;
-//}
-
 a:hover {
     text-decoration: none;
     cursor: pointer;
 }
-
-#forgot {
-    margin: 0px 0px;
-    /*   float: right; */
-}
-
-//.butt {
-//    margin: 2vh 0px;
-//    display: block;
-//    font-size: 20px;
-//    font-weight: 500;
-//
-//    a {
-//        color: #09097e;
-//    }
-//}
-
 #help {
     float: right;
     margin-bottom: 5vh;
@@ -157,7 +113,6 @@ a:hover {
         }
     }
 }
-
 .contact {
     margin-top: 5rem;
     display: flex;
@@ -202,4 +157,82 @@ a:hover {
     }
 }
 
-/* icons */
+/* create account */
+
+.formfill {
+    display: none;
+     width: 41.6%;
+
+    input {
+        background-color: transparent;
+        border: 0px solid skyblue;
+
+        height: 4rem;
+        color: #000;
+        width: 100%;
+    }
+
+    textarea:focus,
+    input:focus {
+        outline: none;
+    }
+
+    form {
+            .inputs {
+                display: flex;
+                border-bottom: 1px solid #313030;
+                margin: 2rem 0;
+
+            }
+        
+        .radio{
+            display: flex;
+            margin: 3rem 0px;
+            .boxes{
+                display: flex;
+                margin: 3rem 0 0 -6rem;
+            }
+              
+            input{
+                
+                height: 3rem;
+                width: auto;
+            }
+            .rdo{
+                margin-right: 2rem;
+                display: flex;
+                height: 4rem;
+                width: 5rem;
+                line-height: 4rem;
+            }
+        }
+        .select{
+            margin-top: 1rem;
+            width: 100%;
+            padding: .5rem;
+        }
+
+            .inputBtn {
+                position: relative;
+                margin-bottom: 2rem;
+
+                .loginBtn {
+
+                    background: #09097e;
+                    color: #fff;
+                    font-size: 2rem;
+                    letter-spacing: 3px;
+                }
+
+                i {
+                    color: #fff;
+                    transform: translateY(-50%);
+                    top: 50%;
+                    left: 72%;
+                    position: absolute;
+                }
+            }
+
+        
+    }
+}
