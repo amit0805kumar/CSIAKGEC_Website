@@ -5,9 +5,8 @@
     border-radius: 3px;
     margin-bottom: 10rem;
 
-    .formImg {
+.formImg {
         margin: 1.5rem;
-
     }
 
 
@@ -179,42 +178,29 @@ a:hover {
 
     form {
             .inputs {
+                padding:0 .5rem;
                 display: flex;
                 border-bottom: 1px solid #313030;
                 margin: 2rem 0;
 
             }
         
-        .radio{
-            display: flex;
-            margin: 3rem 0px;
-            .boxes{
-                display: flex;
-                margin: 3rem 0 0 -6rem;
-            }
-              
-            input{
-                
-                height: 3rem;
-                width: auto;
-            }
-            .rdo{
-                margin-right: 2rem;
-                display: flex;
-                height: 4rem;
-                width: 5rem;
-                line-height: 4rem;
-            }
+        .selector{
+            padding:0 0 1rem 0; 
+            border-bottom: 1px solid #313030;
         }
         .select{
+            border: 0px;
             margin-top: 1rem;
             width: 100%;
-            padding: .5rem;
+            padding: .5rem -.5rem;
+            color: #75757E;
+            
         }
 
             .inputBtn {
                 position: relative;
-                margin-bottom: 2rem;
+                margin: 2rem 0;
 
                 .loginBtn {
 
@@ -234,5 +220,12 @@ a:hover {
             }
 
         
+    }
+    .back{
+        margin: 2rem 0;
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+      
     }
 }

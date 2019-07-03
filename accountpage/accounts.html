@@ -23,14 +23,18 @@ $(document).ready(function(){
   $("#hide").click(function(){
     $("#login").hide();
       $("#create").show();
+      $(".formImg").css({'height':'55rem'});
   });
 });
             
 $(document).ready(function(){
-  $("#hide").click(function(){
-    $("#login").hide();
+  $("#goback").click(function(){
+    $("#create").hide();
+      $("#login").show();
+      $(".formImg").css({'height':'52rem'});
   });
 });            
+       
             
             
         </script>
@@ -174,7 +178,7 @@ $(document).ready(function(){
                         <div class="inputs">
                         <input type="text" placeholder="Name" required>
                         </div>
-                        
+                        <div class="selector">
                         <select class="select" name="Branch" required>
                                   <option value="none" selected disabled hidden>Branch</option> 
                                   <option value="saab">Information Technology</option>
@@ -186,13 +190,14 @@ $(document).ready(function(){
                                   <option value="audi">Mechanical Engineering</option>
                                   <option value="audi">MCA OR MBA</option>
                         </select>
-                       
+                        </div>
                         <div class="inputs">
                         <input type="email" placeholder="Email" required>
                         </div>
                         <div class="inputs">
                         <input type="Number" placeholder="Phone" required>
                         </div>
+                        <div class="selector">
                         <select class="select" name="Batch" required>
                                   <option value="none" selected disabled hidden>Batch Year</option> 
                                   <option value="">2016</option>
@@ -200,26 +205,20 @@ $(document).ready(function(){
                                   <option value="">2018</option>
                                   <option value="">2019</option>
                         </select>
-                        <div class="radio">
-                        CSI Member
-                        <div class="boxes">
-                        <span class="rdo">
-                        Yes<input type="radio" name="csimember" value="Yes">
-                        </span>
-                        <span class="rdo">
-                        No<input type="radio" name="csimember" value="No">
-                        </span>
-                        </div>
                         </div>
                         
                         
                         
                         <div class="inputBtn">
-
-                        <input type="submit" class="loginBtn" value="Create Account">
-                        <i class="glyphicon glyphicon-menu-right"></i>
-                    </div>
+                            <input type="submit" class="loginBtn" value="Create Account">
+                            <i class="glyphicon glyphicon-menu-right"></i>
+                        </div>
                     </form>
+                    
+                    <div class="back">
+                        <p>Already have an account?</p><a id="goback" href="#">Login</a>
+                    </div>
+                    
                 </div>
 
             </div>

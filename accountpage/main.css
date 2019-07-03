@@ -120,31 +120,22 @@ a:hover {
   .formfill input:focus {
     outline: none; }
   .formfill form .inputs {
+    padding: 0 .5rem;
     display: flex;
     border-bottom: 1px solid #313030;
     margin: 2rem 0; }
-  .formfill form .radio {
-    display: flex;
-    margin: 3rem 0px; }
-    .formfill form .radio .boxes {
-      display: flex;
-      margin: 3rem 0 0 -6rem; }
-    .formfill form .radio input {
-      height: 3rem;
-      width: auto; }
-    .formfill form .radio .rdo {
-      margin-right: 2rem;
-      display: flex;
-      height: 4rem;
-      width: 5rem;
-      line-height: 4rem; }
+  .formfill form .selector {
+    padding: 0 0 1rem 0;
+    border-bottom: 1px solid #313030; }
   .formfill form .select {
+    border: 0px;
     margin-top: 1rem;
     width: 100%;
-    padding: .5rem; }
+    padding: .5rem -.5rem;
+    color: #75757E; }
   .formfill form .inputBtn {
     position: relative;
-    margin-bottom: 2rem; }
+    margin: 2rem 0; }
     .formfill form .inputBtn .loginBtn {
       background: #09097e;
       color: #fff;
@@ -156,5 +147,10 @@ a:hover {
       top: 50%;
       left: 72%;
       position: absolute; }
+  .formfill .back {
+    margin: 2rem 0;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
