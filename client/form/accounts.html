@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>CSI | Account</title>
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Orbitron:400,500,700,900|Poiret+One|Poppins:200,300,400,500,600,700,800,900|Muli:200,300,400,700,800,900" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Fredoka+One|Orbitron:400,500,700,900|Poiret+One|Poppins:200,300,400,500,600,700,800,900|Muli:200,300,400,700,800,900"
+        rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <!-- icons -->
@@ -13,35 +16,35 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    
-    <!-- myfiles -->
-    <link rel="stylesheet" type="text/css" href="account.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
 
-        <script>
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $("#login").hide();
-      $("#create").show();
-      $(".formImg").css({'height':'55rem'});
-  });
-});
-            
-$(document).ready(function(){
-  $("#goback").click(function(){
-    $("#create").hide();
-      $("#login").show();
-      $(".formImg").css({'height':'52rem'});
-  });
-});            
-       
-            
-            
-        </script>
+    <!-- myfiles -->
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <script>
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $("#login").hide();
+                $("#create").show();
+                $(".formImg").css({ 'height': '55rem' });
+            });
+        });
+
+        $(document).ready(function () {
+            $("#goback").click(function () {
+                $("#create").hide();
+                $("#login").show();
+                $(".formImg").css({ 'height': '52rem' });
+            });
+        });
+
+
+
+    </script>
 </head>
 
 <body>
-    
+
 
     <header>
 
@@ -144,13 +147,13 @@ $(document).ready(function(){
 
                     <div class="create_account">
                         Don't have an account ?
-                        <p  id="hide">
-                           
-                           
-                           
-                            <a  href="#">Create Account</a>
-                            
-                            
+                        <p id="hide">
+
+
+
+                            <a href="#">Create Account</a>
+
+
                         </p>
                     </div>
                     <div class="contact">
@@ -167,58 +170,58 @@ $(document).ready(function(){
 
                 </div>
                 <div id="create" class="formfill login col-md-5">
-                   <div class="block">
+                    <div class="block">
                         <h1>Hi There :)</h1>
                         <p>Please enter your details to get connected with us</p>
                     </div>
                     <form action="">
-                       <div class="inputs">
-                        <input type="number" placeholder="Roll Number" required>
+                        <div class="inputs">
+                            <input type="number" placeholder="Roll Number" required>
                         </div>
                         <div class="inputs">
-                        <input type="text" placeholder="Name" required>
+                            <input type="text" placeholder="Name" required>
                         </div>
                         <div class="selector">
-                        <select class="select" name="Branch" required>
-                                  <option value="none" selected disabled hidden>Branch</option> 
-                                  <option value="saab">Information Technology</option>
-                                  <option value="mercedes">Computer Science</option>
-                                  <option value="audi">Electronics And Instrumentation Engineering</option>
-                                  <option value="saab">Electrical And Electronics Engineering</option>
-                                  <option value="mercedes">Electronics And Communication Engineering</option>
-                                  <option value="audi">Civil Engineering</option>
-                                  <option value="audi">Mechanical Engineering</option>
-                                  <option value="audi">MCA OR MBA</option>
-                        </select>
+                            <select class="select" name="Branch" required>
+                                <option value="none" selected disabled hidden>Branch</option>
+                                <option value="saab">Information Technology</option>
+                                <option value="mercedes">Computer Science</option>
+                                <option value="audi">Electronics And Instrumentation Engineering</option>
+                                <option value="saab">Electrical And Electronics Engineering</option>
+                                <option value="mercedes">Electronics And Communication Engineering</option>
+                                <option value="audi">Civil Engineering</option>
+                                <option value="audi">Mechanical Engineering</option>
+                                <option value="audi">MCA OR MBA</option>
+                            </select>
                         </div>
                         <div class="inputs">
-                        <input type="email" placeholder="Email" required>
+                            <input type="email" placeholder="Email" required>
                         </div>
                         <div class="inputs">
-                        <input type="Number" placeholder="Phone" required>
+                            <input type="Number" placeholder="Phone" required>
                         </div>
                         <div class="selector">
-                        <select class="select" name="Batch" required>
-                                  <option value="none" selected disabled hidden>Batch Year</option> 
-                                  <option value="">2016</option>
-                                  <option value="">2017</option>
-                                  <option value="">2018</option>
-                                  <option value="">2019</option>
-                        </select>
+                            <select class="select" name="Batch" required>
+                                <option value="none" selected disabled hidden>Batch Year</option>
+                                <option value="">2016</option>
+                                <option value="">2017</option>
+                                <option value="">2018</option>
+                                <option value="">2019</option>
+                            </select>
                         </div>
-                        
-                        
-                        
+
+
+
                         <div class="inputBtn">
                             <input type="submit" class="loginBtn" value="Create Account">
                             <i class="glyphicon glyphicon-menu-right"></i>
                         </div>
                     </form>
-                    
+
                     <div class="back">
                         <p>Already have an account?</p><a id="goback" href="#">Login</a>
                     </div>
-                    
+
                 </div>
 
             </div>
@@ -226,4 +229,5 @@ $(document).ready(function(){
     </section>
 
 </body>
+
 </html>
