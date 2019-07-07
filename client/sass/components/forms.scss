@@ -1,135 +1,128 @@
-.con {
-    margin-top: 20vh;
-    overflow: hidden;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.13);
-    border-radius: 3px;
-    margin-bottom: 10rem;
+.container {
+  margin-top: 20vh;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.13);
+  border-radius: 3px;
+  width: 80%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  margin-bottom: 10rem;
 
-.formImg {
-        margin: 1.5rem;
+  .row {
+    display: flex;
+    height: 100%;
+    // background: rgb(197, 214, 240);
+    align-items: stretch;
+    .form__left {
+      width: 60%;
+      .formImg {
+        height: 100%;
+      }
     }
-
-
-}
-
-.login {
-    background-color: #fff;
-    font-family: 'Poppins', sans-serif;
-
-}
-
-h1 {
-    font-family: 'Muli', sans-serif;
-    font-weight: 800;
-    margin-bottom: 2vh;
-}
-
-.details {
-    width: 100%;
-
-    input {
-        background-color: transparent;
-        border: 0px solid skyblue;
-
-        height: 4rem;
-        color: #000;
+    .form__right {
+      padding: 2rem;
+      width: 40%;
+      background-color: rgba(255, 255, 255, 0.41);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.13);
+      font-family: "Poppins", sans-serif;
+      .block {
+        h1 {
+          font-family: "Muli", sans-serif;
+          font-size: 4rem;
+        }
+        p {
+          font-family: "Poppins", sans-serif;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+        }
+      }
+      .details {
         width: 100%;
-    }
 
-    textarea:focus,
-    input:focus {
-        outline: none;
-    }
+        input {
+          background-color: transparent;
+          border: 0px;
 
-    form {
-        .fields {
+          height: 4rem;
+          color: #000;
+          width: 100%;
+        }
+
+        textarea:focus,
+        input:focus {
+          outline: none;
+        }
+
+        form {
+          .fields {
             margin-bottom: 3rem;
 
             .inputs {
+              display: flex;
+              border-bottom: 1px solid #313030;
+              margin: 3rem 0;
+              .md-24 {
+                font-size: 24px;
+              }
+              i {
+                width: 4rem;
                 display: flex;
-                border-bottom: 1px solid #313030;
-                margin: 3rem 0;
-
-                i {
-                    width: 4rem;
-                    display: flex;
-                    align-items: center;
-                    border-bottom: 1px solid #313030;
-                    padding-left: 5px;
-
-                }
+                align-items: center;
+                padding-left: 5px;
+                color: rgba(34, 33, 33, 0.596);
+              }
             }
 
             .inputBtn {
-                position: relative;
-
-                .loginBtn {
-
-                    background: #09097e;
-                    color: #fff;
-                    font-size: 2rem;
-                    letter-spacing: 3px;
-                }
-
-                i {
-                    color: #fff;
-                    transform: translateY(-50%);
-                    top: 50%;
-                    left: 60%;
-                    position: absolute;
-                }
+              position: relative;
+              margin-top: 4rem;
+              .loginBtn {
+                background: #09097e;
+                color: #fff;
+                font-size: 2rem;
+                letter-spacing: 3px;
+                cursor: pointer;
+              }
             }
-
+          }
         }
-    }
-}
+      }
 
-.block {
-    margin-bottom: 7%;
-}
-tbody {
-    background-color: #fff;
-}
-a:hover {
-    text-decoration: none;
-    cursor: pointer;
-}
-#help {
-    float: right;
-    margin-bottom: 5vh;
-}
-
-.create_account {
-    display: flex;
-    justify-content: space-between;
-
-    p {
-        margin-left: 2rem;
-        font-weight: 500;
-
-        a:hover {
-            color: #09097e;
-        }
-    }
-}
-.contact {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-
-    .links {
-        width: 100%;
+      .create_account {
         display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        p {
+          margin-left: 2rem;
+          font-weight: 500;
 
-    }
-
-    .icons {
+          a:hover {
+            color: #09097e;
+          }
+        }
+      }
+      .contact {
         margin-top: 5rem;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
 
-        .fa {
+        .links {
+          width: 100%;
+          display: flex;
+          font-size: 1.2rem;
+          font-weight: 500;
+          a:hover {
+            color: #09097e;
+          }
+        }
+
+        .icons {
+          margin-top: 5rem;
+          display: flex;
+
+          .fa {
             border-radius: 100%;
             padding: 15px;
             font-size: 15px;
@@ -139,93 +132,36 @@ a:hover {
             align-items: center;
             justify-content: center;
             margin: 0 1rem;
-        }
+          }
 
-        .fa:hover {
+          .fa:hover {
             opacity: 0.7;
-        }
+          }
 
-
-
-        .fa-youtube,
-        .fa-facebook,
-        .fa-instagram {
+          .fa-youtube,
+          .fa-facebook,
+          .fa-instagram {
             background: #000;
             color: white;
+          }
         }
+      }
+      .selector {
+        padding: 0 0 1rem 0;
+        border-bottom: 1px solid #313030;
+      }
+      .select {
+        border: 0px;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 0.5rem -0.5rem;
+        color: #75757e;
+      }
     }
+  }
 }
 
-/* create account */
-
-.formfill {
-    display: none;
-     width: 41.6%;
-
-    input {
-        background-color: transparent;
-        border: 0px solid skyblue;
-
-        height: 4rem;
-        color: #000;
-        width: 100%;
-    }
-
-    textarea:focus,
-    input:focus {
-        outline: none;
-    }
-
-    form {
-            .inputs {
-                padding:0 .5rem;
-                display: flex;
-                border-bottom: 1px solid #313030;
-                margin: 2rem 0;
-
-            }
-        
-        .selector{
-            padding:0 0 1rem 0; 
-            border-bottom: 1px solid #313030;
-        }
-        .select{
-            border: 0px;
-            margin-top: 1rem;
-            width: 100%;
-            padding: .5rem -.5rem;
-            color: #75757E;
-            
-        }
-
-            .inputBtn {
-                position: relative;
-                margin: 2rem 0;
-
-                .loginBtn {
-
-                    background: #09097e;
-                    color: #fff;
-                    font-size: 2rem;
-                    letter-spacing: 3px;
-                }
-
-                i {
-                    color: #fff;
-                    transform: translateY(-50%);
-                    top: 50%;
-                    left: 72%;
-                    position: absolute;
-                }
-            }
-
-        
-    }
-    .back{
-        margin: 2rem 0;
-        display: inline-flex;
-        justify-content: space-between;
-        width: 100%;
-      
-    }
+#help {
+  float: right;
+  margin-bottom: 5vh;
 }
