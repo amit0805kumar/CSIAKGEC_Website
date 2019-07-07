@@ -1500,4 +1500,57 @@ footer {
 .slick-current {
   opacity: 1; }
 
+.review__container {
+  width: 60%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5rem; }
+  .review__container .show__btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    color: #2121db;
+    font-family: "Poppins", sans-serif; }
+    .review__container .show__btn p {
+      transition: all 0.2s;
+      display: inline-block;
+      text-decoration: underline; }
+      .review__container .show__btn p:hover {
+        color: #000; }
+  .review__container .review {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 3rem;
+    margin-bottom: 3.5rem;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif; }
+    .review__container .review__text {
+      margin-bottom: 2rem;
+      z-index: 10;
+      position: relative;
+      font-size: 1.5rem; }
+    .review__container .review__user {
+      display: flex;
+      align-content: center; }
+      .review__container .review__user-name {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
+        border-top: 1px solid #2121db; }
+      .review__container .review__user-branch {
+        font-size: 1rem;
+        color: grey; }
+    .review__container .review::before {
+      content: "\201C";
+      position: absolute;
+      top: -2.75rem;
+      left: -1rem;
+      font-size: 20rem;
+      color: #cac7c7;
+      font-family: sans-serif;
+      line-height: 1;
+      z-index: 1; }
+
 /*# sourceMappingURL=style.css.map */

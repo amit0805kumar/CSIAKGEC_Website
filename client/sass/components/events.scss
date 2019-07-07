@@ -362,3 +362,78 @@
 .slick-current {
   opacity: 1;
 }
+
+//Reviews
+.review__container {
+  width: 60%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5rem;
+
+  .show__btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    color: $color-primary-light;
+    font-family: "Poppins", sans-serif;
+
+    p {
+      transition: all 0.2s;
+      display: inline-block;
+      text-decoration: underline;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+  .review__hidden {
+    // display: none;
+  }
+  .review {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 3rem;
+    margin-bottom: 3.5rem;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    &__text {
+      margin-bottom: 2rem;
+      z-index: 10;
+      position: relative;
+      font-size: 1.5rem;
+      // border-bottom: 1px solid $color-primary-light;
+    }
+    &__user {
+      display: flex;
+      align-content: center;
+      &-box {
+        // margin-left: 1.5rem;
+      }
+
+      &-name {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 0.4rem;
+        border-top: 1px solid $color-primary-light;
+      }
+      &-branch {
+        font-size: 1rem;
+        color: grey;
+      }
+    }
+
+    &::before {
+      content: "\201C";
+      position: absolute;
+      top: -2.75rem;
+      left: -1rem;
+      font-size: 20rem;
+      color: rgb(202, 199, 199);
+      font-family: sans-serif;
+      line-height: 1;
+      z-index: 1;
+    }
+  }
+}
