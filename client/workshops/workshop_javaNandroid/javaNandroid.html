@@ -17,23 +17,22 @@
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"
         integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
 
-    <script src="js/rellax.min.js"></script>
+    <script src="../../js/rellax.min.js"></script>
     <script src="../../vendors/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
     <div class="event-body-bg">
-        <!-- <img class="b1 rellax3" src="../../images/svg/pattern/distorted.svg" alt="">
-        <img class="b2 rellax1" src="../../images/svg/pattern/strip2.svg" alt=""> -->
-        <!--    <img class="b3" src="images/svg/pattern/strip 2.svg" alt="">-->
-        <!-- <img class="b4 rellax2" src="../../images/svg/pattern/ring.svg" alt="">
+        <img class="b1 rellax3" src="../../images/svg/pattern/distorted.svg" alt="">
+        <img class="b2 rellax1" src="../../images/svg/pattern/strip2.svg" alt="">
+        <img class="b4 rellax2" src="../../images/svg/pattern/ring.svg" alt="">
         <img class="b5 rellax3" src="../../images/svg/pattern/triangle.svg" alt="">
         <img class="b6 rellax2" src="../../images/svg/pattern/semiC.svg" alt="">
         <img class="b7 rellax2" src="../../images/svg/pattern/concentric.svg" alt="">
         <img class="b8 rellax1" src="../../images/svg/pattern/circle.svg" alt="">
-        <img class="b9" src="../../images/svg/pattern/distorted2.svg" alt="">
-        <img class="b10 rellax2" src="../../images/svg/pattern/ctriangle.svg" alt="">
-        <img class="b11" src="../../images/svg/pattern/squares.svg" alt=""> -->
+        <img class="b9 rellax1" src="../../images/svg/pattern/distorted2.svg" alt="">
+        <img class="b10 rellax3" src="../../images/svg/pattern/ctriangle.svg" alt="">
+        <img class="b11 rellax1" src="../../images/svg/pattern/squares.svg" alt="">
     </div>
     <nav class="nav">
         <div class="nav__container">
@@ -441,6 +440,32 @@
                 $('.show__btn > p').text('Show all');
             }
 
+        });
+
+        //Parallax classes
+        var rellax1 = new Rellax('.rellax1', {
+            speed: -3,
+            center: false,
+            wrapper: null,
+            round: true,
+            vertical: true,
+            horizontal: false
+        });
+        var rellax2 = new Rellax('.rellax2', {
+            speed: -2,
+            center: false,
+            wrapper: null,
+            round: true,
+            vertical: true,
+            horizontal: false
+        });
+        var rellax3 = new Rellax('.rellax3', {
+            speed: 3,
+            center: false,
+            wrapper: null,
+            round: true,
+            vertical: true,
+            horizontal: false
         });
     </script>
 </body>
