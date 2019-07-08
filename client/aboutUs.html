@@ -16,7 +16,7 @@
         integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
 
     <script src="./js/rellax.min.js"></script>
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>About Us</title>
 
 </head>
@@ -186,6 +186,19 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        $(function () {
+            ScrollReveal().reveal('.about__left', {
+                delay: 100,
+                duration: 1000
+            });
+            ScrollReveal().reveal('.about__right', {
+                delay: 200,
+                duration: 1000
+            });
+        })
+    </script>
 </body>
 
 </html>

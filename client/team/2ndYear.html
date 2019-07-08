@@ -11,6 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css?family=Fredoka+One|Orbitron:400,500,700,900|Poiret+One|Poppins:200,300,400,500,600,700,800,900|Muli:200,300,400,700,800,900"
     rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://code.jquery.com/jquery-1.12.3.min.js"
     integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
   <script src="../js/rellax.min.js"></script>
@@ -553,7 +554,14 @@
       vertical: true,
       horizontal: false
     });
-
+    //Scroll Effect
+    var allBoxes = document.querySelectorAll('.team__imgbox');
+    ScrollReveal().reveal(allBoxes, {
+      delay: 100,
+      duration: 1000,
+      distance: '50px',
+      origin: 'bottom'
+    });
 
   });
 

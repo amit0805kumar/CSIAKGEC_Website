@@ -186,7 +186,7 @@ $(function () {
             delay: 420,
             duration: 1000,
             distance: '100px',
-            origin: 'right'
+            origin: 'bottom'
         });
 
         //section joinUs
@@ -214,7 +214,9 @@ $(function () {
 
 
     }
-    
+
     mainPageScrollEffect();
+
+
 
 });

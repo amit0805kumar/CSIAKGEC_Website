@@ -14,7 +14,7 @@
 
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"
         integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/rellax.min.js"></script>
 
     <title>Privacy Ploicy</title>
@@ -337,6 +337,27 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        $(function () {
+            ScrollReveal().reveal('.header', {
+                delay: 100,
+                duration: 1000
+            });
+            var allPara = document.querySelectorAll('.para');
+            ScrollReveal().reveal(allPara, {
+                delay: 100,
+                duration: 1000
+            });
+
+            var allQnA = document.querySelectorAll('.qna');
+            ScrollReveal().reveal(allQnA, {
+                delay: 100,
+                duration: 1000
+            });
+        });
+
+    </script>
 </body>
 
 </html>

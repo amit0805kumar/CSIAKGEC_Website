@@ -16,7 +16,7 @@
 
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"
         integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="../../js/rellax.min.js"></script>
     <script src="../../vendors/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
@@ -428,45 +428,70 @@
                 slidesToShow: 3,
                 slidesToScroll: 3
             });
+
+            //Parallax classes
+            var rellax1 = new Rellax('.rellax1', {
+                speed: -3,
+                center: false,
+                wrapper: null,
+                round: true,
+                vertical: true,
+                horizontal: false
+            });
+            var rellax2 = new Rellax('.rellax2', {
+                speed: -2,
+                center: false,
+                wrapper: null,
+                round: true,
+                vertical: true,
+                horizontal: false
+            });
+            var rellax3 = new Rellax('.rellax3', {
+                speed: 3,
+                center: false,
+                wrapper: null,
+                round: true,
+                vertical: true,
+                horizontal: false
+            });
+
+
+            $('.review__hidden').slideUp();
+
+            $('.show__btn').click(function () {
+                $('.review__hidden').slideToggle('slow');
+                if ($('.show__btn > p').text().toString().trim() == 'Show all') {
+                    $('.show__btn > p').text('Show less');
+                } else {
+                    $('.show__btn > p').text('Show all');
+                }
+
+            });
+
+
+            //Scroll Reveal Effect
+            var nodeArray = [
+                document.querySelector('.cine_intro'),
+                document.querySelector('.svg_img_top'),
+                document.querySelector('.progress__bar'),
+                document.querySelector('.gallery_container'),
+                document.querySelector('.slider'),
+            ];
+            var allreviews = document.querySelectorAll('.review');
+            ScrollReveal().reveal(nodeArray, {
+                delay: 100,
+                duration: 1000
+            });
+            ScrollReveal().reveal(allreviews, {
+                delay: 100,
+                duration: 1000,
+                distance: '50px',
+                origin: 'bottom'
+            });
+
         });
 
-        $('.review__hidden').slideUp();
 
-        $('.show__btn').click(function () {
-            $('.review__hidden').slideToggle('slow');
-            if ($('.show__btn > p').text().toString().trim() == 'Show all') {
-                $('.show__btn > p').text('Show less');
-            } else {
-                $('.show__btn > p').text('Show all');
-            }
-
-        });
-
-        //Parallax classes
-        var rellax1 = new Rellax('.rellax1', {
-            speed: -3,
-            center: false,
-            wrapper: null,
-            round: true,
-            vertical: true,
-            horizontal: false
-        });
-        var rellax2 = new Rellax('.rellax2', {
-            speed: -2,
-            center: false,
-            wrapper: null,
-            round: true,
-            vertical: true,
-            horizontal: false
-        });
-        var rellax3 = new Rellax('.rellax3', {
-            speed: 3,
-            center: false,
-            wrapper: null,
-            round: true,
-            vertical: true,
-            horizontal: false
-        });
     </script>
 </body>
 
