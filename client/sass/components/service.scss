@@ -1,52 +1,72 @@
 .service {
-    &__container {
-        width: 100%;
-        overflow: hidden;
-        margin-top: 2rem;
+  &__container {
+    width: 100%;
+
+    margin-top: 2rem;
+  }
+
+  &__domain {
+    display: flex;
+    height: 50rem;
+    width: 100%;
+
+    @include respond(w900) {
+      height: 30rem;
+    }
+    @include respond(w600) {
+      height: 20rem;
+    }
+    @include respond(w400) {
+      height: 30rem;
     }
 
-    &__domain {
-        display: flex;
-        height: 50rem;
-        width: 100%;
-        #appD {
-//            background-image: url(../images/svg/svgBg.svg);
+    &__image {
+      width: 50%;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      img {
+        height: 100%;
+        @include respond(w1200) {
+          height: 80%;
         }
-
-     
-
-        &__image {
-            width: 50%;
-
-            background-repeat: no-repeat;
-
-
-
-            img {
-                height: 100%;
-            }
-        }
-
-        &__text {
-            width: 50%;
-            transition: all .3s;
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-
-            h1 {
-                font-family: 'Muli', sans-serif;
-                font-size: 4rem;
-                font-weight: 900;
-                color: $color-primary;
-            }
-
-            p {
-                font-size: 2rem;
-                font-family: 'Poppins', sans-serif;
-            }
-        }
+      }
     }
+
+    &__text {
+      width: 50%;
+      transition: all 0.3s;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-family: "Muli", sans-serif;
+        font-size: 4rem;
+        font-weight: 900;
+        color: $color-primary;
+        @include respond(w900) {
+          font-size: 3rem;
+          font-weight: 700;
+        }
+        @include respond(w900) {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+      }
+
+      p {
+        font-size: 2rem;
+        font-family: "Poppins", sans-serif;
+        @include respond(w900) {
+          font-size: 1.5rem;
+        }
+        @include respond(w900) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
 }

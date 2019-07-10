@@ -1,90 +1,145 @@
 .join {
-    &__container {
-        width: 100%;
-        //        background: #f4f4f4;
-        display: flex;
-        margin: 6rem 0;
-        justify-content: space-between;
-        padding: 0 2rem;
-        
+  &__container {
+    width: 100%;
+    display: flex;
+    margin: 6rem 0;
+    justify-content: space-between;
+    padding: 0 2rem;
+    @include respond(w600) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__box {
+    background: #fff;
+    margin: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    @include respond(w900) {
+      width: 30%;
+    }
+    @include respond(w600) {
+      width: 60%;
+      height: 10rem;
+      margin: 1.5rem 0;
+    }
+    @include respond(w400) {
+      width: 80%;
+    }
+    @include respond(w300) {
+      margin: 1rem 0;
     }
 
-    &__box {
-        background: #fff;
-        margin: 0 .5rem;
-        display: flex;
-        align-items: center;
-        //        background: rgba(191, 234, 191, 6);
+    transition: all 0.3s;
+    cursor: pointer;
 
-        transition: all .3s;
-        cursor: pointer;
-
-        path {
-            transition: all .3s;
-        }
-        
-        &:hover{
-            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
-        }
-        &:hover path {
-
-            stroke-dashoffset: -275.5px;
-
-        }
-
-        &:hover .line {
-            width: 5rem;
-            left: 80%;
-            opacity: 1;
-        }
-
-        &:hover .num {
-            color: #0944C6;
-        }
-
-        &__anim {
-            position: relative;
-            width: 12rem;
-            height: 10rem;
-            margin-right: 4rem;
-
-            svg,
-            div {
-                top: 50%;
-                transform: translateY(-50%);
-                position: absolute;
-            }
-
-            .num {
-                font-family: 'Poppins', sans-serif;
-                font-size: 3rem;
-                left: 50%;
-                transform: translateY(-50%) translateX(-50%);
-                transition: all .3s;
-            }
-
-            .line {
-                width: 0rem;
-                height: 2px;
-                background: #000;
-                left: 60%;
-                transition: all .3s;
-                opacity: 0;
-            }
-
-        }
-
-        &__text {
-            //            width: 40rem;
-            font-family: 'Poppins';
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 1.5rem;
-            }
-        }
+    path {
+      transition: all 0.3s;
     }
+
+    &:hover {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    }
+    &:hover path {
+      stroke-dashoffset: -275.5px;
+    }
+
+    &:hover .line {
+      width: 5rem;
+      left: 80%;
+      opacity: 1;
+      @include respond(w600) {
+        width: 3rem;
+        left: 70%;
+      }
+    }
+
+    &:hover .num {
+      color: #0944c6;
+    }
+
+    &__anim {
+      position: relative;
+      width: 12rem;
+      height: 10rem;
+      margin-right: 4rem;
+
+      @include respond(w900) {
+        width: 10rem;
+        height: 8rem;
+        margin-right: 2rem;
+      }
+      @include respond(w600) {
+        width: 8rem !important;
+        margin-right: 2rem;
+        overflow: hidden;
+      }
+      svg,
+      div {
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+      }
+      svg {
+        @include respond(w600) {
+          //   display: none;
+        }
+      }
+      .num {
+        font-family: "Poppins", sans-serif;
+        font-size: 3rem;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        transition: all 0.3s;
+        @include respond(w600) {
+          font-size: 2.5rem;
+        }
+      }
+
+      .line {
+        width: 0rem;
+        height: 2px;
+        background: #000;
+        left: 60%;
+        transition: all 0.3s;
+        opacity: 0;
+        // @include respond(w600) {
+        //   display: none;
+        // }
+      }
+    }
+
+    &__text {
+      //            width: 40rem;
+      font-family: "Poppins";
+      @include respond(w600) {
+        width: 70%;
+      }
+
+      h1 {
+        font-size: 2rem;
+        @include respond(w900) {
+          font-size: 1.5rem;
+        }
+        @include respond(w300) {
+          font-size: 1rem;
+        }
+      }
+
+      p {
+        font-size: 1.5rem;
+
+        @include respond(w900) {
+          font-size: 1.1rem;
+          padding: 0 0.2rem;
+        }
+
+        @include respond(w300) {
+          font-size: 0.8rem;
+          padding: 0 0.2rem;
+        }
+      }
+    }
+  }
 }

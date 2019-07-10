@@ -1,189 +1,276 @@
 footer {
-    width: 100%;
-    background: #fff;
-    height: 50rem;
-    border-top: 1px solid #ede6e6;
-    margin-top: 5rem;
-    position: relative;
+  width: 100%;
+  background: #fff;
+  height: 50rem;
+  border-top: 1px solid #ede6e6;
+  margin-top: 5rem;
+  position: relative;
+  @include respond(w700) {
+    height: 82rem;
+  }
 }
 
 .footer {
-    &__bg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 0;
+  &__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    @include respond(w700) {
+      top: 10rem;
+    }
+    img {
+      opacity: 0.2;
+      width: 30rem;
+      filter: grayscale(1);
+      @include respond(w1100) {
+        width: 20rem;
+      }
+    }
+  }
 
-        img {
-            opacity: .2;
-            width: 30rem;
-            filter: grayscale(1);
-        }
+  &__mission {
+    position: absolute;
+    left: 15rem;
+    top: 2rem;
+    width: 45rem;
+    padding: 1rem;
+    color: #fff;
+    @include respond(w1100) {
+      width: 33rem;
+      left: 10rem;
     }
 
-    &__mission {
+    @include respond(w900) {
+      position: relative;
+      height: 30rem;
+      margin: 2rem 2;
+    }
+
+    @include respond(w700) {
+      width: 80%;
+      overflow: hidden;
+    }
+    @include respond(w600) {
+      left: 7rem;
+    }
+    @include respond(w300) {
+      left: 5rem;
+    }
+    h1 {
+      font-size: 3rem;
+      font-family: "Poppins", sans-serif;
+      @include respond(w1100) {
+        font-size: 2.5rem;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-family: "Poppins", sans-serif;
+      @include respond(w1100) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  &__featured {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 2rem 0;
+    @include respond(w700) {
+      position: relative;
+      padding: 0.5rem;
+      height: 10rem;
+    }
+    h1 {
+      @include respond(w600) {
+        font-size: 1.5rem;
+      }
+    }
+    &__links {
+      display: flex;
+      margin-top: 1rem;
+      justify-content: center;
+
+      a {
+        margin: 0 1.5rem;
+        font-size: 1.8rem;
+        color: #fff !important;
+        transition: all 0.3s;
+        padding: 0.5rem 1rem;
+        border-radius: 3px;
+        @include respond(w900) {
+          font-size: 1.5rem;
+          padding: 1.5rem 0.8rem;
+        }
+        @include respond(w600) {
+          font-size: 1.1rem;
+          margin: 0 0.5rem;
+        }
+        &:hover {
+          color: #10b1b1 !important;
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.51), 0 15px 15px 0 rgba(0, 0, 0, 0.48);
+        }
+      }
+    }
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__main {
+    height: 90%;
+    background: #1d1d1d;
+    position: relative;
+
+    &__heading {
+      font-size: 3rem;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      transform: rotate(-90deg);
+      position: absolute;
+      left: 0;
+      top: 10rem;
+      display: inline;
+      padding: 1rem;
+      @include respond(w1100) {
+        left: -5rem;
+      }
+      @include respond(w600) {
+        font-size: 2.5rem;
+        left: -6rem;
+      }
+      &::before {
+        content: "";
         position: absolute;
-        left: 15rem;
-        top: 2rem;
+        width: 1px;
+        height: 30rem;
+        background: #fff;
+        left: -1rem;
+        top: -25rem;
+        @include respond(w1100) {
+          left: -4rem;
+        }
+      }
+    }
+
+    &__content {
+      position: absolute;
+      right: 2rem;
+      top: -5rem;
+      background: #fff;
+      padding: 3rem 2rem;
+      width: 50rem;
+      height: 35rem;
+      border-radius: 3px;
+      box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 15px 15px 0 rgba(0, 0, 0, 0.08);
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      font-family: sans-serif;
+      @include respond(w1100) {
+        height: 30rem;
+        padding: 2rem 1.5rem;
         width: 45rem;
+      }
+
+      @include respond(w900) {
+        width: 35rem;
+        height: 28rem;
         padding: 1rem;
-        color: #fff;
-
-
-        h1 {
-            font-size: 3rem;
-            font-family: 'Poppins', sans-serif;
-
-        }
-
-        p {
-            font-size: 1.5rem;
-            font-family: 'Poppins', sans-serif;
-        }
-    }
-
-    &__featured {
-        color: #fff;
-        font-family: 'Poppins', sans-serif;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        text-align: center;
-        padding: 2rem 0;
-
-        &__links {
-            display: flex;
-            margin-top: 1rem;
-            justify-content: center;
-
-            a {
-                margin: 0 1.5rem;
-                font-size: 1.8rem;
-                color: #fff !important;
-                transition: all .3s;
-                padding: .5rem 1rem;
-                border-radius: 3px;
-
-                &:hover {
-
-                    color: #10b1b1 !important;
-                    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.51),
-                        0 15px 15px 0 rgba(0, 0, 0, 0.48);
-                }
-            }
-        }
-    }
-
-    &__container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    &__main {
-        height: 90%;
-        background: #1d1d1d;
+        top: -2rem;
+      }
+      @include respond(w700) {
         position: relative;
-
-        &__heading {
-            font-size: 3rem;
-            color: #fff;
-            font-family: 'Poppins', sans-serif;
-            transform: rotate(-90deg);
-            position: absolute;
-            left: 0;
-            top: 10rem;
-            display: inline;
-            padding: 1rem;
-
-            &::before {
-                content: '';
-                position: absolute;
-                width: 1px;
-                height: 30rem;
-                background: #fff;
-                left: -1rem;
-                top: -25rem;
-            }
-
-        }
-
-        &__content {
-            position: absolute;
-            right: 2rem;
-            top: -5rem;
-            background: #fff;
-            padding: 3rem 2rem;
-            width: 50rem;
-            height: 35rem;
-            border-radius: 3px;
-            box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
-                0 15px 15px 0 rgba(0, 0, 0, 0.08);
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            font-family: sans-serif;
-
-        }
-
-        &__text {
-            margin-left: 2rem;
-
-            h1 {
-                position: relative;
-                font-size: 2rem;
-
-                &::before {
-                    content: '';
-                    background: #000;
-                    position: absolute;
-                    width: .2rem;
-                    height: 100%;
-                    left: -1rem;
-                }
-            }
-
-            p {
-                font-size: 1.5rem;
-                font-family: 'Poppins', sans-serif;
-            }
-        }
+        width: 100%;
+        margin: 2rem;
+        border-radius: 0;
+      }
     }
 
-    &__copy {
-        flex: 1;
-        display: flex;
-        padding: 0 1rem;
-        align-items: center;
-        justify-content: space-between;
-        background: #f4f3ee;
-        overflow: hidden;
-
-        &__section {
-            & > a {
-                font-family: 'Poppins', sans-serif;
-                font-size: 1.5rem;
-                font-weight: 500;
-            }
+    &__text {
+      margin-left: 2rem;
+      @include respond(w900) {
+        margin-left: 1.5rem;
+      }
+      h1 {
+        position: relative;
+        font-size: 2rem;
+        @include respond(w1100) {
+          font-size: 1.5rem;
         }
 
-        &__icons {
-            width: 20rem;
-            display: flex;
-
-            a img {
-                width: 2rem;
-                margin: 0 1.5rem;
-                transition: all .3s;
-                border-radius: 50%;
-                &:hover {
-                     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-                }
-            }
+        &::before {
+          content: "";
+          background: #000;
+          position: absolute;
+          width: 0.2rem;
+          height: 100%;
+          left: -1rem;
         }
+      }
 
+      p {
+        font-size: 1.5rem;
+        font-family: "Poppins", sans-serif;
+        @include respond(w1100) {
+          font-size: 1.2rem;
+        }
+      }
     }
+  }
+
+  &__copy {
+    flex: 1;
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background: #f4f3ee;
+    overflow: hidden;
+
+    &__section {
+      & > a {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        @include respond(w600) {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    &__icons {
+      width: 20rem;
+      display: flex;
+
+      a img {
+        width: 2rem;
+        margin: 0 1.5rem;
+        transition: all 0.3s;
+        border-radius: 50%;
+        &:hover {
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+        @include respond(w600) {
+          width: 1.2rem;
+          margin: 0 0.5rem;
+        }
+      }
+      @include respond(w600) {
+        width: 8rem;
+        padding-right: 1rem;
+      }
+    }
+  }
 }

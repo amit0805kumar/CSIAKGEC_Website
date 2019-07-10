@@ -76,7 +76,7 @@
 
 .events__header {
   width: 100%;
-
+  position: relative;
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -85,6 +85,11 @@
   .cine_intro {
     width: 40%;
     height: 100%;
+    @include respond(w600) {
+      height: auto;
+      width: 100%;
+      z-index: 50;
+    }
     h1 {
       margin-top: 18rem;
       margin-left: 4.5rem;
@@ -93,6 +98,11 @@
       font-weight: 500;
       font-family: "Poppins", sans-serif;
       position: relative;
+      @include respond(w900) {
+        font-size: 3.5rem;
+        margin-top: 15rem;
+        margin-left: 3.5rem;
+      }
       &::before {
         content: "";
         position: absolute;
@@ -101,6 +111,9 @@
         height: 100%;
         width: 2px;
         background: $color-primary-light;
+        @include respond(w900) {
+          left: -3rem;
+        }
       }
     }
     p {
@@ -108,62 +121,15 @@
       font-size: 1.7rem;
       font-family: "Muli", sans-serif;
       color: rgb(56, 56, 56);
+      @include respond(w900) {
+        font-size: 1.4rem;
+        margin-left: 2rem;
+        padding-right: 2rem;
+      }
     }
     .btn {
-      width: 20rem;
-      cursor: pointer;
-      font-family: "Poppins", sans-serif;
-      font-size: 2rem;
       margin-top: 2rem;
       margin-left: 2.5rem;
-      padding: 1rem 2rem;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-      border-radius: 300px;
-      background: #fff;
-      display: flex;
-      justify-content: space-between;
-      overflow: hidden;
-      position: relative;
-      transition: all 0.3s cubic-bezier(0.78, 0.11, 0.04, 1.05);
-      .text {
-        z-index: 5;
-        transition: all 0.3s cubic-bezier(0.78, 0.11, 0.04, 1.05);
-      }
-      .arrow,
-      .cov {
-        width: 3rem;
-        height: 3rem;
-        border-radius: 300px;
-        background: $color-primary-light;
-        position: relative;
-        transition: all 0.3s cubic-bezier(0.78, 0.11, 0.04, 1.05);
-        z-index: 1;
-        i {
-          color: #fff;
-          position: absolute;
-          top: 50%;
-          left: 25%;
-          transform: translateX(-50%) translateY(-50%);
-          width: 1rem;
-        }
-      }
-      .cov {
-        right: 2rem;
-        transform: scale(0);
-        position: absolute;
-      }
-      &:hover {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-      }
-      &:hover .cov {
-        transform: scale(20) translateX(-20%);
-      }
-
-      &:hover .text {
-        color: #fff;
-        margin-left: 50%;
-        transform: translateX(-50%);
-      }
     }
   }
 
@@ -171,6 +137,13 @@
     width: 60%;
     height: 100%;
     position: relative;
+    @include respond(w600) {
+      width: 50%;
+      position: absolute;
+      top: -15rem;
+      right: 0;
+      opacity: 0.6;
+    }
     .header__image__container {
       width: 95%;
       height: 95%;
@@ -179,12 +152,21 @@
       overflow: hidden;
       border-bottom-left-radius: 100%;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-
+      @include respond(w600) {
+        border-radius: 300rem;
+        right: 2rem;
+        box-shadow: none;
+        background: transparent;
+      }
       img {
         height: 100%;
         width: 100%;
         background-color: white;
         padding-left: 90px;
+        @include respond(w600) {
+          padding: 0;
+          background: transparent;
+        }
       }
     }
   }
@@ -192,6 +174,13 @@
 
 .event__details {
   width: 100%;
+
+  @include respond(w1200) {
+    margin-top: 5rem;
+  }
+  @include respond(w600) {
+    margin-top: 0rem;
+  }
   .progress__bar {
     margin-left: 50%;
     margin-top: 3rem;
@@ -199,7 +188,10 @@
     width: 70%;
     height: 20rem;
     position: relative;
-    // background: yellow;
+    @include respond(w600) {
+      margin-top: 1.5rem;
+      height: 15rem;
+    }
     .line {
       left: 50%;
       top: 50%;
@@ -229,6 +221,7 @@
         border-radius: 300px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         position: relative;
+
         i {
           position: absolute;
           left: 0.2rem;
@@ -243,14 +236,38 @@
         left: -50%;
         border-left: 2px solid $color-primary-light;
         padding-left: 1.5rem;
+        @include respond(w600) {
+          padding-left: 1rem;
+        }
+        @include respond(w300) {
+          padding-left: 0.5rem;
+        }
         h3 {
           font-family: "Muli", sans-serif;
           font-size: 2rem;
+          @include respond(w900) {
+            font-size: 1.5rem;
+          }
+          @include respond(w900) {
+            font-size: 1.2rem;
+          }
+          @include respond(w300) {
+            font-size: 1rem;
+          }
         }
         p {
           font-size: 1.2rem;
           white-space: nowrap;
           font-family: "Poppins", sans-serif;
+          @include respond(w900) {
+            font-size: 1rem;
+          }
+          @include respond(w600) {
+            font-size: 0.7rem;
+          }
+          @include respond(w300) {
+            font-size: 0.5rem;
+          }
         }
       }
     }
@@ -259,7 +276,20 @@
 
 .section__gallery {
   margin: 20rem 0;
+  @include respond(w600) {
+    margin: 10rem 0;
+  }
   .gallery_container {
+    @include respond(w900) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    @include respond(w600) {
+      margin-top: 5rem;
+    }
+
     div:hover {
       cursor: pointer;
     }
@@ -268,6 +298,18 @@
       width: 18rem;
       display: flex;
       flex-direction: column;
+      @include respond(w900) {
+        height: 12rem;
+        width: 12rem;
+      }
+      @include respond(w600) {
+        height: 8rem;
+        width: 8rem;
+      }
+      @include respond(w400) {
+        height: 7rem;
+        width: 7rem;
+      }
     }
     .first_line {
       display: flex;
@@ -283,28 +325,76 @@
         padding-top: 2rem;
         color: #ffffff;
         padding-left: 2rem;
+        @include respond(w900) {
+          font-size: 1.5rem;
+          padding-left: 1.5rem;
+          margin-top: 2rem;
+          width: 25rem;
+        }
+        @include respond(w600) {
+          font-size: 1.1rem;
+          padding-left: 0.8rem;
+          margin-top: 2rem;
+          width: 18rem;
+          height: 5rem;
+          display: flex;
+          padding-top: 0;
+          align-items: center;
+        }
+        @include respond(w400) {
+          position: absolute;
+          width: 12rem;
+          font-size: 0.8rem;
+          height: 3rem;
+          transform: translateY(-100%);
+          top: 8.4rem;
+          left: 40%;
+        }
+      }
+      @include respond(w1100) {
+        padding-left: 0;
       }
       .image3 {
         margin-top: 6.7rem;
+        @include respond(w900) {
+          margin-top: 0;
+        }
       }
     }
     .second_line {
       display: flex;
       flex-direction: row;
-
-      margin-top: -67px;
-
+      margin-top: -7rem;
       margin-left: 19.95%;
+
+      @include respond(w1100) {
+        margin-left: 11.5%;
+      }
+
+      @include respond(w900) {
+        margin-top: 0;
+      }
+      @include respond(w400) {
+        margin-left: 0;
+      }
       .image4 {
         margin-top: 7rem;
+        @include respond(w900) {
+          margin-top: 0;
+        }
       }
     }
     .third_line {
       display: flex;
       flex-direction: row;
-
       margin-top: -7rem;
       margin-left: 33.3%;
+      @include respond(w1100) {
+        margin-left: 28.3%;
+      }
+      @include respond(w900) {
+        margin-top: 0;
+      }
     }
   }
 }
@@ -317,6 +407,13 @@
 .slider {
   width: 70%;
   margin: 100px auto;
+
+  @include respond(w600) {
+    width: 88%;
+  }
+  @include respond(w400) {
+    width: 82%;
+  }
 }
 
 .slick-slide {
@@ -334,6 +431,22 @@
     color: #fff;
     padding: 1rem 0;
     background-image: linear-gradient(to right, $color-primary-light, $color-primary);
+    @include respond(w900) {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+      padding: 0.5rem 0;
+    }
+    @include respond(w600) {
+      font-size: 1rem;
+      margin: 0.2rem 0;
+      padding: 0.3rem 0;
+    }
+
+    @include respond(w600) {
+      font-size: 0.6rem;
+      margin: 0.2rem 0;
+      padding: 0.3rem 0;
+    }
   }
 }
 
@@ -366,6 +479,9 @@
   transform: translateX(-50%);
   margin-top: 5rem;
 
+  @include respond(w400) {
+    width: 80%;
+  }
   .show__btn {
     font-size: 1.5rem;
     cursor: pointer;
@@ -393,12 +509,19 @@
     margin-bottom: 3.5rem;
     overflow: hidden;
     font-family: "Poppins", sans-serif;
+    @include respond(w400) {
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
     &__text {
       margin-bottom: 2rem;
       z-index: 10;
       position: relative;
       font-size: 1.5rem;
       // border-bottom: 1px solid $color-primary-light;
+      @include respond(w400) {
+        font-size: 1rem;
+      }
     }
     &__user {
       display: flex;

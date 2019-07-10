@@ -1,31 +1,63 @@
-
 //Media query Manager
 
 @mixin respond($breakpoint) {
-    
-    @if $breakpoint==phone {
-        @media only screen and (max-width: 37.5em) {  //600px
-            @content
-        }
+  @if $breakpoint==w300 {
+    @media only screen and (max-width: 18.75em) {
+      //300px
+      @content;
     }
+  }
+  @if $breakpoint==w400 {
+    @media only screen and (max-width: 25em) {
+      //300px
+      @content;
+    }
+  }
 
-    @if $breakpoint==tab-port {
-        @media only screen and (max-width: 56.25em) {  //900
-            @content
-        }
+  @if $breakpoint==w600 {
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      @content;
     }
+  }
 
-    
-    @if $breakpoint==tab-land {
-        @media only screen and (max-width: 75em) {    //1200
-            @content
-        }
+  @if $breakpoint==w700 {
+    @media only screen and (max-width: 43.75em) {
+      //700px
+      @content;
     }
-    
-    @if $breakpoint==big-desk {
-        @media only screen and (min-width: 112.5em) {      //1800px
-            @content
-        }
+  }
+  @if $breakpoint==w800 {
+    @media only screen and (max-width: 50em) {
+      //700px
+      @content;
     }
+  }
 
+  @if $breakpoint==w900 {
+    @media only screen and (max-width: 56.25em) {
+      //900
+      @content;
+    }
+  }
+
+  @if $breakpoint==w1100 {
+    @media only screen and (max-width: 68.75em) {
+      //1100
+      @content;
+    }
+  }
+  @if $breakpoint==w1200 {
+    @media only screen and (max-width: 75em) {
+      //1200
+      @content;
+    }
+  }
+
+  @if $breakpoint==w1800 {
+    @media only screen and (min-width: 112.5em) {
+      //1800px
+      @content;
+    }
+  }
 }

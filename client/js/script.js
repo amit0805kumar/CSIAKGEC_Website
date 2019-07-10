@@ -182,12 +182,12 @@ $(function () {
             delay: 420,
             duration: 1000
         });
-        ScrollReveal().reveal('.features__box', {
-            delay: 420,
-            duration: 1000,
-            distance: '100px',
-            origin: 'bottom'
-        });
+        // ScrollReveal().reveal('.features__box', {
+        //     delay: 420,
+        //     duration: 1000,
+        //     distance: '100px',
+        //     origin: 'bottom'
+        // });
 
         //section joinUs
 

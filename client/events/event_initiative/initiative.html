@@ -35,9 +35,12 @@
     <nav class="nav">
         <div class="nav__container">
             <div class="nav__logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="../../images/logocsiCenter.png" alt="">
                 </a>
+                <div class="navBtn">
+                    <span>&nbsp;</span>
+                </div>
             </div>
             <div class="nav__links">
                 <ul class="topLinks">
@@ -70,9 +73,9 @@
                     <li><a href="#">About Us</a></li>
                     <li>Our Team
                         <ul class="sublinks">
-                            <li>2nd Year</li>
-                            <li>3rd Year</li>
-                            <li>4th Year</li>
+                            <li><a href="team/2ndYear.html">2nd Year</a></li>
+                            <li><a href="team/3rdYear.html">3rd Year</a></li>
+                            <li><a href="team/4thYear.html">4th Year</a></li>
                         </ul>
                     </li>
                     <li><a href="#">The Initiative</a></li>
@@ -82,7 +85,6 @@
             </div>
         </div>
     </nav>
-
     <section class="events__header">
 
         <div class="cine_intro">
@@ -94,7 +96,7 @@
                 organizing this event is to brainstorm the minds of young students about the burning issues in the
                 country.
             </p>
-            <div class="btn">
+            <div class="mainBtn btn">
                 <div class="text">Register</div>
                 <div class="arrow">
                     <i class="material-icons md-light">
@@ -166,21 +168,29 @@
                 <div class="gallery_name1">
                     <h1>THE INITIATIVE</h1>
                 </div>
+
                 <div class="image1"><img src="./gallery/galleryPic.jpg" class="imag"></div>
                 <div class="image2"><img src="./gallery/galleryPic.jpg" class="imag"></div>
                 <div class="image3"><img src="./gallery/galleryPic.jpg" class="imag"></div>
+
             </div>
             <div class="second_line">
+
                 <div class="image4"><img src="./gallery/galleryPic.jpg"></div>
                 <div class="image5"><img src="./gallery/galleryPic.jpg"></div>
                 <div class="image6"><img src="./gallery/galleryPic.jpg"></div>
                 <div class="image7"><img src="./gallery/galleryPic.jpg"></div>
 
+
             </div>
+
             <div class="third_line">
+
                 <div class="image8"><img src="./gallery/galleryPic.jpg"></div>
                 <div class="image9"><img src="./gallery/galleryPic.jpg"></div>
+
             </div>
+
         </div>
     </section>
 
@@ -298,11 +308,18 @@
     </footer>
     <script>
         $(document).on('ready', function () {
+            let sliderCount = 3;
+            if ($(window).width() < 600) {
+                sliderCount = 2;
+            }
+            if ($(window).width() < 400) {
+                sliderCount = 1;
+            }
             $(".regular").slick({
                 dots: true,
                 infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3
+                slidesToShow: sliderCount,
+                slidesToScroll: sliderCount
             });
             //Parallax classes
             var rellax1 = new Rellax('.rellax1', {
@@ -341,6 +358,12 @@
             ScrollReveal().reveal(nodeArray, {
                 delay: 100,
                 duration: 1000
+            });
+
+            $('.navBtn').click(function () {
+                $('.navBtn').toggleClass('nav_button-animation');
+                $('.nav__container').toggleClass('expandNav');
+                $('.topLinks').toggleClass('linkShow');
             });
         });
 

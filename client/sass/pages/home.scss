@@ -1,13 +1,32 @@
 .section {
-  &__who,
+  &__who {
+    @include respond(w1100) {
+      margin-top: 25rem;
+    }
+    @include respond(w400) {
+      margin-top: 15rem;
+    }
+  }
   &__service,
   &__features,
   &__join,
   &__alumni,
   &__gallery {
-    margin-top: 20rem;
-    margin-bottom: 10rem;
+    margin-top: 12rem;
+    margin-bottom: 5rem;
     position: relative;
+    @include respond(w1100) {
+      margin-top: 17rem;
+    }
+    @include respond(w900) {
+      margin-top: 12rem;
+    }
+    @include respond(w600) {
+      margin-top: 10rem;
+    }
+    @include respond(w400) {
+      margin-top: 5rem;
+    }
 
     &__heading {
       font-size: 3rem;
@@ -19,15 +38,26 @@
       display: inline-block;
       border-radius: 4px;
       margin-left: -0.5rem;
+      @include respond(w1100) {
+        font-size: 2.5rem;
+        padding: 0.8rem 1.7rem;
+      }
+      @include respond(w1600) {
+        font-size: 2rem;
+        padding: 0.5rem 1.2rem;
+      }
     }
   }
   &__alumni {
     margin-bottom: 10rem;
+    @include respond(w300) {
+      width: 116%;
+    }
   }
 }
 
 .section__join {
-  margin-top: 55rem;
+  // margin-top: 55rem;
 }
 
 .body-bg {
@@ -47,6 +77,10 @@
     top: 5rem;
     left: -5rem;
     opacity: 0.5;
+    @include respond(w900) {
+      width: 8rem;
+      left: -3rem;
+    }
   }
 
   .b2 {
@@ -107,6 +141,9 @@
     opacity: 0.5;
     top: 52%;
     left: 5rem;
+    @include respond(w600) {
+      left: 2rem;
+    }
   }
 
   .b11 {
@@ -114,6 +151,10 @@
     opacity: 0.5;
     top: 78%;
     right: -3rem;
+    @include respond(w600) {
+      width: 20rem;
+      top: 83%;
+    }
   }
 
   .b12 {
@@ -125,5 +166,83 @@
       url(../images/logoPattern.jpg);
     background-size: contain;
     background-attachment: fixed;
+    @include respond(w600) {
+      top: 77%;
+    }
+  }
+}
+
+.mainBtn {
+  width: 20rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 300px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.78, 0.11, 0.04, 1.05);
+  @include respond(w900) {
+    width: 18rem;
+    font-size: 1.8rem;
+    padding: 0.8rem 1.8rem;
+  }
+  @include respond(w600) {
+    width: 15rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.2rem;
+  }
+  .text {
+    z-index: 5;
+    transition: all 0.3s cubic-bezier(0.78, 0.11, 0.04, 1.05);
+  }
+  .arrow,
+  .cov {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 300px;
+    background: $color-primary-light;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.78, 0.11, 0.04, 1.05);
+    z-index: 1;
+    @include respond(w900) {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+    i {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 1rem;
+      @include respond(w900) {
+        width: 0.9rem;
+      }
+      @include respond(w600) {
+        opacity: 0;
+      }
+    }
+  }
+  .cov {
+    right: 2rem;
+    transform: scale(0);
+    position: absolute;
+  }
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  &:hover .cov {
+    transform: scale(20) translateX(-20%);
+  }
+
+  &:hover .text {
+    color: #fff;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 }

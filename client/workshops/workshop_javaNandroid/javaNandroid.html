@@ -37,9 +37,12 @@
     <nav class="nav">
         <div class="nav__container">
             <div class="nav__logo">
-                <a href="#">
-                    <img src="../../images/logocsiCenter.png" alt="">
+                <a href="index.html">
+                    <img src="images/logocsiCenter.png" alt="">
                 </a>
+                <div class="navBtn">
+                    <span>&nbsp;</span>
+                </div>
             </div>
             <div class="nav__links">
                 <ul class="topLinks">
@@ -72,9 +75,9 @@
                     <li><a href="#">About Us</a></li>
                     <li>Our Team
                         <ul class="sublinks">
-                            <li>2nd Year</li>
-                            <li>3rd Year</li>
-                            <li>4th Year</li>
+                            <li><a href="team/2ndYear.html">2nd Year</a></li>
+                            <li><a href="team/3rdYear.html">3rd Year</a></li>
+                            <li><a href="team/4thYear.html">4th Year</a></li>
                         </ul>
                     </li>
                     <li><a href="#">The Initiative</a></li>
@@ -94,7 +97,7 @@
                 were held in odd sem 2016-17 to disseminate the knowledge of Android and Java amongst the students, in
                 IT labs from 1st September, 2016 to 23rd September, 2016 .
             </p>
-            <div class="btn">
+            <div class="btn mainBtn">
                 <div class="text">Register</div>
                 <div class="arrow">
                     <i class="material-icons md-light">
@@ -422,13 +425,19 @@
     </footer>
     <script>
         $(document).on('ready', function () {
+            let sliderCount = 3;
+            if ($(window).width() < 600) {
+                sliderCount = 2;
+            }
+            if ($(window).width() < 400) {
+                sliderCount = 1;
+            }
             $(".regular").slick({
                 dots: true,
                 infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3
+                slidesToShow: sliderCount,
+                slidesToScroll: sliderCount
             });
-
             //Parallax classes
             var rellax1 = new Rellax('.rellax1', {
                 speed: -3,
@@ -488,6 +497,13 @@
                 distance: '50px',
                 origin: 'bottom'
             });
+
+            $('.navBtn').click(function () {
+                $('.navBtn').toggleClass('nav_button-animation');
+                $('.nav__container').toggleClass('expandNav');
+                $('.topLinks').toggleClass('linkShow');
+            });
+
 
         });
 

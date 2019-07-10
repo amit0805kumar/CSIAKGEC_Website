@@ -1,76 +1,132 @@
 .features {
+  position: relative;
+
+  &__container {
+    background: #ebe6e6;
+    width: 85%;
+    margin-top: 30rem;
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    margin-bottom: 10rem;
+    margin-left: 100%;
+    transform: translateX(-100%);
+    align-items: flex-end;
+    border-radius: 3px;
+    @include respond(w1200) {
+      width: 90%;
+      margin-top: 18rem;
+    }
+
+    @include respond(w900) {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      background: transparent;
+      width: 100%;
+      margin-top: 5rem;
+    }
+    @include respond(w400) {
+      margin-top: 3rem;
+    }
+  }
+
+  &__box {
+    width: 35rem;
+    height: 38rem;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    overflow: hidden;
     position: relative;
-
-    &__container {
-        background: #ebe6e6;
-        width: 85%;
-        position: absolute;
-        right: 0;
-        top: 30rem;
-        height: 20rem;
-        display: flex;
-        justify-content: space-around;
-        padding: 1rem;
-        margin-bottom: 10rem;
-        align-items: flex-end;
-        border-radius: 3px;
+    @include respond(w1200) {
+      width: 30rem;
+      height: 35rem;
+    }
+    @include respond(w1100) {
+      width: 27rem;
+      height: 30rem;
+    }
+    @include respond(w900) {
+      width: 80%;
+      height: 20rem;
+      margin-top: 2rem;
+    }
+    @include respond(w600) {
+      height: 25rem;
+    }
+    @include respond(w400) {
+      height: 30rem;
     }
 
-    &__box {
-        width: 35rem;
-        height: 38rem;
-        background: #fff;
-        border-radius: 3px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12),
-            0 2px 4px 0 rgba(0, 0, 0, 0.08);
-        transition: all .3s;
-        cursor: pointer;    
-        padding: .5rem 2rem;
-        overflow: hidden;
-        position: relative;
-        &:hover {
-            transform: translateY(-1rem);
-            box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
-                0 5px 15px 0 rgba(0, 0, 0, 0.08);
-        }
-        .bg{
-            position: absolute;
-            width: 10rem;
-            top: 20%;
-            left: 85%;
-            transform: translate(-50%,-50%);
-            opacity: .2;
-        }
-
-        h1 {
-            font-size: 3rem;
-            font-family: 'Muli', sans-serif;
-            margin: 2rem 0;
-            margin-top: 4rem;
-        }
-
-        p {
-            font-size: 1.4rem;
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        &::after{
-            content: '';
-            position: absolute;
-            width: 10%;
-            height: 1rem;
-            background: linear-gradient(to right, blue,#080871);
-            left: 50%;
-            bottom: 0;
-            opacity: 0;
-            transition: all .2s;
-            transform: translateX(-50%);
-        }
-        &:hover::after{
-//            transform: translateX(-100%);
-            width: 100%;
-            opacity: 1;
-        }
-    
+    &:hover {
+      transform: translateY(-1rem);
+      box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
     }
+    .bg {
+      position: absolute;
+      width: 10rem;
+      top: 20%;
+      left: 85%;
+      transform: translate(-50%, -50%);
+      opacity: 0.2;
+
+      @include respond(w1100) {
+        width: 7rem;
+      }
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-family: "Muli", sans-serif;
+      margin: 2rem 0;
+      margin-top: 4rem;
+      @include respond(w1200) {
+        font-size: 2.5rem;
+        margin: 1.5rem 0;
+        margin-top: 3rem;
+      }
+      @include respond(w400) {
+        margin: 1rem 0;
+      }
+
+      @include respond(w1100) {
+        margin-top: 1rem;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+      font-family: "Poppins", sans-serif;
+
+      @include respond(w1200) {
+        font-size: 1.2rem;
+      }
+      @include respond(w400) {
+        font-size: 1rem;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10%;
+      height: 1rem;
+      background: linear-gradient(to right, blue, #080871);
+      left: 50%;
+      bottom: 0;
+      opacity: 0;
+      transition: all 0.2s;
+      transform: translateX(-50%);
+    }
+    &:hover::after {
+      //            transform: translateX(-100%);
+      width: 100%;
+      opacity: 1;
+    }
+  }
 }
