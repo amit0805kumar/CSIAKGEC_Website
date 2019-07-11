@@ -1,16 +1,27 @@
 .about {
   &__container {
-    margin-top: 10rem;
     width: 100%;
     height: 100vh;
     display: flex;
     margin: 5rem 0;
+    @include respond(w1200) {
+      margin-top: 15rem;
+    }
+    @include respond(w700) {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
   }
 
   &__left {
     width: 30%;
     position: relative;
-    overflow: hidden;
+    @include respond(w700) {
+      width: 100%;
+      height: 10rem;
+      margin-bottom: 3rem;
+    }
     .semiC {
       width: 40rem;
       height: 40rem;
@@ -19,6 +30,9 @@
       position: absolute;
       transform: translateX(-60%) translateY(-50%);
       top: 50%;
+      @include respond(w700) {
+        display: none;
+      }
     }
     .circle {
       width: 25rem;
@@ -33,13 +47,27 @@
       transform: translateY(-50%);
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
       padding: 1rem;
+      @include respond(w1100) {
+        left: 5rem;
+        width: 20rem;
+        height: 20rem;
+      }
+      @include respond(w700) {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 15rem;
+        top: 0rem;
+        height: 15rem;
+      }
       img {
         width: 100%;
         height: 100%;
+        z-index: 1;
       }
     }
   }
   &__right {
+    z-index: 20;
     flex: 1;
     padding: 2rem;
     display: flex;
@@ -50,6 +78,13 @@
       color: $color-primary-light;
       font-size: 3rem;
       margin: 3rem 0;
+      @include respond(w700) {
+        text-align: center;
+      }
+      @include respond(w600) {
+        font-size: 2rem;
+        margin: 2rem 0;
+      }
     }
 
     p,
@@ -59,6 +94,11 @@
       margin: 2rem 0;
       font-weight: 700;
       color: rgb(44, 44, 44);
+      @include respond(w1100) {
+        margin: 1.5rem 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
       a {
         color: $color-primary-light;
       }

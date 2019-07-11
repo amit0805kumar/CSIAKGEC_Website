@@ -8,12 +8,25 @@
     padding: 0 3rem;
     align-items: center;
     height: 5rem;
+    @include respond(w600) {
+      margin-top: 12rem;
+    }
     h1 {
       font-size: 3rem;
+      @include respond(w600) {
+        font-size: 2rem;
+      }
+
+      @include respond(w400) {
+        font-size: 1.5rem;
+      }
     }
     .icons {
       display: flex;
       width: 10rem;
+      @include respond(w600) {
+        width: 8rem;
+      }
       a {
         transition: all 0.3s;
         img {
@@ -22,6 +35,15 @@
           margin: 0 1rem;
           transition: all 0.3s;
           border-radius: 300px;
+          @include respond(w600) {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+          @include respond(w600) {
+            width: 1.3rem;
+            height: 1.3rem;
+            margin: 0 0.5rem;
+          }
         }
         &:hover img {
           transform: scale(1.1);
@@ -34,7 +56,9 @@
   width: 100%;
   padding: 2rem 4rem;
   margin-top: 4rem;
-
+  @include respond(w600) {
+    padding: 2rem 2.5rem;
+  }
   .para,
   .qna {
     ul,
@@ -45,10 +69,18 @@
     font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
     margin: 4rem 0;
+    @include respond(w600) {
+      font-size: 1.2rem;
+      margin: 3rem 0;
+      overflow: hidden;
+    }
     .q {
       color: $color-primary-light;
       margin-bottom: 1.5rem;
       font-weight: 500;
+      @include respond(w600) {
+        margin-bottom: 1.2rem;
+      }
     }
   }
 }

@@ -22,13 +22,15 @@
 </head>
 
 <body>
-
     <nav class="nav">
         <div class="nav__container">
             <div class="nav__logo">
-                <a href="#">
-                    <img src="./images/logocsiCenter.png" alt="">
+                <a href="index.html">
+                    <img src="images/logocsiCenter.png" alt="">
                 </a>
+                <div class="navBtn">
+                    <span>&nbsp;</span>
+                </div>
             </div>
             <div class="nav__links">
                 <ul class="topLinks">
@@ -61,9 +63,9 @@
                     <li><a href="#">About Us</a></li>
                     <li>Our Team
                         <ul class="sublinks">
-                            <li>2nd Year</li>
-                            <li>3rd Year</li>
-                            <li>4th Year</li>
+                            <li><a href="team/2ndYear.html">2nd Year</a></li>
+                            <li><a href="team/3rdYear.html">3rd Year</a></li>
+                            <li><a href="team/4thYear.html">4th Year</a></li>
                         </ul>
                     </li>
                     <li><a href="#">The Initiative</a></li>
@@ -73,6 +75,7 @@
             </div>
         </div>
     </nav>
+
 
     <div class="about__container">
         <div class="about__left">
@@ -197,6 +200,12 @@
                 delay: 200,
                 duration: 1000
             });
+            $('.navBtn').click(function () {
+                $('.navBtn').toggleClass('nav_button-animation');
+                $('.nav__container').toggleClass('expandNav');
+                $('.topLinks').toggleClass('linkShow');
+            });
+
         })
     </script>
 </body>
