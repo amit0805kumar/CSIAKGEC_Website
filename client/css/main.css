@@ -147,7 +147,7 @@ ul, li {
   .body-bg .b11 {
     width: 28rem;
     opacity: 0.5;
-    top: 76%;
+    top: 74%;
     right: -3rem; }
     @media only screen and (max-width: 37.5em) {
       .body-bg .b11 {
@@ -685,6 +685,7 @@ footer {
         display: none; } }
   .nav__container {
     transition: all 0.2s ease-in-out;
+    overflow: hidden;
     width: 95%;
     background: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
@@ -706,7 +707,6 @@ footer {
         border-radius: 3px;
         flex-direction: column;
         align-items: flex-start;
-        overflow: hidden;
         position: relative; } }
   .nav__links {
     height: 100%; }
@@ -2591,4 +2591,4 @@ footer {
     .about__right .link a {
       color: #2121db; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

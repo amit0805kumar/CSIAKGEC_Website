@@ -70,7 +70,7 @@
 
   &__container {
     transition: all 0.2s ease-in-out;
-    overflow: hidden;
+   
     width: 95%;
     background: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
@@ -91,6 +91,7 @@
       border-radius: 3px;
       flex-direction: column;
       align-items: flex-start;
+         overflow: hidden;
       position: relative;
     }
   }
