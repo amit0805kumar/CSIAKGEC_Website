@@ -163,7 +163,7 @@
         width: 100%;
         background-color: white;
         padding-left: 90px;
-        @include respond(w600) {
+        @include respond(w600) { 
           padding: 0;
           background: transparent;
         }
