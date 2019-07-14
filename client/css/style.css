@@ -1807,7 +1807,9 @@ footer {
       width: 60%;
       z-index: 1; }
       .form__container .row .form__left .formImg {
-        height: 100%; }
+        height: 85rem; }
+      .form__container .row .form__left .formImg2 {
+        height: 50rem; }
       @media only screen and (max-width: 56.25em) {
         .form__container .row .form__left {
           width: 50%; } }
