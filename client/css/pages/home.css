@@ -5,11 +5,11 @@ Error: Undefined mixin 'respond'.
 
 1: .section {
 2:   &__who {
-3:     @include respond(w1100) {
-4:       margin-top: 25rem;
-5:     }
-6:     @include respond(w400) {
-7:       margin-top: 15rem;
+3:         @include respond(w1800) {
+4:       margin-top: 5rem;
+5:     } 
+6:       @include respond(w1300) {
+7:       margin-top: 7rem;
 8:     }
 
 Backtrace:
@@ -74,4 +74,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'respond'.\A         on line 3 of G:\github\CSIAKGEC_Website\client\sass\pages\home.scss, in `respond'\A         from line 3 of G:\github\CSIAKGEC_Website\client\sass\pages\home.scss\A \A 1: .section {\A 2:   &__who {\A 3:     @include respond(w1100) {\A 4:       margin-top: 25rem;\A 5:     }\A 6:     @include respond(w400) {\A 7:       margin-top: 15rem;\A 8:     }"; }
+  content: "Error: Undefined mixin 'respond'.\A         on line 3 of G:\github\CSIAKGEC_Website\client\sass\pages\home.scss, in `respond'\A         from line 3 of G:\github\CSIAKGEC_Website\client\sass\pages\home.scss\A \A 1: .section {\A 2:   &__who {\A 3:         @include respond(w1800) {\A 4:       margin-top: 5rem;\A 5:     } \A 6:       @include respond(w1300) {\A 7:       margin-top: 7rem;\A 8:     }"; }

@@ -1,10 +1,19 @@
 .section {
   &__who {
-    @include respond(w1100) {
-      margin-top: 25rem;
+        @include respond(w1800) {
+      margin-top: 5rem;
+    } 
+      @include respond(w1300) {
+      margin-top: 7rem;
+    }
+    @include respond(w1200) {
+      margin-top: 5rem;
+    }
+    @include respond(w900) {
+      margin-top: -3rem;
     }
     @include respond(w400) {
-      margin-top: 15rem;
+      margin-top: -7rem;
     }
   }
   &__service,
@@ -199,6 +208,9 @@
   .text {
     z-index: 5;
     transition: all 0.3s cubic-bezier(0.78, 0.11, 0.04, 1.05);
+       @include respond(w600) {
+       font-size: 1.8rem;  
+      }
   }
   .arrow,
   .cov {
@@ -209,10 +221,10 @@
     position: relative;
     transition: all 0.3s cubic-bezier(0.78, 0.11, 0.04, 1.05);
     z-index: 1;
-    @include respond(w900) {
-      width: 1.6rem;
-      height: 1.6rem;
-    }
+//    @include respond(w900) {
+//      width: 1.6rem;
+//      height: 1.6rem;
+//    }
     i {
       color: #fff;
       position: absolute;
@@ -223,9 +235,9 @@
       @include respond(w900) {
         width: 0.9rem;
       }
-      @include respond(w600) {
-        opacity: 0;
-      }
+//      @include respond(w600) {
+//        opacity: 5;
+//      }
     }
   }
   .cov {

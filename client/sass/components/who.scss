@@ -13,6 +13,7 @@
     @include respond(w400) {
       min-height: 45rem;
     }
+      
   }
 
   &__text {
@@ -130,6 +131,10 @@
       transition: all 0.3s;
       cursor: pointer;
       opacity: 0;
+//        @include respond(w1200) {
+//        width: 82%;
+//       
+//      }
 
       &:hover {
         opacity: 1;

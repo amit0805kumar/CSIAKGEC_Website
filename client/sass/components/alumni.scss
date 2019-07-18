@@ -58,3 +58,31 @@
     }
   }
 }
+.alumni__hidden {
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   @include respond(w400) {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+.show__btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    color: $color-primary-light;
+    font-family: "Poppins", sans-serif;
+    margin-top: 2rem;
+     margin-left: 50%;
+    transform: translateX(-50%);
+    p {
+      transition: all 0.2s;
+      display: inline-block;
+      text-decoration: underline;
+      &:hover {
+        color: #000; 
+      }
+    }
+  }
+

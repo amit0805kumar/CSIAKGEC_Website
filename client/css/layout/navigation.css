@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'respond'.
-        on line 51 of G:\github\CSIAKGEC_Website\client\sass\layout\navigation.scss, in `respond'
-        from line 51 of G:\github\CSIAKGEC_Website\client\sass\layout\navigation.scss
+        on line 52 of G:\github\CSIAKGEC_Website\client\sass\layout\navigation.scss, in `respond'
+        from line 52 of G:\github\CSIAKGEC_Website\client\sass\layout\navigation.scss
 
-46:           left: 0;
 47:           transition: all 0.2s ease-in-out;
 48:         }
-49:       }
-50: 
-51:       @include respond(w800) {
-52:         display: block;
-53:       }
-54:     }
-55:     img {
-56:       width: 4rem;
+49:          
+50:       }
+51: 
+52:       @include respond(w800) {
+53:         display: block;
+54:       }
+55:     }
+56:     img {
+57:       width: 4rem;
 
 Backtrace:
-G:\github\CSIAKGEC_Website\client\sass\layout\navigation.scss:51:in `respond'
-G:\github\CSIAKGEC_Website\client\sass\layout\navigation.scss:51
+G:\github\CSIAKGEC_Website\client\sass\layout\navigation.scss:52:in `respond'
+G:\github\CSIAKGEC_Website\client\sass\layout\navigation.scss:52
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -88,4 +88,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'respond'.\A         on line 51 of G:\github\CSIAKGEC_Website\client\sass\layout\navigation.scss, in `respond'\A         from line 51 of G:\github\CSIAKGEC_Website\client\sass\layout\navigation.scss\A \A 46:           left: 0;\A 47:           transition: all 0.2s ease-in-out;\A 48:         }\A 49:       }\A 50: \A 51:       @include respond(w800) {\A 52:         display: block;\A 53:       }\A 54:     }\A 55:     img {\A 56:       width: 4rem;"; }
+  content: "Error: Undefined mixin 'respond'.\A         on line 52 of G:\github\CSIAKGEC_Website\client\sass\layout\navigation.scss, in `respond'\A         from line 52 of G:\github\CSIAKGEC_Website\client\sass\layout\navigation.scss\A \A 47:           transition: all 0.2s ease-in-out;\A 48:         }\A 49:          \A 50:       }\A 51: \A 52:       @include respond(w800) {\A 53:         display: block;\A 54:       }\A 55:     }\A 56:     img {\A 57:       width: 4rem;"; }

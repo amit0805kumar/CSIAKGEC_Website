@@ -53,6 +53,12 @@
       @content;
     }
   }
+    @if $breakpoint==w1300 {
+    @media only screen and (max-width: 81.25em) {
+      //1300
+      @content;
+    }
+  }
 
   @if $breakpoint==w1800 {
     @media only screen and (min-width: 112.5em) {

@@ -89,7 +89,7 @@
                     <span>&nbsp;</span>
                 </div>
             </div>
-            <div class="nav__links">
+            <div class="nav__links"> 
                 <ul class="topLinks">
                     <li><a href="#top">Home</a></li>
                     <li>What We Do
@@ -120,9 +120,9 @@
                     <li><a href="aboutUs.html">About Us</a></li>
                     <li>Our Team
                         <ul class="sublinks">
-                            <li><a href="team/team_2ndYear/2ndYear.html">2nd Year</a></li>
-                            <li><a href="team/team_3rdYear/3rdYear.html">3rd Year</a></li>
-                            <li><a href="team/team_4thYear/4thYear.html">4th Year</a></li>
+                            <li><a href="team/team_2ndYear/2ndYear.html"><div>2nd Year</div></a></li>
+                            <li><a href="team/team_3rdYear/3rdYear.html"><div>3rd Year</div></a></li>
+                            <li><a href="team/team_4thYear/4thYear.html"><div>4th Year</div></a></li>
                         </ul>
                     </li>
                     <li><a href="events/event_initiative/initiative.html">The Initiative</a></li>
@@ -154,7 +154,7 @@
                     <img src="images/svg/icons/004-arrow-pointing-to-right.svg" alt="">
                 </a>
             </div>
-            <div class="who__images">
+            <div class="who__images" id="services">
                 <div class="who__images__cover">
                     <div class="who__images__icons">
                         <a href="https://www.facebook.com/csi.akg/" class="who__images__icon"><img
@@ -169,8 +169,8 @@
             </div>
         </div>
     </section>
-
-    <section class="section__service" id="services">
+"
+    <section class="section__service">
         <div class="section__service__heading">
             <div class="section__heading">
                 Service Domains
@@ -263,7 +263,7 @@
                 </p>
 
             </div>
-            <div class="features__box">
+            <div class="features__box"> 
                 <div class="bg">
                     <img src="images/svg/share.svg" alt="">
                 </div>
@@ -275,7 +275,7 @@
                     the step towards learning and sharing knowledge, communication is the key.
                 </p>
             </div>
-            <div class="features__box">
+            <div class="features__box" id="join_us">
                 <img class="bg" src="images/svg/innovate.svg" alt="">
 
                 <h1>We Innovate</h1>
@@ -289,7 +289,7 @@
         </div>
     </section>
 
-    <section class="section__join" id="join_us">
+    <section class="section__join">
         <div class="section__join__heading">
             <div class="section__heading">
                 Join Us
@@ -498,6 +498,11 @@
                 <img src="images/alumni/36.jpg" alt="">
                 <div class="name">AISHWARYA SRIVASTAVA</div>
             </div>
+            
+            
+            <div class="alumni__hidden">
+            
+                
             <div class="alumni__box">
                 <img src="images/alumni/35.jpg" alt="">
                 <div class="name">SHREYASHI YADAV</div>
@@ -506,7 +511,7 @@
                 <img src="images/alumni/34.jpg" alt="">
                 <div class="name">SHUBHAM UPADHYAY</div>
             </div>
-            <div class="alumni__box">
+           <div class="alumni__box">
                 <img src="images/alumni/33.jpeg" alt="">
                 <div class="name">SHUBHAM VERMA</div>
             </div>
@@ -638,8 +643,16 @@
                 <div class="name">AKASH SRIVASTAVA</div>
             </div>
             
-
+            </div>
+               
+               
+               
         </div>
+        
+              <div class="show__btn">
+                <p>Show all</p>
+            </div>
+           
 
     </section>
 
@@ -725,6 +738,32 @@
 
 
         })
+        
+        
+        
+        
+    
+        $(document).on('ready', function () {
+         
+            
+
+            $('.alumni__hidden').slideUp();
+
+            $('.show__btn').click(function () {
+                $('.alumni__hidden').slideToggle('slow');
+                if ($('.show__btn > p').text().toString().trim() == 'Show all') {
+                    $('.show__btn > p').text('Show less');
+                } else {
+                    $('.show__btn > p').text('Show all');
+                }
+
+            });
+
+
+        });
+
+
+
     </script>
 </body>
 
