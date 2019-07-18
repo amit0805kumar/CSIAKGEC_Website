@@ -181,6 +181,13 @@
   @include respond(w600) {
     margin-top: -25rem;
   }
+      @include respond(w400) {
+    margin-top: -17rem;
+  }
+      @include respond(w300) {
+    margin-top: -10rem;
+  }
+    
   .progress__bar {
     margin-left: 50%;
     margin-top: 3rem;

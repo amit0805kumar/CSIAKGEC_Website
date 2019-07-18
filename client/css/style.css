@@ -2129,6 +2129,12 @@ footer {
   @media only screen and (max-width: 37.5em) {
     .event__details {
       margin-top: -25rem; } }
+  @media only screen and (max-width: 25em) {
+    .event__details {
+      margin-top: -17rem; } }
+  @media only screen and (max-width: 18.75em) {
+    .event__details {
+      margin-top: -10rem; } }
   .event__details .progress__bar {
     margin-left: 50%;
     margin-top: 3rem;
