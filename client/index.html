@@ -17,6 +17,7 @@
         integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
     <script src="js/rellax.min.js"></script>
     <script src="js/anime.min.js"></script>
+   <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>CSI | Home</title>
@@ -116,7 +117,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#services">Services</a></li>
+                  <li><a href="#services" data-scroll>Services</a></li>
                     <li><a href="aboutUs.html">About Us</a></li>
                     <li>Our Team
                         <ul class="sublinks">
@@ -126,8 +127,8 @@
                         </ul>
                     </li>
                     <li><a href="events/event_initiative/initiative.html">The Initiative</a></li>
-                    <li><a href="#join_us">Join Us</a></li>
-                    <li><a href="#contact_us">Contact Us</a></li>
+                    <li><a href="#join_us" data-scroll>Join Us</a></li>
+                    <li><a href="#contact_us" data-scroll>Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -760,10 +761,25 @@
             });
 
 
-        });
-
-
-
+        }); 
+        
+        
+        document.addEventListener('DOMContentLoaded',() => {
+             var scroller = new SweetScroll({
+            easing: 'easeOutQuint',
+           });
+     var hash = window.location.hash;
+     var needsInitialScroll = document.getElementById(hash.substr(1)) != null;
+     if (needsInitialScroll) {
+      window.location.hash = '';
+  }
+  window.addEventListener('load', function() {
+    if (needsInitialScroll) {
+      scroller.to(hash, { updateURL: 'replace' });
+    }
+  }, false);
+}, false);  
+        
     </script>
 </body>
 
