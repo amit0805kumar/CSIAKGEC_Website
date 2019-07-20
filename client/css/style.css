@@ -2627,4 +2627,28 @@ footer {
     .about__right .link a {
       color: #2121db; }
 
+.img__error {
+  height: 45rem;
+  width: 45rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .img__error {
+      height: 30rem;
+      width: 30rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .img__error {
+      height: 20rem;
+      width: 20rem; } }
+  @media only screen and (max-width: 25em) {
+    .img__error {
+      height: 10rem;
+      width: 10rem;
+      margin-top: 7rem; } }
+
+.btn__error {
+  margin-left: 50%;
+  transform: translateX(-50%); }
+
 /*# sourceMappingURL=style.css.map */

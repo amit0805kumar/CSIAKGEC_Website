@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>CSI | Login</title>
-    <!-- fonts -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./css/style.css">
+     <link rel="shortcut icon" type="images/png" href="images/csi logo inner.png">
     <link
         href="https://fonts.googleapis.com/css?family=Fredoka+One|Orbitron:400,500,700,900|Poiret+One|Poppins:200,300,400,500,600,700,800,900|Muli:200,300,400,700,800,900"
         rel="stylesheet">
-    <!-- icons -->
-     <link rel="shortcut icon" type="images/png" href="../../images/csi logo inner.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"
+        integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+
+    <script src="./js/rellax.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- myfiles -->
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>CSI | About Us</title>
+
 </head>
 
 <body>
-
-     <nav class="nav">
+  <nav class="nav">
         <div class="nav__container">
             <div class="nav__logo">
-                <a href="../../index.html">
-                    <img src="../../images/logocsiCenter.png" alt="">
+                <a href="index.html">
+                    <img src="images/logocsiCenter.png" alt="">
                 </a>
                 <div class="navBtn">
                     <span>&nbsp;</span>
@@ -37,10 +40,10 @@
                         <ul class="sublinks">
                             <li>Events
                                 <ul class="subLinksChild">
-                                    <li><a href="../events/event_cine/cine.html">CINE</a></li>
-                                    <li><a href="../events/event_initiative/initiative.html">The Initiative</a></li>
-                                    <li><a href="../events/event_rdm/rdm.html">RDM</a></li>
-                                    <li><a href="../events/event_vacanza/vacanza.html">Vacanza</a></li>
+                                    <li><a href="events/event_cine/cine.html">CINE</a></li>
+                                    <li><a href="events/event_initiative/initiative.html">The Initiative</a></li>
+                                    <li><a href="events/event_rdm/rdm.html">RDM</a></li>
+                                    <li><a href="events/event_vacanza/vacanza.html">Vacanza</a></li>
 
                                 </ul>
                             </li>
@@ -57,96 +60,47 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="../../index.html#services">Services</a></li>
+                    <li><a href="index.html#services">Services</a></li>
                     <li><a href="../../aboutUs.html">About Us</a></li>
                     <li>Our Team
                         <ul class="sublinks">
-                            <li><a href="../404.html"><div>2nd Year</div></a></li>
-                            <li><a href="../../team/team_3rdYear/3rdYear.html"><div>3rd Year</div></a></li>
-                            <li><a href="../../team/team_4thYear/4thYear.html"><div>4th Year</div></a></li>
+                            <li><a href="404.html"><div>2nd Year</div></a></li>
+                            <li><a href="team/team_3rdYear/3rdYear.html"><div>3rd Year</div></a></li>
+                            <li><a href="team/team_4thYear/4thYear.html"><div>4th Year</div></a></li>
                         </ul>
                     </li>
                     <li><a href="../events/event_initiative/initiative.html">The Initiative</a></li>
-                    <li><a href="../../index.html#join_us">Join Us</a></li>
+                    <li><a href="index.html#join_us">Join Us</a></li>
                     <li><a href="#contact_us">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
- 
-    <!---------------------------------------------------------------------------------------------------------------->
 
-
-    <div class="form__container">
-        <div class="row">
-
-            <div class="form__left">
-                <img class="formImg2" src="images/formBg.svg" class="img-responsive" alt="">
+    <div>
+         <img src="images/svg/404.svg" alt="" class="img__error">
+  
+  
+<a href="index.html">
+            <div class="btn__error mainBtn">
+                <div class="text">Home</div>
+                <div class="arrow">
+                    <i class="material-icons md-light">
+                        arrow_forward
+                    </i>
+                </div>
+                <div class="cov"></div>
             </div>
-
-            <div id="login" class="form__right login disp">
-                <div class="block">
-                    <h1>Welcome back :)</h1>
-                    <p>Please enter your details to keep connected with us</p>
-                </div>
-
-                <div class="details">
-                    <form action="">
-                        <div class="fields">
-                            <div class="inputs">
-                                <i class="material-icons md-24">
-                                    account_circle
-                                </i>
-                                <input type="text" placeholder="Student ID" required>
-                            </div>
-                            <div class="inputs">
-                                <i class="material-icons md-24">
-                                    lock
-                                </i>
-                                <input type="password" placeholder="Password" required>
-                            </div>
-                            <div class="inputBtn">
-
-                                <input type="submit" class="loginBtn" value="Login">
-
-                            </div>
-                        </div>
-                    </form>
-
-                </div>
-
-                <div class="create_account">
-                    Don't have an account ?
-                    <p id="hide">
-                        <a href="./register.html">Create Account</a>
-                    </p>
-                </div>
-                <div class="contact">
-                    <div class="links">
-                        <a id="forgot" href="">Forgot Password ?</a>
-                    </div>
-                    <div class="icons">
-                        <a href="" class="fa fa-facebook" target="_blank"></a>
-                        <a href="#" class="fa fa-youtube" target="_blank"></a>
-                        <a href="#" class="fa fa-instagram" target="_blank"></a>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-        </div>
-    </div>
-
-      <footer id="contact_us">
+            </a>
+   </div>
+    <footer id="contact_us">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1471.7730863857932!2d77.50373911730475!3d28.67510364168703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6ce36e4b8bdd1bad!2sCSIAKGEC!5e0!3m2!1sen!2sin!4v1556215241925!5m2!1sen!2sin"
             width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="footer__container">
 
 
-            <div class="footer__main"> 
+            <div class="footer__main">
                 <div class="footer__bg">
                     <img src="images/logocsiCenter.png" alt="">
                 </div>
@@ -170,7 +124,7 @@
                 <div class="footer__main__content">
                     <div class="footer__main__text">
                         <h1>Address</h1>
-                        <p> - Basic IT Lab, Third Floor, CS-IT Block, Ajay Kumar Garg Engineering College, Ghaziabad -
+                        <p> - Basic IT Lab, Third Floor, CS-IT Block,  Ajay Kumar Garg Engineering College, Ghaziabad -
                             201009</p>
                     </div>
                     <div class="footer__main__text">
@@ -179,14 +133,14 @@
                     </div>
                     <div class="footer__main__text">
                         <h1>Call Us</h1>
-                         <p> - +91-8802980454, +91-7417387372</p>
+                        <p> - +91-8802980454, +91-7417387372</p>
                     </div>
                 </div>
                 <div class="footer__featured">
                     <h1>Featured Links</h1>
                     <div class="footer__featured__links">
                         <a href="http://www.akgec.in">AKGEC</a>
-                        <a href="../../events/event_initiative/initiative.html">The Initiative</a>
+                        <a href="events/event_initiative/initiative.html">The Initiative</a>
                         <a href="http://www.csi-india.org">CSI India</a>
                         <a href="http://csi-india.org/eligibility.aspx">CSI Membership</a>
                     </div>
@@ -194,43 +148,33 @@
             </div>
             <div class="footer__copy">
                 <div class="footer__copy__section"><a href="http://akgec.in/index.php/life-akgec/societies/csi">&copy; CSI AKGEC: 2019</a> &nbsp; &nbsp; <a
-                        href="../../privacy_policy.html">Privacy Policy</a> </div>
+                        href="privacy_policy.html">Privacy Policy</a> </div>
                 <div class="footer__copy__section">
                     <div class="footer__copy__icons">
                         <a href="https://www.facebook.com/csi.akg/" target="_blank"><img
-                                src="../../images/svg/icons/facebook-black-social-button-circle.svg" alt=""></a>
-                        <a href="https://www.instagram.com/csi_akgec/" target="_blank"><img src="../../images/svg/icons/instagram.svg"
+                                src="images/svg/icons/facebook-black-social-button-circle.svg" alt=""></a>
+                        <a href="https://www.instagram.com/csi_akgec/" target="_blank"><img src="images/svg/icons/instagram.svg"
                                 alt=""></a>
                         <a href="https://www.youtube.com/channel/UCrxGbgXygspoAIk5zhOClVQ" target="_blank">
-                            <img src="../../images/svg/icons/youtube-symbol.svg" alt="">
+                            <img src="images/svg/icons/youtube-symbol.svg" alt="">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    
     <script>
         $(function () {
-
-            var nodeArray = [
-                document.querySelector('.formImg'),
-                document.querySelector('.block'),
-                document.querySelector('.form__right')
-            ];
-            ScrollReveal().reveal(nodeArray, {
-                delay: 500,
-                duration: 1000,
-            });
-
+            
             $('.navBtn').click(function () {
                 $('.navBtn').toggleClass('nav_button-animation');
                 $('.nav__container').toggleClass('expandNav');
                 $('.topLinks').toggleClass('linkShow');
             });
-        });
 
+        })
     </script>
-</body>
-
+ </body>
 
 </html>
