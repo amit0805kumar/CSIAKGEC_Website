@@ -1,215 +1,192 @@
 header {
-  width: 100%;
-  height: 100vh;
-  //   overflow: hidden;
-  .header {
-    &__text {
-      position: absolute;
-      top: 20rem;
-      left: 5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 90%;
-
-      .btn {
-        margin-top: 4rem;
-      }
-      @include respond(w600) {
-        left: 3rem;
-      }
-      @include respond(w400) {
-        left: 2rem;
-      }
+    width: 100%;
+    height: 100vh;
+    //   overflow: hidden;
+    .header {
+        &__text {
+            position: absolute;
+            top: 12rem;
+            left: 5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 90%;
+            .btn {
+                margin-top: 4rem;
+            }
+            @include respond(w900) {
+                top: 15rem;
+            }
+            @include respond(w600) {
+                left: 3rem;
+                top: 3%;
+            }
+            @include respond(w400) {
+                left: 2rem;
+            }
+        }
+        &__csi {
+            font-size: 7rem;
+            font-family: "Muli", sans-serif;
+            font-weight: 800;
+            color: $color-secondary;
+            display: inline-block;
+            @include respond(w900) {
+                font-size: 5rem;
+            }
+            @include respond(w600) {
+                font-size: 4rem;
+            }
+            &__type {
+                font-size: 2rem;
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                margin-top: 3rem;
+                color: $color-secondary;
+                @include respond(w900) {
+                    font-size: 2rem;
+                }
+                @include respond(w600) {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+            }
+        }
+        &__moto {
+            position: relative;
+            width: 45rem;
+            font-family: "Poppins", sans-serif;
+            height: 4rem;
+            font-size: 4rem;
+            margin-top: 2rem;
+            font-weight: 700;
+            color: $color-secondary;
+            @include respond(w600) {
+                font-size: 3rem;
+                width: 35rem;
+            }
+            @include respond(w400) {
+                font-size: 2.8rem;
+                width: 20rem;
+            }
+            p {
+                display: inline-block;
+                vertical-align: top;
+                margin: 0;
+            }
+            .word {
+                position: absolute;
+                width: 22rem;
+                opacity: 0;
+                font-weight: 300;
+                color: $color-primary;
+            }
+        }
+        &__bg {
+            position: relative;
+            width: 100%;
+            img {
+                position: absolute;
+            }
+            #bg {
+                top: 0;
+                right: 0;
+                width: 70%;
+                @include respond(w900) {
+                    width: 80%;
+                }
+                @include respond(w600) {
+                    width: 90%;
+                }
+            }
+            #sys {
+                width: 50rem;
+                top: 10rem;
+                right: 15%;
+                @include respond(w1200) {
+                    width: 50rem;
+                }
+                @include respond(w900) {
+                    top: 25rem;
+                    width: 40rem;
+                }
+                @include respond(w600) {
+                    top: 8rem;
+                    width: 25rem;
+                    right: 15%;
+                }
+            }
+            #colourful {
+                width: 38%;
+                right: 3rem;
+            }
+            #white {
+                width: 50%;
+                right: 0;
+                @include respond(w600) {
+                    width: 70%;
+                }
+            }
+            #boy {
+                top: 30rem;
+                width: 45rem;
+                right: 22rem;
+                position: absolute;
+                @include respond(w900) {
+                    width: 30rem;
+                    top: 40rem;
+                }
+                @include respond(w600) {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    opacity: 0.5;
+                }
+                @include respond(w400) {
+                    width: 25rem;
+                }
+            }
+        }
     }
-
-    &__csi {
-      font-size: 7rem;
-      font-family: "Muli", sans-serif;
-      font-weight: 800;
-      color: $color-secondary;
-      display: inline-block;
-      @include respond(w900) {
-        font-size: 5rem;
-      }
-
-      @include respond(w600) {
-        font-size: 4rem;
-      }
-
-      &__type {
-        font-size: 2rem;
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-        margin-top: 3rem;
-        color: $color-secondary;
-
-        @include respond(w900) {
-          font-size: 2rem;
-        }
-
-        @include respond(w600) {
-          font-size: 1.5rem;
-          font-weight: 500;
-        }
-      }
-    }
-
-    &__moto {
-      position: relative;
-      width: 45rem;
-      font-family: "Poppins", sans-serif;
-      height: 4rem;
-      font-size: 4rem;
-      margin-top: 2rem;
-      font-weight: 700;
-      color: $color-secondary;
-      @include respond(w600) {
-        font-size: 3rem;
-        width: 35rem;
-      }
-      @include respond(w400) {
-        font-size: 2.8rem;
-        width: 20rem;
-      }
-
-      p {
-        display: inline-block;
-        vertical-align: top;
-        margin: 0;
-      }
-
-      .word {
-        position: absolute;
-        width: 22rem;
-        opacity: 0;
-        font-weight: 300;
-        color: $color-primary;
-      }
-    }
-
-    &__bg {
-      position: relative;
-      width: 100%;
-
-      img {
-        position: absolute;
-      }
-
-      #bg {
-        top: 0;
-        right: 0;
-        width: 70%;
-
-        @include respond(w900) {
-          width: 80%;
-        }
-
-        @include respond(w600) {
-          width: 90%;
-        }
-      }
-
-      #sys {
-        width: 50rem;
-        top: 10rem;
-        right: 15%;
-
-        @include respond(w1200) {
-          width: 50rem;
-        }
-
-        @include respond(w900) {
-          top: 25rem;
-          width: 40rem;
-        }
-
-        @include respond(w600) {
-          top: 8rem;
-          width: 25rem;
-          right: 15%;
-        }
-      }
-
-      #colourful {
-        width: 38%;
-        right: 3rem;
-      }
-
-      #white {
-        width: 50%;
-        right: 0;
-
-        @include respond(w600) {
-          width: 70%;
-        }
-      }
-
-      #boy {
-        top: 30rem;
-        width: 45rem;
-        right: 22rem;
-        position: absolute;
-
-        @include respond(w900) {
-          width: 30rem;
-          top: 40rem;
-        }
-
-        @include respond(w600) {
-          left: 50%;
-          transform: translateX(-50%);
-          opacity: 0.5;
-        }
-        @include respond(w400) {
-          width: 25rem;
-        }
-      }
-    }
-  }
 }
 
 .boy {
-  animation: updownsp1 3s infinite;
-  animation-timing-function: ease-in-out;
-
-  @include respond(w900) {
-    animation: none;
-  }
+    animation: updownsp1 3s infinite;
+    animation-timing-function: ease-in-out;
+    @include respond(w900) {
+        animation: none;
+    }
 }
 
 @keyframes updownsp1 {
-  0% {
-    top: 30rem;
-  }
-
-  50% {
-    top: 35rem;
-  }
-
-  100% {
-    top: 30rem;
-  }
+    0% {
+        top: 30rem;
+    }
+    50% {
+        top: 35rem;
+    }
+    100% {
+        top: 30rem;
+    }
 }
 
 .letter {
-  display: inline-block;
-  position: relative;
-  float: left;
-  transform: translateZ(25px);
-  transform-origin: 50% 50% 25px;
+    display: inline-block;
+    position: relative;
+    float: left;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
 }
 
 .letter.out {
-  transform: rotateX(90deg);
-  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .letter.behind {
-  transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
 }
 
 .letter.in {
-  transform: rotateX(0deg);
-  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }

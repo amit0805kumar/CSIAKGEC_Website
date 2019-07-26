@@ -1,268 +1,268 @@
 .nav {
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  z-index: 100;
-  &__logo {
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    .navBtn {
-      display: none;
-      width: 5rem;
-      height: 5rem;
-      margin-top: 1rem;
-      position: relative;
-      span { 
-        width: 35px;
-        background: #000;
-        height: 2px;
-        position: absolute;
-        border-radius: 100px;
-        transition: all 0.2s ease-in-out;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%);
-
-        &::after {
-          content: "";
-          position: absolute;
-          width: 35px;
-          height: 2px;
-          background: #000;
-          top: 4px;
-          left: 0;
-          transition: all 0.2s ease-in-out;
-        }
-
-        &::before {
-          content: "";
-          position: absolute;
-          width: 35px;
-          height: 2px;
-          background: #000;
-          top: -4px;
-          left: 0;
-          transition: all 0.2s ease-in-out;
-        }
-         
-      }
-
-      @include respond(w800) {
-        display: block;
-      }
-    }
-    img {
-      width: 4rem;
-      @include respond(w900) {
-        width: 3rem;
-      }
-    }
-    @include respond(w800) {
-      width: 100%;
-    }
-    a {
-      @include respond(w800) {
-        display: none;
-      }
-    }
-  }
-
-  &__container {
-    transition: all 0.2s ease-in-out;
-   
-    width: 95%;
-    background: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-    height: 4rem;
-    border-radius: 300px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
     z-index: 100;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 3rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 2rem;
-    align-items: center;
-    @include respond(w800) {
-      height: 4rem;
-      border-radius: 3px;
-      flex-direction: column;
-      align-items: flex-start;
-         overflow: hidden;
-      position: relative;
-    }
-  }
-
-  &__links {
-    height: 100%;
-    @include respond(w1100) {
-      margin-left: -2rem;
-    }
-    @include respond(w800) {
-      width: 100%;
-    }
-    ul.topLinks {
-      transition: all 0.2s ease-in-out;
-      display: flex;
-      font-family: "Poppins", sans-serif;
-      font-size: 1.8rem;
-      height: 100%;
-      align-items: center;
-      @include respond(w1200) {
-        font-size: 1.6rem;
-      }
-      @include respond(w1100) {
-        font-size: 1.5rem;
-      }
-      @include respond(w900) {
-        font-size: 1.2rem;
-      }
-      @include respond(w800) {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-around;
-        font-size: 2rem;
-        height: 90%;
-        opacity: 0;
-        margin-top: 2rem;
-      }
-
-      & > li {
-        margin: 0 0.5rem;
-        min-width: 12rem;
-        padding: 0 0.5rem;
-        text-align: center;
-        cursor: pointer;
-        height: 100%;
-        justify-content: center;
-        transition: all 0.3s;
-        @include respond(w1100) {
-          padding: 0 0.3;
-          min-width: 7rem;
+    &__logo {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        @include respond(w800) {
+            justify-content: space-between;
+        }
+        a {
+            img {
+                @include respond(w800) {
+                    margin-top: 1rem;
+                }
+            }
+        }
+        .navBtn {
+            display: none;
+            width: 5rem;
+            height: 5rem;
+            margin-top: 1rem;
+            position: relative;
+            span {
+                width: 30px;
+                background: #000;
+                height: 2px;
+                position: absolute;
+                border-radius: 100px;
+                transition: all 0.2s ease-in-out;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%);
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 30px;
+                    height: 2px;
+                    background: #000;
+                    top: 4px;
+                    left: 0;
+                    transition: all 0.2s ease-in-out;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 30px;
+                    height: 2px;
+                    background: #000;
+                    top: -4px;
+                    left: 0;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+            @include respond(w800) {
+                display: block;
+            }
+        }
+        img {
+            width: 4rem;
+            @include respond(w900) {
+                width: 3rem;
+            }
         }
         @include respond(w800) {
-          height: 3rem;
+            width: 100%;
         }
-
-        & > a {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        &:hover {
-          background: #edecfc;
-        }
-
-        &:hover > ul.sublinks {
-          opacity: 1;
-          visibility: visible;
-        }
-
-        display: flex;
-        flex-direction: column;
-        position: relative;
-
-        ul.sublinks {
-          position: absolute;
-          display: flex;
-          flex-direction: column;
-          top: 4rem;
-          background: #fff;
-          transition: all 0.2s;
-          margin-left: 1.5rem;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-          width: 15rem;
-          border-radius: 4px;
-          opacity: 0;
-          z-index: 20;
-          visibility: hidden;
-          font-size: 1.5rem;
-          @include respond(w800) {
-            margin-left: 0;
-            opacity: 1;
-            left: 100%;
-            top: 0;
-          }
-          & > li {
-            text-align: left;
-            padding: 1rem 0;
-            padding-left: 0.5rem;
-            transition: all 0.3s;
-
-            &:hover {
-              background: #edecfc;
-              padding-left: 1rem;
-            }
-
-            &:hover > ul.subLinksChild {
-              opacity: 1;
-              visibility: visible;
-            }
-
-            & > ul.subLinksChild {
-              position: absolute;
-              border-radius: 4px;
-              display: flex;
-              flex-direction: column;
-              transition: all 0.3s;
-              background: #fff;
-              min-width: 20rem;
-              left: 90%;
-              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
-              opacity: 0;
-              visibility: hidden;
-              & > li {
-                padding: 1rem 0;
-                padding-left: 0.5rem;
-                transition: all 0.3s;
-
-                &:hover {
-                  background: #edecfc;
-                  padding-left: 1rem;
-                }
-
-                & > a {
-                  width: 100%;
-                  height: 100%;
-                  display: flex;
-                  align-items: center;
-                  justify-content: flex-start;
-                }
-              }
-            }
-          }
-        }
-      }
+        // a {
+        //   @include respond(w800) {
+        //     display: none;
+        //   }
+        // }
     }
-  }
+    &__container {
+        transition: all 0.2s ease-in-out;
+        width: 95%;
+        background: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+        height: 4rem;
+        border-radius: 300px;
+        z-index: 100;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2rem;
+        align-items: center;
+        @include respond(w800) {
+            height: 4rem;
+            border-radius: 3px;
+            flex-direction: column;
+            align-items: flex-start;
+            overflow: hidden;
+            position: relative;
+        }
+    }
+    &__links {
+        height: 100%;
+        @include respond(w1100) {
+            // margin-left: -2rem;
+        }
+        @include respond(w800) {
+            width: 100%;
+            margin-top: 2rem;
+            border-top: 1px solid rgb(226, 224, 224);
+        }
+        ul.topLinks {
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            font-family: "Poppins", sans-serif;
+            font-size: 1.8rem;
+            height: 100%;
+            align-items: center;
+            @include respond(w1200) {
+                font-size: 1.6rem;
+            }
+            @include respond(w1100) {
+                font-size: 1.5rem;
+            }
+            @include respond(w900) {
+                font-size: 1.2rem;
+            }
+            @include respond(w800) {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-around;
+                font-size: 2rem;
+                height: 90%;
+                opacity: 0;
+                margin-top: 2rem;
+            }
+            &>li {
+                margin: 0 0.5rem;
+                min-width: 12rem;
+                padding: 0 0.5rem;
+                text-align: center;
+                cursor: pointer;
+                height: 100%;
+                justify-content: center;
+                transition: all 0.3s;
+                @include respond(w1100) {
+                    padding: 0 0.3;
+                    min-width: 7rem;
+                }
+                @include respond(w800) {
+                    height: 3rem;
+                }
+                &>a {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &:hover {
+                    background: #edecfc;
+                }
+                &:hover>ul.sublinks {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                ul.sublinks {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    top: 4rem;
+                    background: #fff;
+                    transition: all 0.2s;
+                    margin-left: 1.5rem;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+                    width: 15rem;
+                    border-radius: 4px;
+                    opacity: 0;
+                    z-index: 20;
+                    visibility: hidden;
+                    font-size: 1.5rem;
+                    @include respond(w800) {
+                        opacity: 0;
+                        left: 10%;
+                        top: 3rem;
+                    }
+                    &>li {
+                        text-align: left;
+                        padding: 1rem 0;
+                        padding-left: 0.5rem;
+                        transition: all 0.3s;
+                        position: relative;
+                        &:hover {
+                            background: #edecfc;
+                            padding-left: 1rem;
+                        }
+                        &:hover>ul.subLinksChild {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        &>ul.subLinksChild {
+                            position: absolute;
+                            border-radius: 4px;
+                            display: flex;
+                            flex-direction: column;
+                            transition: all 0.3s;
+                            background: #fff;
+                            min-width: 20rem;
+                            left: 90%;
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+                            opacity: 0;
+                            visibility: hidden;
+                            z-index: 15;
+                            @include respond(w800) {
+                                left: 25%;
+                                top: 4rem;
+                            }
+                            &>li {
+                                padding: 1rem 0;
+                                padding-left: 0.5rem;
+                                transition: all 0.3s;
+                                &:hover {
+                                    background: #edecfc;
+                                    padding-left: 1rem;
+                                }
+                                &>a {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .nav_button-animation {
-  span {
-    transform: translate(-50%) rotate(-50deg) !important;
-    width: 13px;
-    left: 25px;
-    &::after {
-      //   transform: rotate(-50deg);
-      opacity: 0;
+    span {
+        transform: translate(-50%) rotate(-50deg) !important;
+        width: 13px;
+        left: 25px;
+        &::after {
+            //   transform: rotate(-50deg);
+            opacity: 0;
+        }
+        &::before {
+            transform: rotate(100deg) translateX(4px) translateY(-1px) !important;
+            width: 13px;
+        }
     }
+}
 
-    &::before {
-      transform: rotate(100deg) translateX(4px) translateY(-1px) !important;
-      width: 13px;
-    }
-  }
-}
 .expandNav {
-  height: 90vh;
+    height: 90vh;
 }
+
 .linkShow {
-  opacity: 1 !important;
+    opacity: 1 !important;
 }

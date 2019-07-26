@@ -1,565 +1,557 @@
 .event-body-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  img {
     position: absolute;
-  }
-  .b1 {
-    width: 10rem;
-    top: 5rem;
-    left: -5rem;
-    opacity: 0.5;
-  }
-  .b2 {
-    top: 11%;
     width: 100%;
-    opacity: 0.2;
-  }
-  .b4 {
-    top: 32%;
-    width: 10rem;
-    opacity: 0.4;
-  }
-  .b5 {
-    width: 15rem; 
-    top: 43%;
-    right: 0;
-    opacity: 0.5;
-  }
-  .b7 {
-    width: 15rem;
-    top: 40%;
-    right: 5rem;
-    opacity: 0.4;
-  }
-  .b8 {
-    width: 3rem;
-    top: 28%;
-    left: 50%;
-    opacity: 0.6;
-  }
-  .b3 {
-    width: 100%;
-    top: 43%;
-    opacity: 0.2;
-  }
-  .b6 {
-    width: 8rem;
-    top: 73%;
-    right: -2rem;
-    opacity: 0.6;
-  }
-  .b9 {
-    width: 15rem;
-    top: 72%;
-    opacity: 0.4;
-    left: -8rem;
-  }
-  .b10 {
-    width: 15rem;
-    top: 82%;
-    opacity: 0.4;
-    left: 0rem;
-  }
-  .b11 {
-    width: 10rem;
-    top: 47%;
-    opacity: 0.4;
-    right: 0rem;
-  }
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    img {
+        position: absolute;
+    }
+    .b1 {
+        width: 10rem;
+        top: 5rem;
+        left: -5rem;
+        opacity: 0.5;
+    }
+    .b2 {
+        top: 11%;
+        width: 100%;
+        opacity: 0.2;
+    }
+    .b4 {
+        top: 32%;
+        width: 10rem;
+        opacity: 0.4;
+    }
+    .b5 {
+        width: 15rem;
+        top: 43%;
+        right: 0;
+        opacity: 0.5;
+    }
+    .b7 {
+        width: 15rem;
+        top: 40%;
+        right: 5rem;
+        opacity: 0.4;
+    }
+    .b8 {
+        width: 3rem;
+        top: 28%;
+        left: 50%;
+        opacity: 0.6;
+    }
+    .b3 {
+        width: 100%;
+        top: 43%;
+        opacity: 0.2;
+    }
+    .b6 {
+        width: 8rem;
+        top: 73%;
+        right: -2rem;
+        opacity: 0.6;
+    }
+    .b9 {
+        width: 15rem;
+        top: 72%;
+        opacity: 0.4;
+        left: -8rem;
+    }
+    .b10 {
+        width: 15rem;
+        top: 82%;
+        opacity: 0.4;
+        left: 0rem;
+    }
+    .b11 {
+        width: 10rem;
+        top: 47%;
+        opacity: 0.4;
+        right: 0rem;
+    }
 }
 
 .events__header {
-  width: 100%;
-  position: relative;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  .cine_intro {
-    width: 40%;
-    height: 100%;
-    @include respond(w600) {
-      height: auto;
-      width: 100%;
-      z-index: 50;
-    }
-    h1 {
-      margin-top: 18rem;
-      margin-left: 4.5rem;
-      font-size: 5rem;
-      margin-bottom: 1.5rem;
-      font-weight: 500;
-      font-family: "Poppins", sans-serif;
-      position: relative;
-      @include respond(w900) {
-        font-size: 3.5rem;
-        margin-top: 15rem;
-        margin-left: 3.5rem;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        left: -2rem;
-        top: 0;
-        height: 100%;
-        width: 2px;
-        background: $color-primary-light;
-        @include respond(w900) {
-          left: -3rem;
-        }
-      }
-    }
-    p {
-      margin-left: 2.5rem;
-      font-size: 1.7rem;
-      font-family: "Muli", sans-serif;
-      color: rgb(56, 56, 56);
-      @include respond(w900) {
-        font-size: 1.4rem;
-        margin-left: 2rem;
-        padding-right: 2rem;
-      }
-    }
-    .btn {
-      margin-top: 2rem;
-      margin-left: 2.5rem;
-    }
-  }
-
-  .svg_img_top {
-    width: 60%;
-    height: 100%;
+    width: 100%;
     position: relative;
-    @include respond(w600) {
-      width: 50%;
-      position: absolute;
-      top: -15rem;
-      right: 0;
-      opacity: 0.6;
-    }
-    .header__image__container {
-      width: 95%;
-      height: 95%;
-      position: absolute;
-      right: 0;
-      overflow: hidden;
-      border-bottom-left-radius: 100%;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-      @include respond(w600) {
-        border-radius: 300rem;
-        right: 2rem;
-        box-shadow: none;
-        background: transparent;
-      }
-      img {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .cine_intro {
+        width: 40%;
         height: 100%;
-        width: 100%;
-        background-color: white;
-        padding-left: 90px;
-        @include respond(w600) { 
-          padding: 0;
-          background: transparent;
+        @include respond(w600) {
+            height: auto;
+            width: 100%;
+            z-index: 50;
         }
-      }
+        h1 {
+            margin-top: 18rem;
+            margin-left: 4.5rem;
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            font-family: "Poppins", sans-serif;
+            position: relative;
+            @include respond(w900) {
+                font-size: 3.5rem;
+                margin-top: 15rem;
+                margin-left: 3.5rem;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                left: -2rem;
+                top: 0;
+                height: 100%;
+                width: 2px;
+                background: $color-primary-light;
+                @include respond(w900) {
+                    left: -3rem;
+                }
+            }
+        }
+        p {
+            margin-left: 2.5rem;
+            font-size: 1.7rem;
+            font-family: "Muli", sans-serif;
+            color: rgb(56, 56, 56);
+            @include respond(w900) {
+                font-size: 1.4rem;
+                margin-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+        .btn {
+            margin-top: 3rem;
+            margin-left: 2.5rem;
+        }
+        .mainBtnLink {
+            display: inline-block;
+        }
     }
-  }
+    .svg_img_top {
+        width: 60%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        @include respond(w600) {
+            width: 100%;
+            position: absolute;
+            top: -15rem;
+            right: 0;
+            opacity: 0.6;
+        }
+        .header__image__container {
+            width: 95%;
+            height: 95%;
+            position: absolute;
+            right: 0;
+            overflow: hidden;
+            border-bottom-left-radius: 100%;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            @include respond(w600) {
+              width: 30rem;
+              height: 30rem;
+                border-radius: 300rem;
+                right: -8rem;
+                top: 7rem;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+                background: white;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                background-color: white;
+                padding-left: 90px;
+                @include respond(w600) {
+                    padding: 0;
+                    background: transparent;
+                }
+            }
+        }
+    }
 }
 
 .event__details {
-  width: 100%;
-
-  @include respond(w1200) {
-    margin-top: 5rem;
-  }
-  @include respond(w600) {
-    margin-top: -25rem;
-  }
-      @include respond(w400) {
-    margin-top: -17rem;
-  }
-      @include respond(w300) {
-    margin-top: -10rem;
-  }
-    
-  .progress__bar {
-    margin-left: 50%;
-    margin-top: 3rem;
-    transform: translateX(-50%);
-    width: 70%;
-    height: 20rem;
-    position: relative;
+    width: 100%;
+    @include respond(w1200) {
+        margin-top: 5rem;
+    }
     @include respond(w600) {
-      margin-top: 1.5rem;
-      height: 15rem;
+        margin-top: -25rem;
     }
-    .line {
-      left: 50%;
-      top: 50%;
-      position: absolute;
-      height: 3px;
-      background: $color-primary-light;
-      width: 100%;
-      transform: translate(-50%);
-      border-radius: 300px;
-      z-index: 1;
+    @include respond(w400) {
+        margin-top: -17rem;
     }
-    .circles {
-      width: 100%;
-      display: flex;
-      height: 100%;
-      align-items: center;
-      justify-content: space-between;
+    @include respond(w300) {
+        margin-top: -10rem;
     }
-    .details {
-      position: relative;
-      &__circle {
-        width: 3rem;
-        z-index: 2;
-        height: 3rem;
-        background: #fff;
-        margin-left: -0.5rem;
-        border-radius: 300px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    .progress__bar {
+        margin-left: 50%;
+        margin-top: 3rem;
+        transform: translateX(-50%);
+        width: 70%;
+        height: 20rem;
         position: relative;
-
-        i {
-          position: absolute;
-          left: 0.2rem;
-          top: 0.3rem;
-          color: $color-primary-light;
-          transform: rotate(180deg);
-        }
-      }
-      &__box {
-        position: absolute;
-        top: 6rem;
-        left: -50%;
-        border-left: 2px solid $color-primary-light;
-        padding-left: 1.5rem;
         @include respond(w600) {
-          padding-left: 1rem;
+            margin-top: 1.5rem;
+            height: 15rem;
         }
-        @include respond(w300) {
-          padding-left: 0.5rem;
+        .line {
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            height: 3px;
+            background: $color-primary-light;
+            width: 100%;
+            transform: translate(-50%);
+            border-radius: 300px;
+            z-index: 1;
         }
-        h3 {
-          font-family: "Muli", sans-serif;
-          font-size: 2rem;
-          @include respond(w900) {
-            font-size: 1.5rem;
-          }
-          @include respond(w900) {
-            font-size: 1.2rem;
-          }
-          @include respond(w300) {
-            font-size: 1rem;
-          }
+        .circles {
+            width: 100%;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: space-between;
         }
-        p {
-          font-size: 1.2rem;
-          white-space: nowrap;
-          font-family: "Poppins", sans-serif;
-          @include respond(w900) {
-            font-size: 1rem;
-          }
-          @include respond(w600) {
-            font-size: 0.7rem;
-          }
-          @include respond(w300) {
-            font-size: 0.5rem;
-          }
+        .details {
+            position: relative;
+            &__circle {
+                width: 3rem;
+                z-index: 2;
+                height: 3rem;
+                background: #fff;
+                margin-left: -0.5rem;
+                border-radius: 300px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                position: relative;
+                i {
+                    position: absolute;
+                    left: 0.2rem;
+                    top: 0.3rem;
+                    color: $color-primary-light;
+                    transform: rotate(180deg);
+                }
+            }
+            &__box {
+                position: absolute;
+                top: 6rem;
+                left: -50%;
+                border-left: 2px solid $color-primary-light;
+                padding-left: 1.5rem;
+                @include respond(w600) {
+                    padding-left: 1rem;
+                }
+                @include respond(w300) {
+                    padding-left: 0.5rem;
+                }
+                h3 {
+                    font-family: "Muli", sans-serif;
+                    font-size: 2rem;
+                    @include respond(w900) {
+                        font-size: 1.5rem;
+                    }
+                    @include respond(w900) {
+                        font-size: 1.2rem;
+                    }
+                    @include respond(w300) {
+                        font-size: 1rem;
+                    }
+                }
+                p {
+                    font-size: 1.2rem;
+                    white-space: nowrap;
+                    font-family: "Poppins", sans-serif;
+                    @include respond(w900) {
+                        font-size: 1rem;
+                    }
+                    @include respond(w600) {
+                        font-size: 0.7rem;
+                    }
+                    @include respond(w300) {
+                        font-size: 0.5rem;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 
 .section__gallery {
-  margin: 20rem 0;
-  @include respond(w600) {
-    margin: 10rem 0;
-  }
-  .gallery_container {
-    @include respond(w900) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+    margin: 20rem 0;
     @include respond(w600) {
-      margin-top: 5rem;
+        margin: 10rem 0;
     }
-
-    div:hover {
-      cursor: pointer;
-    }
-    img {
-      height: 18rem;
-      width: 18rem;
-      display: flex;
-      flex-direction: column;
-      @include respond(w900) {
-        height: 12rem;
-        width: 12rem;
-      }
-      @include respond(w600) {
-        height: 8rem;
-        width: 8rem;
-      }
-      @include respond(w400) {
-        height: 7rem;
-        width: 7rem;
-      }
-    }
-    .first_line {
-      display: flex;
-      flex-direction: row;
-      padding-left: 3%;
-      .gallery_name1 {
-        background-color: #cdcdcd;
-        height: 75px;
-        width: 45%;
-        margin-top: 10.5rem;
-        font-family: "Muli", sans-serif;
-        font-size: 2rem;
-        padding-top: 2rem;
-        color: #ffffff;
-        padding-left: 2rem;
+    .gallery_container {
         @include respond(w900) {
-          font-size: 1.5rem;
-          padding-left: 1.5rem;
-          margin-top: 2rem;
-          width: 25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         @include respond(w600) {
-          font-size: 1.1rem;
-          padding-left: 0.8rem;
-          margin-top: 2rem;
-          width: 18rem;
-          height: 5rem;
-          display: flex;
-          padding-top: 0;
-          align-items: center;
+            margin-top: 5rem;
         }
-        @include respond(w400) {
-          position: absolute;
-          width: 12rem;
-          font-size: 0.8rem;
-          height: 3rem;
-          transform: translateY(-100%);
-          top: 8.4rem;
-          left: 40%;
+        div:hover {
+            cursor: pointer;
         }
-      }
-      @include respond(w1100) {
-        padding-left: 0;
-      }
-      .image3 {
-        margin-top: 6.7rem;
-        @include respond(w900) {
-          margin-top: 0;
+        img {
+            height: 18rem;
+            width: 18rem;
+            display: flex;
+            flex-direction: column;
+            @include respond(w900) {
+                height: 12rem;
+                width: 12rem;
+            }
+            @include respond(w600) {
+                height: 8rem;
+                width: 8rem;
+            }
+            @include respond(w400) {
+                height: 7rem;
+                width: 7rem;
+            }
         }
-      }
+        .first_line {
+            display: flex;
+            flex-direction: row;
+            padding-left: 3%;
+            .gallery_name1 {
+                background-color: #cdcdcd;
+                height: 75px;
+                width: 45%;
+                margin-top: 10.5rem;
+                font-family: "Muli", sans-serif;
+                font-size: 2rem;
+                padding-top: 2rem;
+                color: #ffffff;
+                padding-left: 2rem;
+                @include respond(w900) {
+                    font-size: 1.5rem;
+                    padding-left: 1.5rem;
+                    margin-top: 2rem;
+                    width: 25rem;
+                }
+                @include respond(w600) {
+                    font-size: 1.1rem;
+                    padding-left: 0.8rem;
+                    margin-top: 2rem;
+                    width: 18rem;
+                    height: 5rem;
+                    display: flex;
+                    padding-top: 0;
+                    align-items: center;
+                }
+                @include respond(w400) {
+                    position: absolute;
+                    width: 12rem;
+                    font-size: 0.8rem;
+                    height: 3rem;
+                    transform: translateY(-100%);
+                    top: 8.4rem;
+                    left: 40%;
+                }
+            }
+            @include respond(w1100) {
+                padding-left: 0;
+            }
+            .image3 {
+                margin-top: 6.7rem;
+                @include respond(w900) {
+                    margin-top: 0;
+                }
+            }
+        }
+        .second_line {
+            display: flex;
+            flex-direction: row;
+            margin-top: -7rem;
+            margin-left: 19.95%;
+            @include respond(w1100) {
+                margin-left: 11.5%;
+            }
+            @include respond(w900) {
+                margin-top: 0;
+            }
+            @include respond(w400) {
+                margin-left: 0;
+            }
+            .image4 {
+                margin-top: 7rem;
+                @include respond(w900) {
+                    margin-top: 0;
+                }
+            }
+        }
+        .third_line {
+            display: flex;
+            flex-direction: row;
+            margin-top: -7rem;
+            margin-left: 33.3%;
+            @include respond(w1100) {
+                margin-left: 28.3%;
+            }
+            @include respond(w900) {
+                margin-top: 0;
+            }
+        }
     }
-    .second_line {
-      display: flex;
-      flex-direction: row;
-      margin-top: -7rem;
-      margin-left: 19.95%;
-
-      @include respond(w1100) {
-        margin-left: 11.5%;
-      }
-
-      @include respond(w900) {
-        margin-top: 0;
-      }
-      @include respond(w400) {
-        margin-left: 0;
-      }
-      .image4 {
-        margin-top: 7rem;
-        @include respond(w900) {
-          margin-top: 0;
-        }
-      }
-    }
-    .third_line {
-      display: flex;
-      flex-direction: row;
-      margin-top: -7rem;
-      margin-left: 33.3%;
-      @include respond(w1100) {
-        margin-left: 28.3%;
-      }
-      @include respond(w900) {
-        margin-top: 0;
-      }
-    }
-  }
 }
 
 .section__events {
-  margin: 10rem 0;
+    margin: 10rem 0;
 }
 
 //Slider Styling
 .slider {
-  width: 70%;
-  margin: 100px auto;
-
-  @include respond(w600) {
-    width: 88%;
-  }
-  @include respond(w400) {
-    width: 82%;
-  }
+    width: 70%;
+    margin: 100px auto;
+    @include respond(w600) {
+        width: 88%;
+    }
+    @include respond(w400) {
+        width: 82%;
+    }
 }
 
 .slick-slide {
-  margin: 0px 20px;
-  transition: all 0.3s;
-
-  &:hover {
-    cursor: pointer;
-  }
-  .details {
-    text-align: center;
-    margin: 1rem 0;
-    font-family: "Muli", sans-serif;
-    font-size: 2rem;
-    color: #fff;
-    padding: 1rem 0;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary);
-    @include respond(w900) {
-      font-size: 1.2rem;
-      margin: 0.5rem 0;
-      padding: 0.5rem 0;
+    margin: 0px 20px;
+    transition: all 0.3s;
+    &:hover {
+        cursor: pointer;
     }
-    @include respond(w600) {
-      font-size: 1rem;
-      margin: 0.2rem 0;
-      padding: 0.3rem 0;
+    .details {
+        text-align: center;
+        margin: 1rem 0;
+        font-family: "Muli", sans-serif;
+        font-size: 2rem;
+        color: #fff;
+        padding: 1rem 0;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary);
+        @include respond(w900) {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+            padding: 0.5rem 0;
+        }
+        @include respond(w600) {
+            font-size: 1rem;
+            margin: 0.2rem 0;
+            padding: 0.3rem 0;
+        }
+        @include respond(w600) {
+            font-size: 0.6rem;
+            margin: 0.2rem 0;
+            padding: 0.3rem 0;
+        }
     }
-
-    @include respond(w600) {
-      font-size: 0.6rem;
-      margin: 0.2rem 0;
-      padding: 0.3rem 0;
-    }
-  }
 }
 
 .slick-slide img {
-  width: 100%;
+    width: 100%;
 }
 
 .slick-prev:before,
 .slick-next:before {
-  color: black !important;
+    color: black !important;
 }
 
 .slick-slide {
-  transition: all ease-in-out 0.3s;
-  opacity: 1;
+    transition: all ease-in-out 0.3s;
+    opacity: 1;
 }
 
 .slick-active {
-  opacity: 1;
+    opacity: 1;
 }
 
 .slick-current {
-  opacity: 1;
+    opacity: 1;
 }
 
 //Reviews
 .review__container {
-  width: 60%;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  margin-top: 5rem;
-
-  @include respond(w400) {
-    width: 80%;
-  }
-  .show__btn {
-    font-size: 1.5rem;
-    cursor: pointer;
-    text-align: center;
-    color: $color-primary-light;
-    font-family: "Poppins", sans-serif;
-
-    p {
-      transition: all 0.2s;
-      display: inline-block;
-      text-decoration: underline;
-      &:hover {
-        color: #000; 
-      }
-    }
-  }
-  .review__hidden {
-    // display: none;
-  }
-  .review {
-    position: relative;
-    background: #fff;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    padding: 3rem;
-    margin-bottom: 3.5rem;
-    overflow: hidden;
-    font-family: "Poppins", sans-serif;
+    width: 60%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5rem;
     @include respond(w400) {
-      padding: 2rem;
-      margin-bottom: 2rem;
+        width: 80%;
     }
-    &__text {
-      margin-bottom: 2rem;
-      z-index: 10;
-      position: relative;
-      font-size: 1.5rem;
-      // border-bottom: 1px solid $color-primary-light;
-      @include respond(w400) {
-        font-size: 1rem;
-      }
+    .show__btn {
+        font-size: 1.5rem;
+        cursor: pointer;
+        text-align: center;
+        color: $color-primary-light;
+        font-family: "Poppins", sans-serif;
+        p {
+            transition: all 0.2s;
+            display: inline-block;
+            text-decoration: underline;
+            &:hover {
+                color: #000;
+            }
+        }
     }
-    &__user {
-      display: flex;
-      align-content: center;
-      &-box {
-        // margin-left: 1.5rem;
-      }
-
-      &-name {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 1.1rem;
-        margin-bottom: 0.4rem;
-        border-top: 1px solid $color-primary-light;
-      }
-      &-branch {
-        font-size: 1rem;
-        color: grey;
-      }
+    .review__hidden {
+        // display: none;
     }
-
-    &::before {
-      content: "\201C";
-      position: absolute;
-      top: -2.75rem;
-      left: -1rem;
-      font-size: 20rem;
-      color: rgb(202, 199, 199);
-      font-family: sans-serif;
-      line-height: 1;
-      z-index: 1;
+    .review {
+        position: relative;
+        background: #fff;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        padding: 3rem;
+        margin-bottom: 3.5rem;
+        overflow: hidden;
+        font-family: "Poppins", sans-serif;
+        @include respond(w400) {
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        &__text {
+            margin-bottom: 2rem;
+            z-index: 10;
+            position: relative;
+            font-size: 1.5rem;
+            // border-bottom: 1px solid $color-primary-light;
+            @include respond(w400) {
+                font-size: 1rem;
+            }
+        }
+        &__user {
+            display: flex;
+            align-content: center;
+            &-box {
+                // margin-left: 1.5rem;
+            }
+            &-name {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 1.1rem;
+                margin-bottom: 0.4rem;
+                border-top: 1px solid $color-primary-light;
+            }
+            &-branch {
+                font-size: 1rem;
+                color: grey;
+            }
+        }
+        &::before {
+            content: "\201C";
+            position: absolute;
+            top: -2.75rem;
+            left: -1rem;
+            font-size: 20rem;
+            color: rgb(202, 199, 199);
+            font-family: sans-serif;
+            line-height: 1;
+            z-index: 1;
+        }
     }
-  }
 }

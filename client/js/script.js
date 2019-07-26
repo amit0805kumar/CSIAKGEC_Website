@@ -1,22 +1,22 @@
-$(function () {
+$(function() {
 
 
-    var imgIcons = $('.who__images__icons');
-    imgIcons.css('opacity', '0');
+    // var imgIcons = $('.who__images__icons');
+    // imgIcons.css('opacity', '0');
 
-    var imgCover = $('.who__images__cover');
-    imgCover.stop().mouseenter(function () {
-        imgIcons.animate({
-            'opacity': '1',
-            'top': '50%'
-        }, 300);
-    });
-    imgCover.mouseleave(function () {
-        imgIcons.stop().animate({
-            'opacity': '0',
-            'top': '54%'
-        }, 300);
-    });
+    // var imgCover = $('.who__images__cover');
+    // imgCover.stop().mouseenter(function() {
+    //     imgIcons.animate({
+    //         'opacity': '1',
+    //         'top': '50%'
+    //     }, 300);
+    // });
+    // imgCover.mouseleave(function() {
+    //     imgIcons.stop().animate({
+    //         'opacity': '0',
+    //         'top': '54%'
+    //     }, 300);
+    // });
 
 
     var pathEls = $('path');
@@ -66,13 +66,13 @@ $(function () {
     }
 
     function animateLetterOut(cw, i) {
-        setTimeout(function () {
+        setTimeout(function() {
             cw[i].className = 'letter out';
         }, i * 80);
     }
 
     function animateLetterIn(nw, i) {
-        setTimeout(function () {
+        setTimeout(function() {
             nw[i].className = 'letter in';
         }, 340 + (i * 80));
     }
@@ -208,6 +208,10 @@ $(function () {
             duration: 1000
         });
         ScrollReveal().reveal('.alumni__container', {
+            delay: 420,
+            duration: 1000
+        });
+        ScrollReveal().reveal('.section__features', {
             delay: 420,
             duration: 1000
         });

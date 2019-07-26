@@ -1,26 +1,30 @@
-.img__error{
-   height: 45rem;
-    width: 45rem; 
-    margin-left: 50%;
-     transform: translateX(-50%);
-    margin-top: 5rem;
-     @include respond(w900) {
-        height: 30rem;
-         width: 30rem;
-      }
-    @include respond(w600) {
-        height: 20rem;
-         width: 20rem;
-      }
-     @include respond(w400) {
-        height: 10rem;
-         width: 10rem;
-         margin-top: 7rem;
-      }
+.container404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .img__error {
+        height: 45rem;
+        width: 45rem;
+        margin-top: 5rem;
+        @include respond(w900) {
+            height: 30rem;
+            width: 30rem;
+        }
+        @include respond(w600) {
+            height: 20rem;
+            width: 20rem;
+        }
+        @include respond(w400) {
+            height: 10rem;
+            width: 10rem;
+            margin-top: 7rem;
+        }
+    }
+    .btn__error {
+        width: 20rem;
+        margin-left: 0rem;
+    }
+    .mainBtnLink {
+        display: inline-block;
+    }
 }
-.btn__error{
-   margin-left: 50%;
-     transform: translateX(-50%); 
-}
-
-
