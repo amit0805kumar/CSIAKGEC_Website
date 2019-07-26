@@ -25,7 +25,7 @@
   height: 40rem
 }
 
-path{
+.st9{
     stroke: #fff;
     fill: #2121db;
     stroke-dasharray: 1400;
@@ -40,7 +40,7 @@ path{
         stroke-dashoffset: 1400;
     }
     30%{
-        opacity: 10;
+        opacity: 10; 
         fill: none;
         stroke-dashoffset: 1400;
     }

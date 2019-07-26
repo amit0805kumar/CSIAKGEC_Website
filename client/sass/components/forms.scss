@@ -24,9 +24,31 @@
       z-index: 1; 
       .formImg {
         height:85rem;
+           @include respond(w1100) {
+           height: 75rem;
+    }
+           @include respond(w900) { 
+           height: 65rem;
+    }
+           @include respond(w400) {
+           height: 50rem;
+    }
+          @include respond(w300) {
+           height: 45rem;
+    }
       }
         .formImg2 {
         height: 50rem;
+             @include respond(w1100) {
+           height: 45rem;
+    }
+           @include respond(w900) { 
+           height: 35rem;
+    }
+     
+          @include respond(w300) {
+           height: 30rem;
+    }
       }
       @include respond(w900) {
         width: 50%;
@@ -126,7 +148,7 @@
             }
           }
         }
-      }
+      } 
 
       .create_account {
         display: flex;
