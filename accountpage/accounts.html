@@ -173,6 +173,9 @@ $(document).ready(function(){
                     </div>
                     <form action="">
                        <div class="inputs">
+                        <input type="number" placeholder="Student Number" required>
+                        </div>
+                        <div class="inputs">
                         <input type="number" placeholder="Roll Number" required>
                         </div>
                         <div class="inputs">
@@ -181,18 +184,25 @@ $(document).ready(function(){
                         <div class="selector">
                         <select class="select" name="Branch" required>
                                   <option value="none" selected disabled hidden>Branch</option> 
-                                  <option value="saab">Information Technology</option>
-                                  <option value="mercedes">Computer Science</option>
-                                  <option value="audi">Electronics And Instrumentation Engineering</option>
-                                  <option value="saab">Electrical And Electronics Engineering</option>
-                                  <option value="mercedes">Electronics And Communication Engineering</option>
-                                  <option value="audi">Civil Engineering</option>
-                                  <option value="audi">Mechanical Engineering</option>
-                                  <option value="audi">MCA OR MBA</option>
+                                  <option value="Information Technology">Information Technology</option>
+                                  <option value="Computer Science">Computer Science</option>
+                                  <option value="Electronics And Instrumentation Engineering">Electronics And Instrumentation Engineering</option>
+                                  <option value="Electrical And Electronics Engineering">Electrical And Electronics Engineering</option>
+                                  <option value="Electronics And Communication Engineering">Electronics And Communication Engineering</option>
+                                  <option value="Civil Engineering">Civil Engineering</option>
+                                  <option value="Mechanical Engineering">Mechanical Engineering</option>
+                                  <option value="MCA OR MBA">MCA OR MBA</option>
                         </select>
                         </div>
                         <div class="inputs">
                         <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="selector">
+                        <select class="select" name="Day Scholar" required>
+                                  <option value="none" selected disabled hidden>Day Scholar</option> 
+                                  <option value="yes">Yes</option>
+                                  <option value="no">No</option>
+                        </select>
                         </div>
                         <div class="inputs">
                         <input type="Number" placeholder="Phone" required>
@@ -200,13 +210,21 @@ $(document).ready(function(){
                         <div class="selector">
                         <select class="select" name="Batch" required>
                                   <option value="none" selected disabled hidden>Batch Year</option> 
-                                  <option value="">2016</option>
-                                  <option value="">2017</option>
-                                  <option value="">2018</option>
-                                  <option value="">2019</option>
+                                  <option value="2016-2020">2016-2020</option>
+                                  <option value="2017-2021">2017-2021</option>
+                                  <option value="2018-2022">2018-2022</option>
+                                  <option value="2019-2023">2019-2023</option>
                         </select>
                         </div>
-                        
+                        <div class="checkboxes">
+                            <div class="check_head">Domain</div>
+                            <div class="chk_name">Technical</div>
+                            <div><input type="checkbox" value="technical" multiple></div>
+                            <div class="chk_name">Managerial</div>
+                            <div><input type="checkbox" value="managerial" multiple></div>
+                            <div class="chk_name">Designer</div>
+                            <div><input type="checkbox" value="designer" multiple></div>
+                        </div>
                         
                         
                         <div class="inputBtn">
