@@ -1,4 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://amit:amit@cluster0-bsy5m.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtsecret": "csitoken"
-}
