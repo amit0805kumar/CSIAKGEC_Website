@@ -34,7 +34,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 ::selection {
   color: #fff;
-  background: red; }
+  background: #2121db; }
 
 a {
   text-decoration: none;
