@@ -59,7 +59,7 @@
         <div class="nav__container">
             <div class="nav__logo">
                 <a href="../index.html">
-                    <img src="../../images/logocsiCenter.png" alt="">
+                    <img src="../images/logocsiCenter.png" alt="">
                 </a>
                 <div class="navBtn">
                     <span>&nbsp;</span>
@@ -87,6 +87,7 @@
                                     <li><a href="../../workshops/workshop_webD/webD.html">Web Development</a></li>
                                     <li><a href="../../workshops/workshop_angular/angular.html">Web Tech With Angular</a></li>
                                     <li><a href="../../workshops/workshop_blockchain/blockchain.html">Blockchain</a></li>
+                                    <li><a href="../../workshops/workshop_nodejs/nodejs.html">Nodejs With Mongodb</a></li>
 
                                 </ul>
                             </li>
@@ -135,7 +136,7 @@
             <!--Register form-->
             <div id="create" class="form__right login">
                 <div class="block">
-                    <h1>Hi There :)</h1>
+                    <h1 class="noselect">Hi There :)</h1>
                     <p>Please enter your details to get connected with us</p>
                 </div>
                 <div class="details">
@@ -143,15 +144,17 @@
                         <div class="fields">
                            
                             <div class="inputs">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            
+                            <div class="inputs">
                         <input type="number" placeholder="Student Number" required>
                         </div>
                            
                             <div class="inputs">
                                 <input type="number" placeholder="Roll Number" required>
                             </div>
-                            <div class="inputs">
-                                <input type="text" placeholder="Name" required>
-                            </div>
+                           
                             <div class="selector">
                                 <select class="select" name="Branch" required>
                                     <option value="none" selected disabled hidden>Branch</option>
@@ -162,7 +165,8 @@
                                     <option value="mercedes">Electronics And Communication Engineering</option>
                                     <option value="audi">Civil Engineering</option>
                                     <option value="audi">Mechanical Engineering</option>
-                                    <option value="audi">MCA OR MBA</option>
+                                    <option value="audi">MCA</option>
+                                    <option value="audi">MBA</option>
                                 </select>
                             </div>
                             <div class="inputs">
@@ -183,16 +187,17 @@
                             </div>
                             <div class="selector">
                                 <select class="select" name="Batch" required>
-                                    <option value="none" selected disabled hidden>Batch Year</option>
-                                    <option value="">2016</option>
-                                    <option value="">2017</option>
-                                    <option value="">2018</option>
-                                    <option value="">2019</option>
+                                    <option value="none" selected disabled hidden>Year</option>
+                                    <option value="">2nd</option>
+                                    <option value="">3rd</option>
+                                    <option value="">MCA/MBA - 1st</option>
+<!--                                    <option value="">2019</option>-->
                                 </select>
                             </div>
                             
                           
                             
+<!--
                                 <div class="checkboxes">
                             <div class="check_head">Domain</div>
                             <div class="chk_name">Technical</div>
@@ -202,6 +207,7 @@
                             <div class="chk_name">Designer</div>
                             <div><input type="checkbox" value="designer" multiple></div>
                         </div>
+-->
 
 
 
@@ -213,16 +219,20 @@
                     </form>
                 </div>
 
+<!--
                 <div class="back create_account">
                     Already have an account?
                     <p>
                         <a id="goback" href="./login.html">Login</a>
                     </p>
                 </div>
+-->
                 <div class="contact">
+<!--
                     <div class="links">
                         <a id="forgot" href="">Forgot Password ?</a>
                     </div>
+-->
                     <div class="icons">
                         <a href="#" class="fa fa-facebook" target="_blank"></a>
                         <a href="#" class="fa fa-youtube" target="_blank"></a>
