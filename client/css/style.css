@@ -1910,19 +1910,19 @@ footer {
       width: 60%;
       z-index: 1; }
       .form__container .row .form__left .formImg {
-        height: 85rem; }
+        height: 75rem; }
         @media only screen and (max-width: 68.75em) {
           .form__container .row .form__left .formImg {
-            height: 75rem; } }
+            height: 65rem; } }
         @media only screen and (max-width: 56.25em) {
           .form__container .row .form__left .formImg {
-            height: 65rem; } }
+            height: 50rem; } }
         @media only screen and (max-width: 25em) {
           .form__container .row .form__left .formImg {
-            height: 50rem; } }
+            height: 40rem; } }
         @media only screen and (max-width: 18.75em) {
           .form__container .row .form__left .formImg {
-            height: 45rem; } }
+            height: 37rem; } }
       .form__container .row .form__left .formImg2 {
         height: 50rem; }
         @media only screen and (max-width: 68.75em) {

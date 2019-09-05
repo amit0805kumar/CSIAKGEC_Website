@@ -23,18 +23,18 @@
       width: 60%;
       z-index: 1;  
       .formImg {
-        height:85rem;
+        height: 75rem;
            @include respond(w1100) {
-           height: 75rem;
-    }
-           @include respond(w900) { 
            height: 65rem;
     }
-           @include respond(w400) {
+           @include respond(w900) { 
            height: 50rem;
     }
+           @include respond(w400) {
+           height: 40rem;
+    }
           @include respond(w300) {
-           height: 45rem;
+           height: 37rem;
     }
       }
         .formImg2 {
