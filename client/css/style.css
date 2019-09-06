@@ -1983,7 +1983,9 @@ footer {
         .form__container .row .form__right .details input:focus {
           outline: none; }
         .form__container .row .form__right .details form .fields {
-          margin-bottom: 3rem; }
+          margin-bottom: 3rem;
+          /* Modal Content */
+          /* The Close Button */ }
           .form__container .row .form__right .details form .fields .inputs {
             display: flex;
             border-bottom: 1px solid #313030;
@@ -2016,6 +2018,91 @@ footer {
               border-radius: 100%;
               width: 100%;
               height: 1.5rem; }
+          .form__container .row .form__right .details form .fields .payments_main {
+            position: relative;
+            margin-top: 4rem;
+            width: 40%; }
+          .form__container .row .form__right .details form .fields .paymentBtn {
+            background: #09097e;
+            color: #fff;
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+            cursor: pointer; }
+          .form__container .row .form__right .details form .fields .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: black;
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */ }
+          .form__container .row .form__right .details form .fields .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%;
+            height: 38%; }
+            @media only screen and (max-width: 25em) {
+              .form__container .row .form__right .details form .fields .modal-content {
+                width: 80%; } }
+            @media only screen and (max-width: 18.75em) {
+              .form__container .row .form__right .details form .fields .modal-content {
+                width: 80%; } }
+            @media only screen and (max-width: 68.75em) {
+              .form__container .row .form__right .details form .fields .modal-content {
+                width: 80%; } }
+            @media only screen and (max-width: 56.25em) {
+              .form__container .row .form__right .details form .fields .modal-content {
+                width: 80%; } }
+          .form__container .row .form__right .details form .fields .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold; }
+          .form__container .row .form__right .details form .fields .close:hover,
+          .form__container .row .form__right .details form .fields .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer; }
+          .form__container .row .form__right .details form .fields .only_registered {
+            color: #F60C0C; }
+          .form__container .row .form__right .details form .fields #above_content {
+            text-align: center; }
+          .form__container .row .form__right .details form .fields .modal-content_submit {
+            position: relative;
+            width: 40%; }
+            @media only screen and (max-width: 25em) {
+              .form__container .row .form__right .details form .fields .modal-content_submit {
+                width: 80%; } }
+            @media only screen and (max-width: 18.75em) {
+              .form__container .row .form__right .details form .fields .modal-content_submit {
+                width: 80%; } }
+            @media only screen and (max-width: 68.75em) {
+              .form__container .row .form__right .details form .fields .modal-content_submit {
+                width: 80%; } }
+            @media only screen and (max-width: 56.25em) {
+              .form__container .row .form__right .details form .fields .modal-content_submit {
+                width: 80%; } }
+          .form__container .row .form__right .details form .fields .submitBtn {
+            background: #09097e;
+            color: #fff;
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+            cursor: pointer; }
           .form__container .row .form__right .details form .fields .inputBtn {
             position: relative;
             margin-top: 4rem; }

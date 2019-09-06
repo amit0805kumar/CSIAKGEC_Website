@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'respond'.
-        on line 11 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\layout\navigation.scss, in `respond'
-        from line 11 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\layout\navigation.scss
+        on line 9 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\404.scss, in `respond'
+        from line 9 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\404.scss
 
-6:     &__logo {
-7:         width: 3rem;
-8:         height: 3rem;
-9:         display: flex;
-10:         align-items: center;
-11:         @include respond(w800) {
-12:             justify-content: space-between;
-13:         }
-14:         a {
-15:             img {
-16:                 @include respond(w800) {
+4:     align-items: center;
+5:     .img__error {
+6:         height: 45rem;
+7:         width: 45rem;
+8:         margin-top: 5rem;
+9:         @include respond(w900) {
+10:             height: 30rem;
+11:             width: 30rem;
+12:         }
+13:         @include respond(w600) {
+14:             height: 20rem;
 
 Backtrace:
-C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\layout\navigation.scss:11:in `respond'
-C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\layout\navigation.scss:11
+C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\404.scss:9:in `respond'
+C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\404.scss:9
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -77,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'respond'.\A         on line 11 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\layout\navigation.scss, in `respond'\A         from line 11 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\layout\navigation.scss\A \A 6:     &__logo {\A 7:         width: 3rem;\A 8:         height: 3rem;\A 9:         display: flex;\A 10:         align-items: center;\A 11:         @include respond(w800) {\A 12:             justify-content: space-between;\A 13:         }\A 14:         a {\A 15:             img {\A 16:                 @include respond(w800) {"; }
+  content: "Error: Undefined mixin 'respond'.\A         on line 9 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\404.scss, in `respond'\A         from line 9 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\404.scss\A \A 4:     align-items: center;\A 5:     .img__error {\A 6:         height: 45rem;\A 7:         width: 45rem;\A 8:         margin-top: 5rem;\A 9:         @include respond(w900) {\A 10:             height: 30rem;\A 11:             width: 30rem;\A 12:         }\A 13:         @include respond(w600) {\A 14:             height: 20rem;"; }

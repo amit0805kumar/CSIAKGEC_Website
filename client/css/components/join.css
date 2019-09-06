@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'respond'.
-        on line 8 of G:\github\CSIAKGEC_Website\client\sass\components\join.scss, in `respond'
-        from line 8 of G:\github\CSIAKGEC_Website\client\sass\components\join.scss
+        on line 8 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\join.scss, in `respond'
+        from line 8 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\join.scss
 
 3:     width: 100%;
 4:     display: flex;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'respond'.
 13: 
 
 Backtrace:
-G:\github\CSIAKGEC_Website\client\sass\components\join.scss:8:in `respond'
-G:\github\CSIAKGEC_Website\client\sass\components\join.scss:8
+C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\join.scss:8:in `respond'
+C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\join.scss:8
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -77,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'respond'.\A         on line 8 of G:\github\CSIAKGEC_Website\client\sass\components\join.scss, in `respond'\A         from line 8 of G:\github\CSIAKGEC_Website\client\sass\components\join.scss\A \A 3:     width: 100%;\A 4:     display: flex;\A 5:     margin: 6rem 0;\A 6:     justify-content: space-between;\A 7:     padding: 0 2rem;\A 8:     @include respond(w600) {\A 9:       flex-direction: column;\A 10:       align-items: center;\A 11:     }\A 12:   }\A 13: "; }
+  content: "Error: Undefined mixin 'respond'.\A         on line 8 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\join.scss, in `respond'\A         from line 8 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\join.scss\A \A 3:     width: 100%;\A 4:     display: flex;\A 5:     margin: 6rem 0;\A 6:     justify-content: space-between;\A 7:     padding: 0 2rem;\A 8:     @include respond(w600) {\A 9:       flex-direction: column;\A 10:       align-items: center;\A 11:     }\A 12:   }\A 13: "; }

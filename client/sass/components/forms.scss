@@ -158,6 +158,107 @@
 }
         }
 
+
+
+.payments_main{
+              position: relative;
+              margin-top: 4rem;
+              width:40%;
+        }
+         .paymentBtn{
+               background: #09097e;
+                color: #fff;
+                font-size: 1.4rem;
+                letter-spacing: 2px;
+                cursor: pointer;
+         }
+         .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  height:38%;
+   @include respond(w400){
+                width:80%;
+                }
+                 @include respond(w300){
+                 width:80%;
+                 }
+                  @include respond(w1100) {
+           width:80%;
+    }
+           @include respond(w900) { 
+           width:80%;
+    }
+
+   }
+
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+ .only_registered{
+ color:#F60C0C;
+ }
+ #above_content{
+ text-align: center;
+ }
+  .modal-content_submit{
+              position: relative;
+              
+              width:40%;
+               @include respond(w400){
+                width:80%;
+                }
+                 @include respond(w300){
+                 width:80%;
+                 }
+                  @include respond(w1100) {
+           width:80%;
+    }
+           @include respond(w900) { 
+           width:80%;
+    }
+         
+        }
+         .submitBtn{
+               background: #09097e;
+                color: #fff;
+                font-size: 1.4rem;
+                letter-spacing: 2px;
+                cursor: pointer;
+
+         }
+
+
             .inputBtn {
               position: relative;
               margin-top: 4rem;

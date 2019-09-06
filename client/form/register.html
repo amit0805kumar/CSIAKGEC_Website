@@ -212,12 +212,80 @@
 
 
 
+
+ <div class="payments_main">
+                              <input type="submit" class="paymentBtn" id="myBtn" value="PAY ONLINE">
+                           </div>
+                        <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+                         <div class="modal-content">
+                           <span class="close">&times;</span>
+                             <div class="block" id="above_content">
+                    <h1 class="noselect" id="noselect_edit"></h1>
+                    <p class="only_registered">PROCEED ONLY IF YOU ARE REGISTERED</p>
+                    <div class="paytm_btn"><a href="https://paytm.business/link/95412/LL_12597845"
+        target='_blank' rel='im-checkout' data-behaviour='remote'
+        data-style='light' data-text="Pay with Paytm" style="border-radius: 2px;display: inline-block;border: 1px solid #e6ebf3;padding: 0 23px;color: #182233;font-size: 12px;text-decoration: none;font-family: 'Nunito Sans', sans-serif;height: 32px;line-height: 28px;background: #ffffff;border: 1px solid #e8edf4;color: #182233; box-shadow: 0 12px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        margin-top:1rem; ">
+        <span>Pay  with</span>
+            <img style="margin-left: 6px;vertical-align:sub;width: 50px;"
+                 src="https://static1.paytm.in/1.4/plogo/paytmlogo-coloured.png" /></a> 
+             </div>
+             
+                </div>
+                  
+                 <div class="inputs">
+
+                        <input type="number" placeholder="Student Number" required>
+                        </div>
+                         <div class="inputs">
+                                <input type="email" placeholder="paytm Order Id" required>
+                            </div>
+                            <div class="modal-content_submit">
+                              <input type="submit" class="submitBtn" id="myBtn" value="SUBMIT">
+                           </div>
+                              </div>
+
+                            </div>
+
+
+
                             <div class="inputBtn">
                                 <input type="submit" class="loginBtn" value="REGISTER">
 
                             </div>
                         </div>
                     </form>
+
+ <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+                    
                 </div>
 
 <!--

@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'respond'.
-        on line 11 of G:\github\CSIAKGEC_Website\client\sass\components\alumni.scss, in `respond'
-        from line 11 of G:\github\CSIAKGEC_Website\client\sass\components\alumni.scss
+        on line 11 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\alumni.scss, in `respond'
+        from line 11 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\alumni.scss
 
 6:     display: flex;
 7:     flex-wrap: wrap;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'respond'.
 16:   &__box {
 
 Backtrace:
-G:\github\CSIAKGEC_Website\client\sass\components\alumni.scss:11:in `respond'
-G:\github\CSIAKGEC_Website\client\sass\components\alumni.scss:11
+C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\alumni.scss:11:in `respond'
+C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\alumni.scss:11
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -77,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'respond'.\A         on line 11 of G:\github\CSIAKGEC_Website\client\sass\components\alumni.scss, in `respond'\A         from line 11 of G:\github\CSIAKGEC_Website\client\sass\components\alumni.scss\A \A 6:     display: flex;\A 7:     flex-wrap: wrap;\A 8:     justify-content: center;\A 9:     margin-left: 50%;\A 10:     transform: translateX(-50%);\A 11:     @include respond(w400) {\A 12:       width: 100%;\A 13:       overflow: hidden;\A 14:     }\A 15:   }\A 16:   &__box {"; }
+  content: "Error: Undefined mixin 'respond'.\A         on line 11 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\alumni.scss, in `respond'\A         from line 11 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\alumni.scss\A \A 6:     display: flex;\A 7:     flex-wrap: wrap;\A 8:     justify-content: center;\A 9:     margin-left: 50%;\A 10:     transform: translateX(-50%);\A 11:     @include respond(w400) {\A 12:       width: 100%;\A 13:       overflow: hidden;\A 14:     }\A 15:   }\A 16:   &__box {"; }

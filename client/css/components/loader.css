@@ -1,39 +1,28 @@
 /*
 Error: Undefined mixin 'respond'.
-        on line 11 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\layout\navigation.scss, in `respond'
-        from line 11 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\layout\navigation.scss
+        on line 24 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\loader.scss, in `respond'
+        from line 24 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\loader.scss
 
-6:     &__logo {
-7:         width: 3rem;
-8:         height: 3rem;
-9:         display: flex;
-10:         align-items: center;
-11:         @include respond(w800) {
-12:             justify-content: space-between;
-13:         }
-14:         a {
-15:             img {
-16:                 @include respond(w800) {
+19: #loader__logo {
+20:     display: inline-block;
+21:     position: relative;
+22:     width: 20rem;
+23:     height: 20rem;
+24:     @include respond(w600) {
+25:         width: 10rem;
+26:         height: 10rem;
+27:     }
+28: }
+29: 
 
 Backtrace:
-C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\layout\navigation.scss:11:in `respond'
-C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\layout\navigation.scss:11
+C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\loader.scss:24:in `respond'
+C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\loader.scss:24
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -77,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'respond'.\A         on line 11 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\layout\navigation.scss, in `respond'\A         from line 11 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\layout\navigation.scss\A \A 6:     &__logo {\A 7:         width: 3rem;\A 8:         height: 3rem;\A 9:         display: flex;\A 10:         align-items: center;\A 11:         @include respond(w800) {\A 12:             justify-content: space-between;\A 13:         }\A 14:         a {\A 15:             img {\A 16:                 @include respond(w800) {"; }
+  content: "Error: Undefined mixin 'respond'.\A         on line 24 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\loader.scss, in `respond'\A         from line 24 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\loader.scss\A \A 19: #loader__logo {\A 20:     display: inline-block;\A 21:     position: relative;\A 22:     width: 20rem;\A 23:     height: 20rem;\A 24:     @include respond(w600) {\A 25:         width: 10rem;\A 26:         height: 10rem;\A 27:     }\A 28: }\A 29: "; }

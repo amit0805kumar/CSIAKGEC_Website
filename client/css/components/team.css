@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'respond'.
-        on line 72 of G:\github\CSIAKGEC_Website\client\sass\components\team.scss, in `respond'
-        from line 72 of G:\github\CSIAKGEC_Website\client\sass\components\team.scss
+        on line 72 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\team.scss, in `respond'
+        from line 72 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\team.scss
 
 67:     &__align {
 68:       margin-top: 10rem;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'respond'.
 77:       font-size: 2rem;
 
 Backtrace:
-G:\github\CSIAKGEC_Website\client\sass\components\team.scss:72:in `respond'
-G:\github\CSIAKGEC_Website\client\sass\components\team.scss:72
+C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\team.scss:72:in `respond'
+C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\team.scss:72
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -77,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'respond'.\A         on line 72 of G:\github\CSIAKGEC_Website\client\sass\components\team.scss, in `respond'\A         from line 72 of G:\github\CSIAKGEC_Website\client\sass\components\team.scss\A \A 67:     &__align {\A 68:       margin-top: 10rem;\A 69:       margin-bottom: -10rem;\A 70:     }\A 71: \A 72:     @include respond(w1100) {\A 73:       font-size: 2.5rem;\A 74:       padding: 0.8rem 1.7rem;\A 75:     }\A 76:     @include respond(w1600) {\A 77:       font-size: 2rem;"; }
+  content: "Error: Undefined mixin 'respond'.\A         on line 72 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\team.scss, in `respond'\A         from line 72 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\team.scss\A \A 67:     &__align {\A 68:       margin-top: 10rem;\A 69:       margin-bottom: -10rem;\A 70:     }\A 71: \A 72:     @include respond(w1100) {\A 73:       font-size: 2.5rem;\A 74:       padding: 0.8rem 1.7rem;\A 75:     }\A 76:     @include respond(w1600) {\A 77:       font-size: 2rem;"; }

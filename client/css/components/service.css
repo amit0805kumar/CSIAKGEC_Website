@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'respond'.
-        on line 13 of G:\github\CSIAKGEC_Website\client\sass\components\service.scss, in `respond'
-        from line 13 of G:\github\CSIAKGEC_Website\client\sass\components\service.scss
+        on line 13 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\service.scss, in `respond'
+        from line 13 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\service.scss
 
 8:   &__domain {
 9:     display: flex;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'respond'.
 18:     }
 
 Backtrace:
-G:\github\CSIAKGEC_Website\client\sass\components\service.scss:13:in `respond'
-G:\github\CSIAKGEC_Website\client\sass\components\service.scss:13
+C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\service.scss:13:in `respond'
+C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\service.scss:13
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -77,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'respond'.\A         on line 13 of G:\github\CSIAKGEC_Website\client\sass\components\service.scss, in `respond'\A         from line 13 of G:\github\CSIAKGEC_Website\client\sass\components\service.scss\A \A 8:   &__domain {\A 9:     display: flex;\A 10:     height: 50rem;\A 11:     width: 100%;\A 12: \A 13:     @include respond(w900) {\A 14:       height: 30rem;\A 15:     }\A 16:     @include respond(w600) {\A 17:       height: 20rem;\A 18:     }"; }
+  content: "Error: Undefined mixin 'respond'.\A         on line 13 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\service.scss, in `respond'\A         from line 13 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\service.scss\A \A 8:   &__domain {\A 9:     display: flex;\A 10:     height: 50rem;\A 11:     width: 100%;\A 12: \A 13:     @include respond(w900) {\A 14:       height: 30rem;\A 15:     }\A 16:     @include respond(w600) {\A 17:       height: 20rem;\A 18:     }"; }
