@@ -2103,6 +2103,13 @@ footer {
             font-size: 1.4rem;
             letter-spacing: 2px;
             cursor: pointer; }
+          .form__container .row .form__right .details form .fields .step_inputs {
+            display: flex;
+            flex-direction: column; }
+          .form__container .row .form__right .details form .fields .paytm_btn h3 {
+            float: left; }
+          .form__container .row .form__right .details form .fields .step_2 {
+            margin-top: 5px; }
           .form__container .row .form__right .details form .fields .inputBtn {
             position: relative;
             margin-top: 4rem; }
