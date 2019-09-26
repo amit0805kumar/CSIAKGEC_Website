@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'respond'.
-        on line 10 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\forms.scss, in `respond'
-        from line 10 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\forms.scss
+        on line 10 of G:\github\CSIAKGEC_Website\client\sass\components\forms.scss, in `respond'
+        from line 10 of G:\github\CSIAKGEC_Website\client\sass\components\forms.scss
 
 5:   border-radius: 3px;
 6:   width: 80%;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'respond'.
 15:     height: 100%;
 
 Backtrace:
-C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\forms.scss:10:in `respond'
-C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\forms.scss:10
+G:\github\CSIAKGEC_Website\client\sass\components\forms.scss:10:in `respond'
+G:\github\CSIAKGEC_Website\client\sass\components\forms.scss:10
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'respond'.\A         on line 10 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\forms.scss, in `respond'\A         from line 10 of C:\Users\GAURAV RAJPUT\Desktop\git\CSIAKGEC_Website\client\sass\components\forms.scss\A \A 5:   border-radius: 3px;\A 6:   width: 80%;\A 7:   transform: translateX(-50%);\A 8:   margin-left: 50%;\A 9:   margin-bottom: 10rem;\A 10:   @include respond(w900) {\A 11:     width: 90%;\A 12:   }\A 13:   .row {\A 14:     display: flex;\A 15:     height: 100%;"; }
+  content: "Error: Undefined mixin 'respond'.\A         on line 10 of G:\github\CSIAKGEC_Website\client\sass\components\forms.scss, in `respond'\A         from line 10 of G:\github\CSIAKGEC_Website\client\sass\components\forms.scss\A \A 5:   border-radius: 3px;\A 6:   width: 80%;\A 7:   transform: translateX(-50%);\A 8:   margin-left: 50%;\A 9:   margin-bottom: 10rem;\A 10:   @include respond(w900) {\A 11:     width: 90%;\A 12:   }\A 13:   .row {\A 14:     display: flex;\A 15:     height: 100%;"; }
