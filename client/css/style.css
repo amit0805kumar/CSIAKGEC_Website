@@ -824,6 +824,12 @@ footer {
         display: flex;
         flex-direction: column;
         position: relative; }
+        @media only screen and (max-width: 81.25em) {
+          .nav__links ul.topLinks > li {
+            min-width: 11rem; } }
+        @media only screen and (max-width: 75em) {
+          .nav__links ul.topLinks > li {
+            min-width: 10rem; } }
         @media only screen and (max-width: 68.75em) {
           .nav__links ul.topLinks > li {
             padding: 0 0.3;

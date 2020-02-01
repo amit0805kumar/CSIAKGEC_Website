@@ -144,6 +144,14 @@
                 height: 100%;
                 justify-content: center;
                 transition: all 0.3s;
+                 @include respond(w1300) {
+                   
+                    min-width: 11rem;
+                }
+                 @include respond(w1200) {
+                   
+                    min-width: 10rem;
+                }
                 @include respond(w1100) {
                     padding: 0 0.3;
                     min-width: 7rem;
